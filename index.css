@@ -438,7 +438,11 @@ img {
   gap: 48px;
   margin-bottom: 64px;
   padding-bottom: 48px;
-  border-bottom: 1px dashed black;
+  border-bottom: none;
+  background-image: linear-gradient(to right, black 85%, transparent 85%);
+  background-position: bottom;
+  background-size: 16.666% 1px;
+  background-repeat: repeat-x;
 }
 
 .project-meta__col {
@@ -482,6 +486,16 @@ img {
 
 .project-text p:last-child {
   margin-bottom: 0;
+}
+
+.text-toggle-btn {
+  cursor: pointer;
+  text-decoration: underline;
+  transition: opacity 0.2s ease;
+}
+
+.text-toggle-btn:hover {
+  opacity: 0.7;
 }
 
 .project-image {
