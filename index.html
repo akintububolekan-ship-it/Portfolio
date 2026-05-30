@@ -1,0 +1,279 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ola — Product & Interaction Designer</title>
+    <meta
+      name="description"
+      content="Ola is a Product & Interaction Designer currently leading design at Haystack, an AI-powered CRM platform."
+    />
+    <meta property="og:title" content="Ola — Product & Interaction Designer" />
+    <meta
+      property="og:description"
+      content="Product & Interaction Designer currently leading design at Haystack, an AI-powered CRM platform."
+    />
+    <meta property="og:type" content="website" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <main class="portfolio" id="portfolio">
+      <!-- Avatar -->
+      <img
+        src="images/Profile image.png"
+        alt="Portrait photo of Ola"
+        class="avatar"
+        id="avatar"
+        width="64"
+        height="64"
+      />
+
+      <!-- Bio -->
+      <section class="bio" id="bio">
+        <p class="bio__intro">
+          Hi, I'm Ola. A Product & interaction designer Currently i'm Leading
+          design at Haystack, an ai powered CRM platform.
+        </p>
+        <p class="bio__details">
+          Previously, I led UI/UX initiatives as the Lead Product Designer &
+          Lead website manager at
+          <a href="#" id="link-rovingheights">Rovingheights</a>,
+          <a href="#" id="link-nedsis">Nedsis</a> and
+          <a href="#" id="link-careerminds">Careerminds</a>, where I designed
+          socio-commerce systems and user-centric payment solutions. On the
+          side, I advise on complex interface logic and design systems for
+          global companies like
+          <a href="#" id="link-careerminds-2">Careerminds</a> and
+          <a href="#" id="link-nauta">Nauta AI</a>.
+        </p>
+        <p class="bio__social">
+          You can find me on <a href="#" id="link-x">X</a>,
+          <a href="#" id="link-github">Github</a>,
+          <a href="#" id="link-instagram">Instagram</a> or send me an
+          <a href="mailto:Akintububolekan@gmail.com" id="link-email">Email</a>.
+        </p>
+      </section>
+
+      <!-- Tabs Area -->
+      <div class="tabs-wrapper" id="tabs-wrapper">
+        <div class="tabs-container" id="tabs-container">
+          <div class="tabs-left">
+            <img
+              src="images/Profile image.png"
+              alt="Ola"
+              class="tabs__avatar"
+              id="tabs-avatar"
+            />
+            <nav class="tabs" id="tabs" aria-label="Portfolio categories">
+              <button
+                class="tabs__item tabs__item--active"
+                data-tab="case-studies"
+                id="tab-case-studies"
+              >
+                Case studies
+              </button>
+              <button
+                class="tabs__item"
+                data-tab="design-explorations"
+                id="tab-design-explorations"
+              >
+                Design explorations
+              </button>
+              <button
+                class="tabs__item"
+                data-tab="interactions"
+                id="tab-interactions"
+              >
+                Interactions
+              </button>
+            </nav>
+          </div>
+          <a
+            href="mailto:Akintububolekan@gmail.com"
+            class="send-mail-link"
+            id="send-mail-link"
+            >E-Mail</a
+          >
+        </div>
+      </div>
+
+      <!-- Case Studies -->
+      <section
+        class="tab-content tab-content--active"
+        id="content-case-studies"
+        aria-label="Case studies projects"
+      >
+        <!-- IFA ai -->
+        <a href="#" class="project-card" id="project-ifa">
+          <div class="project-card__image-container">
+            <img
+              src="images/Ifa Ai display picture.png"
+              alt="IFA ai mobile AI assistant"
+              class="project-card__image"
+              loading="lazy"
+            />
+          </div>
+          <div class="project-card__info">
+            <h3 class="project-card__title">IFA ai</h3>
+            <p class="project-card__desc">
+              A next-generation mobile AI assistant
+            </p>
+          </div>
+        </a>
+
+        <!-- Bron Crypto -->
+        <a href="#" class="project-card" id="project-bron">
+          <div class="project-card__image-container">
+            <img
+              src="images/Bron Crypto display picture.png"
+              alt="Bron Crypto platform"
+              class="project-card__image"
+              loading="lazy"
+            />
+          </div>
+          <div class="project-card__info">
+            <h3 class="project-card__title">Bron Crypto</h3>
+            <p class="project-card__desc">
+              An Ethereum powered crypto platform
+            </p>
+          </div>
+        </a>
+
+        <!-- Haystack -->
+        <a href="project.html" class="project-card" id="project-haystack">
+          <div class="project-card__image-container">
+            <img
+              src="images/Haystack display picture.png"
+              alt="Haystack CRM platform"
+              class="project-card__image"
+              loading="lazy"
+            />
+          </div>
+          <div class="project-card__info">
+            <h3 class="project-card__title">Haystack</h3>
+            <p class="project-card__desc">An ai powered CRM platform</p>
+          </div>
+        </a>
+
+        <!-- RIHUB -->
+        <a href="#" class="project-card" id="project-rihub">
+          <div class="project-card__image-container">
+            <img
+              src="images/Rihub display picture.png"
+              alt="RIHUB loan recovery financial tool"
+              class="project-card__image"
+              loading="lazy"
+            />
+          </div>
+          <div class="project-card__info">
+            <h3 class="project-card__title">RIHUB</h3>
+            <p class="project-card__desc">
+              An ai powered loan recovery financial tool
+            </p>
+          </div>
+        </a>
+      </section>
+
+      <!-- Design Explorations -->
+      <section
+        class="tab-content"
+        id="content-design-explorations"
+        aria-label="Design explorations projects"
+      >
+        <div class="empty-state">Design explorations coming soon.</div>
+      </section>
+
+      <!-- Interaction Design -->
+      <section
+        class="tab-content"
+        id="content-interaction-design"
+        aria-label="Interaction design projects"
+      >
+        <div class="empty-state">Interaction design projects coming soon.</div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer" id="footer">
+      <div class="footer__divider"></div>
+      <p class="footer__text">© 2026 Ola. All rights reserved.</p>
+    </footer>
+
+    <script>
+      // Tab switching logic
+      const tabs = document.querySelectorAll(".tabs__item");
+      const contents = document.querySelectorAll(".tab-content");
+
+      tabs.forEach((tab) => {
+        tab.addEventListener("click", () => {
+          // Remove active from all tabs
+          tabs.forEach((t) => t.classList.remove("tabs__item--active"));
+          // Hide all content
+          contents.forEach((c) => c.classList.remove("tab-content--active"));
+
+          // Activate clicked tab
+          tab.classList.add("tabs__item--active");
+          // Show matching content
+          const target = document.getElementById("content-" + tab.dataset.tab);
+          if (target) {
+            target.classList.add("tab-content--active");
+          }
+        });
+      });
+
+      // Sticky nav logic
+      const bio = document.getElementById("bio");
+      const tabsWrapper = document.getElementById("tabs-wrapper");
+
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.boundingClientRect.bottom < 0) {
+              tabsWrapper.classList.add("is-sticky");
+            } else {
+              tabsWrapper.classList.remove("is-sticky");
+            }
+          });
+        },
+        { threshold: 0 },
+      );
+
+      if (bio) observer.observe(bio);
+
+      // Smooth scroll back to top in exactly 0.5s
+      const tabsAvatar = document.getElementById("tabs-avatar");
+      if (tabsAvatar) {
+        tabsAvatar.style.cursor = "pointer";
+        tabsAvatar.addEventListener("click", () => {
+          const start = window.pageYOffset;
+          if (start === 0) return;
+
+          document.documentElement.style.scrollBehavior = "auto";
+          const duration = 500;
+          const startTime = performance.now();
+
+          function scroll(currentTime) {
+            const timeElapsed = currentTime - startTime;
+            const progress = Math.min(timeElapsed / duration, 1);
+            // easeOutQuad easing
+            const ease = progress * (2 - progress);
+            window.scrollTo(0, start * (1 - ease));
+
+            if (timeElapsed < duration) {
+              requestAnimationFrame(scroll);
+            } else {
+              document.documentElement.style.scrollBehavior = "";
+            }
+          }
+          requestAnimationFrame(scroll);
+        });
+      }
+    </script>
+  </body>
+</html>
