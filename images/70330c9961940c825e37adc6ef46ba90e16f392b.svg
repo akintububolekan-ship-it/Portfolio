@@ -1,0 +1,49 @@
+<svg preserveAspectRatio="none" overflow="visible" style="display: block;" width="192.047" height="377.101" viewBox="0 0 192.047 377.101" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="iPhone 13 &#38; 14 - 29" filter="url(#filter0_d_644_45952)">
+<g clip-path="url(#clip0_644_45952)">
+<rect width="188.318" height="373.372" transform="translate(1.86453)" fill="#F7FBFB"/>
+<g id="Vector 298" filter="url(#filter1_f_644_45952)">
+<path d="M-146.353 261.864C200.112 259.415 534.318 326.129 200.565 457.911" stroke="#A57E71" stroke-opacity="0.8" stroke-width="139.84"/>
+</g>
+<g id="Rectangle 1" filter="url(#filter2_n_644_45952)">
+<rect x="1.86484" y="-7.82388e-06" width="181.86" height="393.887" fill="#D9D9D9" fill-opacity="0.2"/>
+</g>
+</g>
+</g>
+<defs>
+<filter id="filter0_d_644_45952" x="0" y="0" width="192.047" height="377.101" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset dy="1.86453"/>
+<feGaussianBlur stdDeviation="0.932265"/>
+<feComposite in2="hardAlpha" operator="out"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0.846154 0 0 0 0 0.846154 0 0 0 0 0.846154 0 0 0 0.25 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_644_45952"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_644_45952" result="shape"/>
+</filter>
+<filter id="filter1_f_644_45952" x="-662.203" y="-323.477" width="1585.88" height="1361.78" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feGaussianBlur stdDeviation="257.678" result="effect1_foregroundBlur_644_45952"/>
+</filter>
+<filter id="filter2_n_644_45952" x="1.86484" y="-7.82388e-06" width="181.86" height="393.887" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feTurbulence type="fractalNoise" baseFrequency="2.1453125476837158 2.1453125476837158" stitchTiles="stitch" numOctaves="3" result="noise" seed="950" />
+<feColorMatrix in="noise" type="luminanceToAlpha" result="alphaNoise" />
+<feComponentTransfer in="alphaNoise" result="coloredNoise1">
+<feFuncA type="discrete" tableValues="1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 "/>
+</feComponentTransfer>
+<feComposite operator="in" in2="shape" in="coloredNoise1" result="noise1Clipped" />
+<feFlood flood-color="rgba(92, 92, 92, 0.15)" result="color1Flood" />
+<feComposite operator="in" in2="noise1Clipped" in="color1Flood" result="color1" />
+<feMerge result="effect1_noise_644_45952">
+<feMergeNode in="shape" />
+<feMergeNode in="color1" />
+</feMerge>
+</filter>
+<clipPath id="clip0_644_45952">
+<rect width="188.318" height="373.372" fill="white" transform="translate(1.86453)"/>
+</clipPath>
+</defs>
+</svg>

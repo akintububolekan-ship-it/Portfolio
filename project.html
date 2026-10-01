@@ -51,7 +51,7 @@
         </div>
 
         <h1 class="project-title">
-          Haystack | AI-Powered Omni-Channel CRM & Support Automation
+          Haystack | AI-Powered Omni-Channel CRM &amp; Support Automation
         </h1>
 
         <div class="project-meta">
@@ -75,184 +75,449 @@
         <div class="project-text">
           <h2>Overview</h2>
           <p>
-            Haystack is an enterprise-grade, AI-driven CRM platform built for medium-to-large scale companies overwhelmed by massive customer support volumes. <span id="read-more-btn" class="text-toggle-btn" onclick="document.getElementById('more-text').style.display='inline'; this.style.display='none';">Read more</span><span id="more-text" style="display: none;">By unifying fragmented customer communication channels and seamlessly integrating with core business infrastructure (Logistics, ERP, and Payments), Haystack acts as an automated triage and resolution layer. The platform relies on an autonomous AI agent to resolve routine inquiries instantly, dramatically reducing ticket backlogs and freeing human support managers to tackle complex, high-priority issues. <span id="show-less-btn" class="text-toggle-btn" onclick="document.getElementById('more-text').style.display='none'; document.getElementById('read-more-btn').style.display='inline';">Show less</span></span>
+            Haystack is an ai powered customer service management tool that helps large and medium scale businesses optimize customer service issues through chats and calls.
           </p>
         </div>
       </div>
 
-      <!-- Hero Image - Chat UI -->
+      <!-- Overview Hero Image -->
       <img
-        src="images/Overview image.svg"
-        alt="Haystack Mobile Chat Interface"
+        src="images/UI/Overview image.png"
+        alt="Haystack Chat & Support Overview"
         class="project-image project-image--hero"
       />
+
+      <!-- Design Process -->
+      <div class="project-content">
+        <div class="project-text">
+          <div class="section-header">
+            <h2>Design Process</h2>
+            <button class="section-header__action" onclick="toggleSection('design-process-content', this)">Close</button>
+          </div>
+          <div id="design-process-content">
+            <p>
+              For the design process, I followed 4 critical steps.
+            </p>
+            <p class="process-flow">
+              [Baseline Problem] &rarr; [Targeted Research] &rarr; [Refine Problem &amp; Goals] &rarr; [Design &amp; Test]
+            </p>
+          </div>
+        </div>
+      </div>
 
       <!-- The Problem -->
       <div class="project-content">
         <div class="project-text">
-          <h2>The Problem</h2>
-          <p>
-            A major retail client struggled with managing customer inquiries
-            across various platforms (Email, WhatsApp, Instagram, etc.). Support
-            agents found it overwhelming to switch between different tools,
-            leading to delayed response times and lost customer information. The
-            lack of a unified system meant that automated responses were not
-            context-aware, resulting in poor customer experience.
-          </p>
+          <div class="section-header">
+            <h2>The Problem</h2>
+            <button class="section-header__action" onclick="toggleSection('problem-content', this)">Close</button>
+          </div>
+          <div id="problem-content">
+            <p>
+              As medium and large companies scale, their customer service quality heavily reduces, because high volumes of routine queries overwhelm human agents, leaving customers waiting days for simple resolutions, leading to increased customer complaints.
+            </p>
+          </div>
         </div>
       </div>
 
-      <!-- Key Features -->
+      <!-- The Project Goal -->
       <div class="project-content">
         <div class="project-text">
-          <h2>Key Features</h2>
-          <p>
-            1. Automated responses with intelligent routing — an AI chat
-            interface that handles simple queries and routes complex issues to
-            human agents automatically.
-          </p>
-          <p>
-            2. Omnichannel integrations — native integration with 10+ platforms
-            including WhatsApp, Messenger, Instagram, Email, Webchat, and Slack.
-          </p>
-          <p>
-            3. Team collaboration — built-in internal chat for agents to consult
-            with specialists without leaving the customer context. Includes tag
-            features, thread tracking, and real-time status updates.
-          </p>
+          <div class="section-header">
+            <h2>The Project Goal</h2>
+            <button class="section-header__action" onclick="toggleSection('goal-content', this)">View</button>
+          </div>
+          <div id="goal-content">
+            <p>
+              The goal is very simple.
+            </p>
+            <p>
+              Automate Resolution: Design &amp; Deploy an autonomous AI agent to handle routine complaints and eliminate massive ticket backlogs.
+            </p>
+          </div>
         </div>
       </div>
 
-      <!-- Screenshot: Chats management -->
-      <div class="project-mockups">
-        <div class="project-mockup-label">
-          <span class="project-mockup-label__title">Chats management</span>
-          <span class="project-mockup-label__desc">All chats view</span>
-        </div>
-        <img
-          src="images/Dashboard.svg"
-          alt="Chats management - All chats view"
-          class="project-image"
-        />
-      </div>
-
-      <!-- Screenshot: Chat flow -->
-      <div class="project-mockups">
-        <div class="project-mockup-label">
-          <span class="project-mockup-label__title">A typical chat flow</span>
-          <span class="project-mockup-label__desc"
-            >An example chat flow on the platform with a live agent and AI
-            assistant</span
-          >
-        </div>
-        <img
-          src="images/chat management.svg"
-          alt="A typical chat flow"
-          class="project-image"
-        />
-      </div>
-
-      <!-- Screenshot: Dashboard analytics -->
-      <div class="project-mockups">
-        <div class="project-mockup-label">
-          <span class="project-mockup-label__title">Dashboard analytics</span>
-          <span class="project-mockup-label__desc"
-            >Performance metrics and conversation analytics overview</span
-          >
-        </div>
-        <img
-          src="images/Call management.svg"
-          alt="Dashboard analytics view"
-          class="project-image"
-        />
-      </div>
-
-      <!-- Screenshot: Integrations panel -->
-      <div class="project-mockups">
-        <div class="project-mockup-label">
-          <span class="project-mockup-label__title">Integrations panel</span>
-          <span class="project-mockup-label__desc"
-            >The integrations panel used to hook up external apps and
-            services</span
-          >
-        </div>
-        <img
-          src="images/Messaging screen.svg"
-          alt="Integrations panel"
-          class="project-image"
-        />
-      </div>
-
-      <!-- Screenshot: Knowledge base -->
-      <div class="project-mockups">
-        <div class="project-mockup-label">
-          <span class="project-mockup-label__title">Knowledge base</span>
-          <span class="project-mockup-label__desc"
-            >The knowledge base section — search and browse categories for the
-            help centre</span
-          >
-        </div>
-        <img
-          src="images/Integrations screen.svg"
-          alt="Knowledge base and help centre"
-          class="project-image"
-        />
-      </div>
-
-      <!-- Screenshot: Settings -->
-      <div class="project-mockups">
-        <div class="project-mockup-label">
-          <span class="project-mockup-label__title">Settings</span>
-          <span class="project-mockup-label__desc"
-            >Integrations tab — connected accounts and preferences</span
-          >
-        </div>
-        <img
-          src="images/Integration s 2.svg"
-          alt="Settings - Integrations tab"
-          class="project-image"
-        />
-      </div>
-
-      <!-- Results -->
+      <!-- Research -->
       <div class="project-content">
         <div class="project-text">
-          <h2>Results</h2>
+          <div class="section-header">
+            <h2>Research</h2>
+            <button class="section-header__action" onclick="toggleSection('research-content', this)">View</button>
+          </div>
+          <div id="research-content">
+            <p>
+              To ensure our design decisions were grounded in real-world data rather than assumptions, we did a comprehensive research phase. Our focus was to gather actionable data directly from the people experiencing the problem daily.
+            </p>
+            <p>
+              The following section outlines our systematic approach: defining clear Research Objectives, detailing our data-gathering Methodology, and synthesizing our findings into the core Insights that drove the final design.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Research Objectives -->
+      <div class="project-content">
+        <div class="project-text">
+          <div class="section-header">
+            <h2>Research Objectives</h2>
+            <button class="section-header__action" onclick="toggleSection('objectives-content', this)">View</button>
+          </div>
+          <div id="objectives-content">
+            <p>
+              Before designing, we needed to uncover why medium and large enterprises suffer from severe customer support backlogs and high agent burnout. We were driven by two primary goals:
+            </p>
+            <ol>
+              <li>
+                Determine the root causes of slow response times. We needed to map where data gets trapped internally and why agents struggle to get information to the customer quickly.
+              </li>
+              <li>
+                Map Agent Bottlenecks: Uncover the workflow inefficiencies, missing data points, or repetitive tasks that cause the longest delays in an agent's day.
+              </li>
+            </ol>
+          </div>
+        </div>
+      </div>
+
+      <!-- Research Insights -->
+      <div class="project-content">
+        <div class="project-text">
+          <div class="section-header">
+            <h2>Research Insights</h2>
+            <button class="section-header__action" onclick="toggleSection('insights-content', this)">View</button>
+          </div>
+          <div id="insights-content">
+            <p>
+              Our user interviews and observations revealed that the problem wasn't just a lack of human staff. Some companies attempted to use automated tools to solve their backlogs but the execution has just made customers more furious.
+            </p>
+            <ol>
+              <li>
+                Customers are highly frustrated by automated bots that provide generic FAQ links instead of specific answers.
+              </li>
+              <li>
+                Blind Handoffs Escalate User Anger: One of the biggest friction point occurs during a human transfer. Customers get furious when forced to re-explain their entire issue from scratch. Conversely, human agents feel set up for failure when an escalated ticket drops into their queue completely blank, without any of the preceding chat history.
+              </li>
+              <li>
+                Data Spread Across Software: Customer information is mostly spread across multiple software, increasing the time it takes to resolve one customer complaint.
+              </li>
+            </ol>
+          </div>
+        </div>
+      </div>
+
+      <!-- User Personas -->
+      <div class="project-content">
+        <div class="project-text">
+          <div class="section-header">
+            <h2>User Personas</h2>
+            <button class="section-header__action" onclick="toggleSection('personas-content', this)">Close</button>
+          </div>
+          <div id="personas-content">
+            <p>
+              To ensure the platform addresses both the operational strains on agents and the frustrations of end-users, we synthesized our findings into two key personas:
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- User Persona Cards -->
+      <img
+        src="images/UI/Frame 564.png"
+        alt="User Persona - Henry Barner, Customer Service Agent"
+        class="project-image"
+      />
+      <img
+        src="images/UI/Frame 1000005343.png"
+        alt="User Persona - Samuel White, Business Owner"
+        class="project-image"
+      />
+
+      <!-- Competitor's Analysis -->
+      <div class="project-content">
+        <div class="project-text">
+          <div class="section-header">
+            <h2>Competitor's Analysis</h2>
+            <button class="section-header__action" onclick="toggleSection('competitor-content', this)">Close</button>
+          </div>
+          <div id="competitor-content">
+            <p>
+              To understand how existing customer service platforms handle automation and scaling friction, we analyzed the dominant archetypes in the support software market. Our focus was to identify why existing tools fail to solve high ticket backlogs without destroying user trust.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Competitor Analysis Matrix Table -->
+      <img
+        src="images/UI/Frame 1000005340.png"
+        alt="Competitor Analysis Comparison Matrix"
+        class="project-image"
+      />
+
+      <div class="project-content">
+        <div class="project-text">
           <p>
-            Increased resolution speed by 40% on average. AI-flagged baseline
-            routine queries generated automated responses instantly, freeing
-            agents to focus on complex issues.
+            Our competitor analysis exposed a clear flaw in the current market. Incumbents like Zendesk and Salesforce provide heavy infrastructure and broad integration ecosystems, but their AI implementations feel bolted-on. They rely on rigid decision-tree bots that deflect tickets by tossing static help center links at users. When frustration inevitably peaks and a human must step in, the handoff is blind — no context or chat history transfers over.
           </p>
           <p>
-            Omnichannel usage increased — users engaged with brands on their
-            preferred channels, improving overall customer satisfaction by 30%.
+            Tools like Intercom do a better job with modern conversational UI, but they lack autonomous execution. They cannot execute deep operational actions on external databases (e.g. independently processing a refund or updating an ERP order).
           </p>
           <p>
-            Reduced agent burnout — agents reported feeling less stressed
-            handling inquiries, as the AI handled 60% of common queries and
-            routed complex ones appropriately.
+            This leaves a massive product gap. Haystack captures this opportunity by combining autonomous execution with deep context-preserving handoffs. Instead of a glorified FAQ bot, Haystack is built from the ground up as a native AI teammate that understands sentiment, fetches data across isolated systems, and hands off complex edge cases to humans without losing a single line of context.
           </p>
         </div>
       </div>
 
-      <!-- Takeaway -->
+      <!-- Solution -->
       <div class="project-content">
         <div class="project-text">
-          <h2>Takeaway</h2>
+          <div class="section-header">
+            <h2>Solution</h2>
+            <button class="section-header__action" onclick="toggleSection('solution-content', this)">View</button>
+          </div>
+          <div id="solution-content">
+            <p>
+              I tailored the solution with data from the insights and what i learnt from the research:
+            </p>
+            <ol>
+              <li>
+                Create &amp; Design an ai powered CRM tool that integrates with other software allowing it independently resolve customer queries.
+              </li>
+              <li>
+                Design a screen that summarizes the customer complaint and escalates when sentiment threshold is crossed.
+              </li>
+              <li>
+                Design an interface that shows all the data on a customer across multiple software on one screen.
+              </li>
+            </ol>
+          </div>
+        </div>
+      </div>
+
+      <!-- Paper Wireframes -->
+      <div class="project-content">
+        <div class="project-text">
+          <h2>Paper Wireframes</h2>
           <p>
-            Haystack demonstrates how a well-designed AI-powered platform can
-            transform customer support operations. By centralising all
-            communications and intelligently automating responses, businesses
-            can deliver faster, more consistent, and more personalised service
-            at scale.
+            To begin the design stage, I designed the solutions above into a paper wireframe to help give a quick view of what the final design will look like, brainstormed, added and removed ideas, tailoring them to the Solutions above.
           </p>
         </div>
       </div>
+
+      <!-- The Final Design -->
+      <div class="project-content">
+        <div class="project-text">
+          <h2>The Final Design</h2>
+          <p>
+            I converted the completed paper wireframes to the HIFI screens.
+          </p>
+        </div>
+      </div>
+
+      <!-- Group 1: The Dashboard -->
+      <div class="project-mockups">
+        <div class="project-mockup-label">
+          <span class="project-mockup-label__title">The Dashboard</span>
+          <span class="project-mockup-label__desc">The dashboard here shows a quick overview of the workload, helping the user navigate the workload distribution between the ai agents and human agents, and intelligence to see the customers reaction to responses.</span>
+        </div>
+        <img
+          src="images/UI/Dashboard.png"
+          alt="The Dashboard"
+          class="project-image"
+        />
+      </div>
+
+      <!-- Group 2: Omni-channel Inbox -->
+      <div class="project-mockups">
+        <div class="project-mockup-label">
+          <span class="project-mockup-label__title">Omni-channel Inbox</span>
+          <span class="project-mockup-label__desc">This is the omni-channel inbox, it helps human agents quickly pull out information on a customer query. It is powered with ai so it is interactive and faster than the day to regular omni-channel softwares.</span>
+        </div>
+        <img
+          src="images/UI/Other screens 3.png"
+          alt="Omni-channel Inbox - Screen 1"
+          class="project-image"
+        />
+        <img
+          src="images/UI/Other screens 4.png"
+          alt="Omni-channel Inbox - Screen 2"
+          class="project-image"
+        />
+        <img
+          src="images/UI/Other screens 6.png"
+          alt="Omni-channel Inbox - Screen 3"
+          class="project-image"
+        />
+      </div>
+
+      <!-- Group 3: Chat & Call management -->
+      <div class="project-mockups">
+        <div class="project-mockup-label">
+          <span class="project-mockup-label__title">Chat &amp; Call management</span>
+          <span class="project-mockup-label__desc">The Chat and call managements screens shows real time insights on chats and call performance for the day by the ai agents. It shows all chats, avg response time, and escalated complaints that needs attention for easy access, etc.</span>
+        </div>
+        <img
+          src="images/UI/Chat management.png"
+          alt="Chat and Call Management"
+          class="project-image"
+        />
+      </div>
+
+      <!-- Group 4: Messaging screen -->
+      <div class="project-mockups">
+        <div class="project-mockup-label">
+          <span class="project-mockup-label__title">Messaging screen</span>
+          <span class="project-mockup-label__desc">The all chats screen shows all the chat channels. It shows an ai agent engaging a customer. The ai agent using it's integrations system to check the erp system for the price and availability of the requested item, and the payment directory.</span>
+        </div>
+        <img
+          src="images/UI/Messaging screen.png"
+          alt="Messaging Screen - Active conversation with ERP integration"
+          class="project-image"
+        />
+      </div>
+
+      <!-- Group 5: Integrations screen -->
+      <div class="project-mockups">
+        <div class="project-mockup-label">
+          <span class="project-mockup-label__title">Integrations screen</span>
+          <span class="project-mockup-label__desc">The integration page is where other workflow software containing customer information are integrated. A tree view of the integration screen below shows an ai agent (Sam) fetching data from the erp.</span>
+        </div>
+        <img
+          src="images/UI/Integrations screen.png"
+          alt="Integrations Screen Overview"
+          class="project-image"
+        />
+        <img
+          src="images/UI/Integration s 2.png"
+          alt="Integrations - Autonomous Agent Node View"
+          class="project-image"
+        />
+      </div>
+
+      <!-- Group 6: Some other screens -->
+      <div class="project-mockups">
+        <div class="project-mockup-label">
+          <span class="project-mockup-label__title">Some other screens</span>
+          <span class="project-mockup-label__desc">The help center, Settings etc etc.</span>
+        </div>
+        <img
+          src="images/UI/Other screens 1.png"
+          alt="Help Center Screen"
+          class="project-image"
+        />
+        <img
+          src="images/UI/Other screens 2.png"
+          alt="Settings &amp; Preferences Screen"
+          class="project-image"
+        />
+      </div>
+
+      <!-- Group 7: Dark mode -->
+      <div class="project-mockups">
+        <div class="project-mockup-label">
+          <span class="project-mockup-label__title">Dark mode</span>
+        </div>
+        <img
+          src="images/UI/Other screens 1-1.png"
+          alt="Haystack Dark Mode - Dashboard"
+          class="project-image"
+        />
+        <img
+          src="images/UI/Other screens 2-1.png"
+          alt="Haystack Dark Mode - Analytics Overview"
+          class="project-image"
+        />
+        <img
+          src="images/UI/Other screens 3-1.png"
+          alt="Haystack Dark Mode - Workload Distribution"
+          class="project-image"
+        />
+        <img
+          src="images/UI/Other screens 4-1.png"
+          alt="Haystack Dark Mode - Help Center Setup"
+          class="project-image"
+        />
+        <img
+          src="images/UI/Other screens 5.png"
+          alt="Haystack Dark Mode - Active Chat &amp; AI Triage"
+          class="project-image"
+        />
+      </div>
+
+      <!-- Impacts -->
+      <div class="project-content">
+        <div class="project-text">
+          <div class="section-header">
+            <h2>Impacts</h2>
+            <button class="section-header__action" onclick="toggleSection('impacts-content', this)">View</button>
+          </div>
+          <div id="impacts-content">
+            <ol>
+              <li>Projected to improve avg response speed by 60%</li>
+              <li>Projected to reduce tier-1 ticket volume by 80%.</li>
+              <li>Projected to increase customer satisfaction by 40%</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+
+      <!-- What i learnt -->
+      <div class="project-content">
+        <div class="project-text">
+          <div class="section-header">
+            <h2>What i learnt</h2>
+            <button class="section-header__action" onclick="toggleSection('what-i-learnt-content', this)">View</button>
+          </div>
+          <div id="what-i-learnt-content">
+            <ol>
+              <li>Customers get offended at ai electronic voices, the wait, latency issues etc</li>
+              <li>Customers don’t have a problem with being responded with ai, they hate spending too much time trying to resolve basic issues or agents not having enough information.</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+
+      <!-- Iterations -->
+      <div class="project-content">
+        <div class="project-text">
+          <div class="section-header">
+            <h2>Iterations</h2>
+            <button class="section-header__action" onclick="toggleSection('iterations-content', this)">View</button>
+          </div>
+          <div id="iterations-content">
+            <p>
+              To make the calls feature better, I decided to tried out Misolabs.ai. They’ve been able to eliminate this problem. It has faster reaction time solving the wait and latency issues and easy voice cloning, Saving us the hassle of electronic voices customers don’t like.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Iterations Mockup Image -->
+      <img
+        src="images/UI/image 76.png"
+        alt="Iterations - Misolabs.ai Voice Latency &amp; Cloning"
+        class="project-image"
+      />
+
     </main>
 
     <footer class="footer" id="footer">
       <div class="footer__divider"></div>
       <p class="footer__text">&copy; 2026 Ola. All rights reserved.</p>
     </footer>
+
+    <script>
+      function toggleSection(id, btn) {
+        const el = document.getElementById(id);
+        if (!el) return;
+        if (el.style.display === 'none') {
+          el.style.display = '';
+          btn.textContent = 'Close';
+        } else {
+          el.style.display = 'none';
+          btn.textContent = 'View';
+        }
+      }
+    </script>
   </body>
 </html>
