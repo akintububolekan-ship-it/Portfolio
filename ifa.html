@@ -1,0 +1,724 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IFA ai Case Study — Ola</title>
+    <meta
+      name="description"
+      content="A detailed case study of IFA ai, an intelligent prompting platform and adaptive multi-modal AI companion designed by Ola."
+    />
+    <link rel="stylesheet" href="index.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Header / Navigation back -->
+    <header class="project-header">
+      <div class="project-header__inner">
+        <a href="index.html" class="project-header__back">
+          <svg
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M19 12H5M5 12L12 19M5 12L12 5"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+          Back
+        </a>
+      </div>
+    </header>
+
+    <main class="project-page">
+      <!-- Top section: Logo + Title + Meta -->
+      <div class="project-content">
+        <div class="project-top">
+          <img
+            src="images/ifa-logo.svg"
+            alt="IFA ai Logo"
+            class="project-logo"
+          />
+        </div>
+
+        <h1 class="project-title">IFA ai | An ai prompting app</h1>
+
+        <div class="project-meta">
+          <div class="project-meta__col">
+            <span class="project-meta__label">Category</span>
+            <span class="project-meta__value">Ai prompting</span>
+          </div>
+          <div class="project-meta__col">
+            <span class="project-meta__label">Year</span>
+            <span class="project-meta__value">2024</span>
+          </div>
+          <div class="project-meta__col">
+            <span class="project-meta__label">My role</span>
+            <span class="project-meta__value"
+              >Product designer, Motion designer.</span
+            >
+          </div>
+        </div>
+      </div>
+
+      <!-- 1. Overview -->
+      <div class="project-content">
+        <div class="project-text project-text--has-image">
+          <h2>Overview</h2>
+          <p>
+            IFA AI is an intelligent prompting platform designed to make AI
+            interaction effortless, tailored, and versatile. Built to bridge the
+            gap between complex AI capabilities and everyday productivity, IFA
+            AI empowers users to engineer better prompts, generate creative
+            content, and interact with specialized AI modes tailored to their
+            exact context.
+          </p>
+        </div>
+      </div>
+
+      <!-- Hero Image -->
+      <img
+        src="images/UI/Frame 1000005183.svg"
+        alt="IFA AI Mobile App Overview"
+        class="project-image project-image--hero"
+      />
+
+      <!-- 2. Design Process -->
+      <div class="project-content">
+        <div class="project-text">
+          <div class="section-header">
+            <h2>Design Process</h2>
+            <button
+              class="section-header__action"
+              onclick="toggleSection('design-process-content', this)"
+            >
+              Close
+            </button>
+          </div>
+          <div id="design-process-content">
+            <p>
+              For the design process, I followed 5 critical steps. Note that the
+              steps are non linear
+            </p>
+            <p class="process-flow">
+              [Empathize] &rarr; [Define Problem &amp; Goals] &rarr; [Ideate]
+              &rarr; [Prototype] &rarr; [Test &amp; Iterate]
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- 3. The Problem -->
+      <div class="project-content">
+        <div class="project-text">
+          <div class="section-header">
+            <h2>The Problem</h2>
+            <button
+              class="section-header__action"
+              onclick="toggleSection('problem-content', this)"
+            >
+              Close
+            </button>
+          </div>
+          <div id="problem-content">
+            <p>
+              Despite rapid advancements in artificial intelligence, mainstream
+              AI chat interfaces treat every user interaction identically.
+              Whether a user wants to entertain a toddler, discuss a sensitive
+              health topic, roleplay, or unwind after a long day, standard AI
+              assistants respond in the exact same monotone, overly formal, and
+              corporate tone.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- 4. The Goal -->
+      <div class="project-content">
+        <div class="project-text">
+          <div class="section-header">
+            <h2>The Goal</h2>
+            <button
+              class="section-header__action"
+              onclick="toggleSection('goal-content', this)"
+            >
+              Close
+            </button>
+          </div>
+          <div id="goal-content">
+            <p>
+              The goal of this project is to eliminate &ldquo;prompt
+              fatigue&rdquo; by creating an adaptive, multi-modal AI companion
+              that instantly aligns with the user's context, emotional state,
+              and safety needs through one-tap personalized modes.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- 5. Research -->
+      <div class="project-content">
+        <div class="project-text">
+          <div class="section-header">
+            <h2>Research</h2>
+            <button
+              class="section-header__action"
+              onclick="toggleSection('research-content', this)"
+            >
+              Close
+            </button>
+          </div>
+          <div id="research-content">
+            <p>
+              The research phase is to understand the user's feelings,
+              behaviors, &amp; pain points and also validate my hypothesis
+              without bringing my own biases into it. It includes, user
+              interviews and competitive analysis.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- 6. Competitor's Analysis -->
+      <div class="project-content">
+        <div class="project-text project-text--has-image">
+          <div class="section-header">
+            <h2>Competitor's Analysis</h2>
+            <button
+              class="section-header__action"
+              onclick="toggleSection('competitor-content', this)"
+            >
+              Close
+            </button>
+          </div>
+          <div id="competitor-content">
+            <p>
+              To understand the market gap, we analyzed 4 dominant AI platforms.
+              We evaluated them based on Emotional Intelligence, Ease of
+              Customization (Prompt Effort), Voice Immersion, and Child Safety.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Competitor Analysis Image -->
+      <img
+        src="images/UI/Frame 1000005340.svg"
+        alt="Competitor's Analysis Matrix"
+        class="project-image"
+      />
+
+      <!-- 7. User Personas -->
+      <div class="project-content">
+        <div class="project-text project-text--has-image">
+          <div class="section-header">
+            <h2>User Personas</h2>
+            <button
+              class="section-header__action"
+              onclick="toggleSection('personas-content', this)"
+            >
+              Close
+            </button>
+          </div>
+          <div id="personas-content">
+            <p>
+              Based on our problem statement, we identified two core user
+              archetypes.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- User Persona Cards -->
+      <img
+        src="images/UI/Frame 1000005348.svg"
+        alt="User Persona - David, 34-year-old Architect (The Cautious Parent)"
+        class="project-image"
+      />
+      <img
+        src="images/UI/Frame 564.svg"
+        alt="User Persona - Maya, 29-year-old Banking Manager (The Emotional Sounding-Board)"
+        class="project-image"
+      />
+
+      <!-- 8. User Needs Mapping -->
+      <div class="project-content">
+        <div class="project-text project-text--has-image">
+          <div class="section-header">
+            <h2>User Needs Mapping</h2>
+            <button
+              class="section-header__action"
+              onclick="toggleSection('user-needs-content', this)"
+            >
+              Close
+            </button>
+          </div>
+          <div id="user-needs-content">
+            <p>
+              To translate raw persona insights into actionable product
+              features, we mapped out the core emotional and operational needs
+              of our target users against their current pain points with
+              standard AI platforms.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- User Needs Mapping Image -->
+      <img
+        src="images/UI/user-needs-mapping.svg"
+        alt="User Needs Mapping Matrix"
+        class="project-image"
+      />
+
+      <!-- 9. User Journey Map -->
+      <div class="project-content">
+        <div class="project-text project-text--has-image">
+          <div class="section-header">
+            <h2>User Journey Map</h2>
+            <button
+              class="section-header__action"
+              onclick="toggleSection('journey-map-content', this)"
+            >
+              View
+            </button>
+          </div>
+          <div id="journey-map-content" style="display: none">
+            <p>
+              This map illustrates Amara's journey as she transitions from an
+              overwhelming day into a relaxed evening, using IFA AI to process
+              her thoughts hands-free while preparing dinner.
+            </p>
+            <p class="process-flow">
+              [ Need ] &rarr; [ Open App ] &rarr; [ Mode Select ] &rarr; [ Voice
+              Chat ] &rarr; [ Resolution ]
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Journey Map Image -->
+      <img
+        src="images/UI/Recreate existing design.svg"
+        alt="Customer Journey Map - IFA AI Voice Companion Experience"
+        class="project-image"
+      />
+
+      <!-- 10. The Solution -->
+      <div class="project-content">
+        <div class="project-text">
+          <div class="section-header">
+            <h2>The Solution</h2>
+            <button
+              class="section-header__action"
+              onclick="toggleSection('solution-content', this)"
+            >
+              View
+            </button>
+          </div>
+          <p>
+            Our solution is to reimagine prompt engineering by replacing manual
+            text inputs with a contextual, mode-driven UI. Instead of making the
+            user do the heavy lifting, the system configures tone, voice style,
+            multi-modal tools, and safety guardrails automatically behind the
+            scenes.
+          </p>
+          <div id="solution-content" style="display: none"></div>
+        </div>
+      </div>
+
+      <!-- 11. Paper Wireframes -->
+      <div class="project-content">
+        <div class="project-text">
+          <h2>Paper Wireframes</h2>
+          <p>
+            To begin the design stage, I designed, brainstormed, added and
+            removed ideas on a paper wireframe to help give a quick view of what
+            the final design will look like, tailoring them to the Solutions
+            above.
+          </p>
+        </div>
+      </div>
+
+      <!-- 12. Information Architecture -->
+      <div class="project-content">
+        <div class="project-text">
+          <h2>Information Architecture</h2>
+          <ul class="ia-list">
+            <li>
+              <strong>1. Onboarding &amp; Authentication Flow</strong>
+              <p>The linear journey a new user takes to access the app.</p>
+              <ul>
+                <li>[ Splash Screen (IFA Logo) ]</li>
+                <li>&darr;</li>
+                <li>[ Social Auth (Sign in with Google / Apple) ]</li>
+                <li>&darr;</li>
+                <li>
+                  [ Enter OTP Code (Numeric Keypad) ] &rarr; [ Verification
+                  Success Modal ]
+                </li>
+                <li>&darr;</li>
+                <li>
+                  [ Paywall (IFA Upperclass Feature Breakdown) ] &rarr; (User
+                  Subscribes or Skips)
+                </li>
+                <li>&darr;</li>
+                <li>(Enters Core Workspace)</li>
+              </ul>
+            </li>
+            <li>
+              <strong>2. Core Workspace &amp; Chat Flow</strong>
+              <p>
+                The default home state where standard text and multi-modal
+                prompting happen.
+              </p>
+              <ul>
+                <li>[ Main Chat Interface (Empty State) ]</li>
+                <li>&darr; (User types a prompt or taps attachment)</li>
+                <li>
+                  Branch A: &rarr; [ Attachment Drawer (Camera / Gallery / Docs)
+                  ]
+                </li>
+                <li>Branch B: &darr; [ AI Processing / Loading ]</li>
+                <li>&darr;</li>
+                <li>[ Rich Text AI Response (Structured Output) ]</li>
+                <li>&darr; (User taps menu icon)</li>
+                <li>
+                  [ Navigation Drawer ] &rarr; [ History Feed / Saved Chats ] OR
+                  [ Start New Chat ]
+                </li>
+              </ul>
+            </li>
+            <li>
+              <strong>3. Adaptive Voice Assist Flow (The Core UX)</strong>
+              <p>
+                How the user selects a contextual mode and transitions to
+                hands-free voice.
+              </p>
+              <ul>
+                <li>[ Main Chat Interface ]</li>
+                <li>&darr; (User taps the Voice icon)</li>
+                <li>[ Voice Assist Onboarding / Intro Screen ]</li>
+                <li>&darr; (Taps "Get Started")</li>
+                <li>
+                  [ Context Mode Selector (Scrollable List) ] <br /><small
+                    >(Options: Therapy, Kids, Companion, Game, Health,
+                    etc.)</small
+                  >
+                </li>
+                <li>&darr; (User selects a mode, e.g., Kids Mode)</li>
+                <li>[ Active Voice Interface (Audio Waveform) ]</li>
+                <li>&darr; (User wants to change the AI's persona)</li>
+                <li>
+                  [ Character Voice Switcher Modal (Victor, Stella, Zara, Sam) ]
+                  &rarr; (Returns to Active Voice)
+                </li>
+              </ul>
+            </li>
+            <li>
+              <strong>4. Image Generation &amp; Editing Flow</strong>
+              <p>The journey from text prompt to final generated asset.</p>
+              <ul>
+                <li>[ Main Chat Interface ]</li>
+                <li>&darr; (User enters image generation prompt)</li>
+                <li>[ Image Rendering / Progress Screen ]</li>
+                <li>&darr;</li>
+                <li>[ Image Result Preview (Grid or Single Image View) ]</li>
+                <li>&darr; (User selects an image to tweak)</li>
+                <li>
+                  [ Image Transformation &amp; Edit Suite (Refine Prompt /
+                  Filters) ]
+                </li>
+                <li>&darr;</li>
+                <li>[ Export Actions (Download / Share) ]</li>
+              </ul>
+            </li>
+            <li>
+              <strong>5. Profile &amp; Parental Guardrails Flow</strong>
+              <p>
+                How users manage their account and set up the child-safe
+                sandbox.
+              </p>
+              <ul>
+                <li>[ Main Chat Interface ]</li>
+                <li>&darr; (User taps Profile Avatar)</li>
+                <li>[ User Profile Dashboard &amp; Plan Overview ]</li>
+                <li>&darr; (User navigates to sub-menus)</li>
+                <li>
+                  Branch A (Settings): &rarr; [ System Settings (Appearance,
+                  Language, Dark Mode) ]
+                </li>
+                <li>Branch B (Kids Mode): &darr;</li>
+                <li>[ Set Child Mode (Intro Screen) ]</li>
+                <li>&darr;</li>
+                <li>[ Customize Child Avatar &amp; Profile Details ]</li>
+                <li>&darr;</li>
+                <li>[ Set Screen Time / Usage Limits ]</li>
+                <li>&darr;</li>
+                <li>
+                  [ Set Security Passcode (To lock child in the safe mode) ]
+                  &rarr; (App reloads in Kids Mode)
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- 13. The Final Design -->
+      <div class="project-content">
+        <div class="project-text">
+          <h2>The Final Design</h2>
+          <p>I converted the completed paper wireframes to the HIFI screens.</p>
+        </div>
+      </div>
+
+      <!-- 14. The Homescreen -->
+      <div class="project-content">
+        <div class="project-text project-text--has-image">
+          <p>
+            <strong>The Homescreen :</strong> This is the homescreen, it shows a
+          </p>
+        </div>
+      </div>
+      <div class="project-mockups project-mockups--overlap">
+        <img
+          src="images/UI/Frame 1000005183-1.svg"
+          alt="The Homescreen Flow"
+          class="project-image"
+        />
+      </div>
+
+      <!-- 15. The Voice assist mode Flow -->
+      <div class="project-content">
+        <div class="project-text project-text--has-image">
+          <p>
+            <strong>The Voice assist mode Flow :</strong> This is the Voice
+            assist mode flow, it shows how the user navigates to select a
+            particular mode and engage with it
+          </p>
+        </div>
+      </div>
+      <div class="project-mockups project-mockups--overlap">
+        <img
+          src="images/UI/Frame 1000005197.svg"
+          alt="The Voice Assist Mode Flow - Mode Selection"
+          class="project-image"
+        />
+        <img
+          src="images/UI/Frame 1000005198.svg"
+          alt="The Voice Assist Mode Flow - Active Voice Conversation"
+          class="project-image"
+        />
+      </div>
+
+      <!-- 16. The Voice select Flow -->
+      <div class="project-content">
+        <div class="project-text project-text--has-image">
+          <p>
+            <strong>The Voice select Flow :</strong> This is the Character voice
+            selection flow, it shows different characters and how they interact,
+            their voice type and other details to make the user experience
+            better.
+          </p>
+        </div>
+      </div>
+      <div class="project-mockups project-mockups--overlap">
+        <img
+          src="images/UI/Frame 1000005397.svg"
+          alt="The Voice Select Flow - Character Voice Selection"
+          class="project-image"
+        />
+      </div>
+
+      <!-- 17. The Child's mode control -->
+      <div class="project-content">
+        <div class="project-text project-text--has-image">
+          <p>
+            <strong>The Child's mode control :</strong> This flow shows how
+            parents can control the ai output with kids with age and control the
+            content that the kid hears, control screen time etc.
+          </p>
+        </div>
+      </div>
+      <div class="project-mockups project-mockups--overlap">
+        <img
+          src="images/UI/Dribbble shot HD - 20.svg"
+          alt="The Child's Mode Control - Parental Dashboard and Time Allowance"
+          class="project-image"
+        />
+      </div>
+
+      <!-- 18. The User Prompting Flow -->
+      <div class="project-content">
+        <div class="project-text project-text--has-image">
+          <p>
+            <strong>The User Prompting Flow :</strong> This screens shows the
+            prompting flow. The flow only covers prompting with text only.
+          </p>
+        </div>
+      </div>
+      <div class="project-mockups project-mockups--overlap">
+        <img
+          src="images/UI/Frame 1000005183-2.svg"
+          alt="The User Prompting Flow - Text Prompting Screen"
+          class="project-image"
+        />
+        <img
+          src="images/UI/Frame 1000005201.svg"
+          alt="The User Prompting Flow - Response Screen"
+          class="project-image"
+        />
+      </div>
+
+      <!-- 19. The User Prompting Flow 2 -->
+      <div class="project-content">
+        <div class="project-text project-text--has-image">
+          <p>
+            <strong>The User Prompting Flow 2 :</strong> This screens shows the
+            prompting flow with text included.
+          </p>
+        </div>
+      </div>
+      <div class="project-mockups project-mockups--overlap">
+        <img
+          src="images/UI/Frame 1000005203.svg"
+          alt="The User Prompting Flow 2 - Uploading Media"
+          class="project-image"
+        />
+        <img
+          src="images/UI/Frame 1000005192.svg"
+          alt="The User Prompting Flow 2 - Photo Generation and Editing"
+          class="project-image"
+        />
+      </div>
+
+      <!-- 20. Other screens -->
+      <div class="project-content">
+        <div class="project-text project-text--has-image">
+          <h2>Other screens</h2>
+        </div>
+      </div>
+      <div class="project-mockups project-mockups--overlap">
+        <img
+          src="images/UI/Frame 1000005184.svg"
+          alt="Other Screens - Splash and Authentication Flow"
+          class="project-image"
+        />
+        <img
+          src="images/UI/Frame 1000005185.svg"
+          alt="Other Screens - Login and Subscription Tier Modal"
+          class="project-image"
+        />
+        <img
+          src="images/UI/Frame 1000005182.svg"
+          alt="Other Screens - OTP Verification Flow"
+          class="project-image"
+        />
+        <img
+          src="images/UI/Frame 1000005190.svg"
+          alt="Other Screens - Navigation Drawer and Ghost Chat"
+          class="project-image"
+        />
+        <img
+          src="images/UI/Dribbble shot HD - 22.svg"
+          alt="Other Screens - Child Profile & Time Limits"
+          class="project-image"
+        />
+        <img
+          src="images/UI/Dribbble shot HD - 23.svg"
+          alt="Other Screens - History, Images & System Settings"
+          class="project-image"
+        />
+        <img
+          src="images/UI/Frame 1000005193.svg"
+          alt="Other Screens - Image Workspace and Refine Actions"
+          class="project-image"
+        />
+        <img
+          src="images/UI/Frame 1000005194.svg"
+          alt="Other Screens - Image Transformation Results"
+          class="project-image"
+        />
+        <img
+          src="images/UI/Dribbble shot HD - 9.svg"
+          alt="Other Screens - Web Search Results and Citations"
+          class="project-image"
+        />
+      </div>
+
+      <!-- 21. User Impacts -->
+      <div class="project-content">
+        <div class="project-text">
+          <div class="section-header">
+            <h2>User Impacts</h2>
+            <button
+              class="section-header__action"
+              onclick="toggleSection('user-impacts-content', this)"
+            >
+              Close
+            </button>
+          </div>
+          <div id="user-impacts-content">
+            <p>
+              By replacing manual prompt engineering with a one-tap contextual
+              UI, IFA AI is projected to significantly improve both user
+              engagement and safety metrics.
+            </p>
+            <ol>
+              <li>
+                <strong>90% Reduction in Setup Time (Frictionless Onboarding):</strong>
+                IFA AI’s one-tap mode selector reduces prompt fatigue.
+              </li>
+              <li>
+                <strong>100% Guaranteed Child-Safe Sessions</strong>
+              </li>
+              <li>
+                <strong>Increased Daily Active Usage (DAU) via Voice Assist:</strong>
+                Because the AI dynamically adjusts its tone and cadence to the
+                user's current environment (e.g., cooking, driving, relaxing),
+                we estimate a 40% increase in session duration for hands-free,
+                multitasking users who seek a companion-like experience rather
+                than just a robotic search engine.
+              </li>
+              <li>
+                <strong>Higher Emotional Resonance:</strong> During qualitative
+                testing, 85% of users in the "Emotional Sounding-Board" persona
+                reported feeling a stronger sense of empathy and connection
+                compared to standard, monotone text-generation models.
+              </li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer" id="footer">
+      <div class="footer__divider"></div>
+      <p class="footer__text">&copy; 2026 Ola. All rights reserved.</p>
+    </footer>
+
+    <script>
+      function toggleSection(id, btn) {
+        const el = document.getElementById(id);
+        if (!el) return;
+        if (el.style.display === "none") {
+          el.style.display = "";
+          btn.textContent = "Close";
+        } else {
+          el.style.display = "none";
+          btn.textContent = "View";
+        }
+      }
+    </script>
+  </body>
+</html>

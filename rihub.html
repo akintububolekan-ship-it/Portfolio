@@ -1,0 +1,659 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RIHUB Case Study — Ola</title>
+    <meta
+      name="description"
+      content="A detailed case study of RIHUB, an AI-powered loan recovery software designed by Ola."
+    />
+    <link rel="stylesheet" href="index.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Header / Navigation back -->
+    <header class="project-header">
+      <div class="project-header__inner">
+        <a href="index.html" class="project-header__back">
+          <svg
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M19 12H5M5 12L12 19M5 12L12 5"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+          Back
+        </a>
+      </div>
+    </header>
+
+    <main class="project-page">
+      <!-- Top section: Logo + Title + Meta -->
+      <div class="project-content">
+        <div class="project-top">
+          <img
+            src="images/RIHUB Logo.svg"
+            alt="RIHUB Logo"
+            class="project-logo"
+          />
+        </div>
+
+        <h1 class="project-title">
+          RIHUB | Ai powered Loan recovery software
+        </h1>
+
+        <div class="project-meta">
+          <div class="project-meta__col">
+            <span class="project-meta__label">Category</span>
+            <span class="project-meta__value">Finance, Saas</span>
+          </div>
+          <div class="project-meta__col">
+            <span class="project-meta__label">Year</span>
+            <span class="project-meta__value">2026</span>
+          </div>
+          <div class="project-meta__col">
+            <span class="project-meta__label">My role</span>
+            <span class="project-meta__value">Product designer</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Overview -->
+      <div class="project-content">
+        <div class="project-text">
+          <h2>Overview</h2>
+          <p>
+            Rihub is an ai powered Loan Recovery Software that helps Finance industries recover loans easier and faster. Rihub is basically an easier and less time-consuming way to recover loans with ai
+          </p>
+        </div>
+      </div>
+
+      <!-- Hero Image -->
+      <img
+        src="images/UI/Dashboard.svg"
+        alt="RIHUB Executive Dashboard Overview"
+        class="project-image project-image--hero"
+      />
+
+      <!-- Design Process -->
+      <div class="project-content">
+        <div class="project-text">
+          <div class="section-header">
+            <h2>Design Process</h2>
+            <button
+              class="section-header__action"
+              onclick="toggleSection('design-process-content', this)"
+            >
+              Close
+            </button>
+          </div>
+          <div id="design-process-content">
+            <p>
+              For the design process, I followed 4 non linear critical steps.
+            </p>
+            <p class="process-flow">
+              [Empathize] &rarr; [Problem &amp; Goal Definition] &rarr; [Ideation] &rarr; [Prototype &amp; Testing] &rarr; [Iterations]
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- The Problem -->
+      <div class="project-content">
+        <div class="project-text">
+          <div class="section-header">
+            <h2>The Problem</h2>
+            <button
+              class="section-header__action"
+              onclick="toggleSection('problem-content', this)"
+            >
+              Close
+            </button>
+          </div>
+          <div id="problem-content">
+            <p>
+              Too many loans to handle, while you're still doing the old defaulters, there's a high number of new defaulters, human agents are constantly stressed out with the stress of reaching out to old and new defaulters and documents screening before approving loan, thereby customers are being lost in the process and money too because it's hard to keep up with all loans at once
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- The Goal -->
+      <div class="project-content">
+        <div class="project-text">
+          <div class="section-header">
+            <h2>The Goal</h2>
+            <button
+              class="section-header__action"
+              onclick="toggleSection('goal-content', this)"
+            >
+              Close
+            </button>
+          </div>
+          <div id="goal-content">
+            <p>
+              The Goal is to make the process of loan recollection &amp; approval autonomous, thereby allowing human focus on high risk and long time defaulters or customers that have gone into legal stage.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Research -->
+      <div class="project-content">
+        <div class="project-text">
+          <div class="section-header">
+            <h2>Research</h2>
+            <button
+              class="section-header__action"
+              onclick="toggleSection('research-content', this)"
+            >
+              Close
+            </button>
+          </div>
+          <div id="research-content">
+            <p>
+              To ensure our design decisions were grounded in real-world data rather than assumptions, we did a comprehensive research phase. Our focus was to gather actionable data directly from the people experiencing the problem daily.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Methodology -->
+      <div class="project-content">
+        <div class="project-text">
+          <div class="section-header">
+            <h2>Methodology</h2>
+            <button
+              class="section-header__action"
+              onclick="toggleSection('methodology-content', this)"
+            >
+              Close
+            </button>
+          </div>
+          <div id="methodology-content">
+            <p>
+              To solve the problem I engaged series of loan recollection officers in series of user interview sessions, and proceeded to design user personas to easily understand the data received.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- User Personas Cards -->
+      <div class="project-image-group">
+        <img
+          src="images/UI/Frame 1000005343.svg"
+          alt="User Persona - Rasheed Iman, 27 years old, Loan Recovery Officer"
+          class="project-image"
+        />
+        <img
+          src="images/UI/Frame 564.svg"
+          alt="User Persona - Blessing Micheal, 36 years old, Head of Collections &amp; Risk Management"
+          class="project-image"
+        />
+      </div>
+
+      <!-- Competitor's Analysis -->
+      <div class="project-content">
+        <div class="project-text">
+          <div class="section-header">
+            <h2>Competitor's Analysis</h2>
+            <button
+              class="section-header__action"
+              onclick="toggleSection('competitor-content', this)"
+            >
+              Close
+            </button>
+          </div>
+          <div id="competitor-content">
+            <p>
+              To validate the market need for RIHUB, we analyzed three standard approaches currently used in the finance industry for loan recovery and management. We evaluated them based on Autonomous Outreach, Smart Triage (Human Handoff), Agent UX, and Approval Automation.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Competitor Analysis Matrix Image -->
+      <img
+        src="images/UI/Frame 1000005340.svg"
+        alt="Competitor's Analysis Matrix - RIHUB vs TrueAccord vs Salesforce vs collect."
+        class="project-image"
+      />
+
+      <!-- Research Insights -->
+      <div class="project-content">
+        <div class="project-text">
+          <div class="section-header">
+            <h2>Research Insights</h2>
+            <button
+              class="section-header__action"
+              onclick="toggleSection('insights-content', this)"
+            >
+              Close
+            </button>
+          </div>
+          <div id="insights-content">
+            <ol>
+              <li>
+                A massive portion of daily agent workload is spent on borrowers who are not actually trying to default. Up to 65% of missed payments are due to simple forgetfulness, expired cards, or temporary technical issues.
+              </li>
+              <li>
+                Agents open 3 to 4 different apps to view payment history, read emails, and open PDF documents.
+              </li>
+              <li>
+                Managers lack real-time visibility into collection speed and agent efficiency.
+              </li>
+            </ol>
+          </div>
+        </div>
+      </div>
+
+      <!-- Solution -->
+      <div class="project-content">
+        <div class="project-text">
+          <div class="section-header">
+            <h2>Solution</h2>
+            <button
+              class="section-header__action"
+              onclick="toggleSection('solution-content', this)"
+            >
+              Close
+            </button>
+          </div>
+          <div id="solution-content">
+            <p>
+              I tailored the solution data from the Research insights. It includes:
+            </p>
+            <ol>
+              <li>
+                100% Autonomous Outreach: AI recovers low-risk accounts automatically in the background.
+              </li>
+              <li>
+                Cleaner and more unified Workspace
+              </li>
+              <li>
+                Real-Time Data visualization
+              </li>
+            </ol>
+          </div>
+        </div>
+      </div>
+
+      <!-- Information Architecture -->
+      <div class="project-content">
+        <div class="project-text">
+          <h2>Information Architecture</h2>
+          <p>
+            &#x1F4D1; RIHUB &mdash; Information Architecture (IA)
+          </p>
+          <ul class="ia-list">
+            <li>
+              <strong>1.0 Executive Dashboard (Home)</strong>
+              <ul>
+                <li>1.1 Portfolio Overview: Total debts assigned, total recovered amount, active default rates.</li>
+                <li>
+                  1.2 Real-Time Analytics:
+                  <ul>
+                    <li>1.2.1 Collection Velocity Graph (Time vs. Recovery Speed).</li>
+                    <li>1.2.2 Recovery Rate Performance vs. Monthly Target.</li>
+                    <li>1.2.3 Portfolio Health Breakdown (Donut Chart: Low Risk, Medium Risk, High Risk, Legal Stage).</li>
+                  </ul>
+                </li>
+                <li>
+                  1.3 Urgent Actions Required (Priority Queue):
+                  <ul>
+                    <li>1.3.1 Broken Promises (Failed payment commitments).</li>
+                    <li>1.3.2 Pending Hardship Document Reviews.</li>
+                    <li>1.3.3 Legal Handoff Approvals.</li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <strong>2.0 Accounts &amp; Defaulters Management</strong>
+              <ul>
+                <li>2.1 Debtor Directory: Filterable list by risk tier, days past due (DPD), balance size, AI campaign status, and assigned agent.</li>
+                <li>
+                  2.2 Debtor Detail View (Split-Pane Workspace):
+                  <ul>
+                    <li>2.2.1 Borrower Profile Header: Balance, DPD status, contact info, risk score badge.</li>
+                    <li>2.2.2 Communication Timeline: All call logs, transcripts, SMS/WhatsApp delivery receipts, customer responses.</li>
+                    <li>2.2.3 Integrated Document Viewer: Direct preview of customer uploads (proof of payment, medical notices, hardship letters).</li>
+                    <li>2.2.4 Agent Intervention Bar: Manual call trigger, override AI status, pause campaign, or escalate to legal.</li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <strong>3.0 AI Recovery Rules &amp; Campaign Engine</strong>
+              <ul>
+                <li>3.1 Strategy Builder: Configure recovery flows for different default stages (e.g., 1&ndash;30 DPD vs. 60+ DPD).</li>
+                <li>3.2 AI Script &amp; Persona Selector: Select tone of voice (e.g., Gentle Reminder vs. Firm Escalation) and language preferences.</li>
+                <li>3.3 Smart Triage Thresholds: Set rules for when the AI should automatically transfer a customer to a human agent.</li>
+              </ul>
+            </li>
+            <li>
+              <strong>4.0 Call Logs &amp; Communication Center</strong>
+              <ul>
+                <li>4.1 AI Call Records: List of all automated calls made, call duration, outcome status, and recording playback.</li>
+                <li>4.2 Sentiment &amp; Call Transcripts: Searchable text transcripts tagged with customer sentiment analysis (e.g., Cooperative, Hostile, Disputed).</li>
+                <li>4.3 Message Outbox: History of SMS, Email, and WhatsApp automated notifications.</li>
+              </ul>
+            </li>
+            <li>
+              <strong>5.0 System &amp; AI Outreach Settings (Customized)</strong>
+              <ul>
+                <li>5.1 Organization &amp; Team Management: Agent roles, permissions, and account allocation.</li>
+                <li>
+                  5.2 AI Calling &amp; Voice Outreach Parameters:
+                  <ul>
+                    <li>5.2.1 Allowed Calling Windows: Set operational time frames for automated AI calls (e.g., Allow calls between 9:00 AM &ndash; 6:00 PM).</li>
+                    <li>5.2.2 Do Not Call (DNC) &amp; Blackout Hours: Define restricted times, quiet hours, weekends, or public holidays when no calls may be placed.</li>
+                    <li>5.2.3 Maximum Call Attempts: Cap the number of automated call attempts per debtor (e.g., Max 2 calls per day, max 5 calls total per week).</li>
+                    <li>5.2.4 Unreachable / Fallback Action: Configure default follow-up channel when a customer is unreachable (e.g., if call goes unanswered/busy, automatically send an SMS / WhatsApp message with payment link after 5 minutes).</li>
+                  </ul>
+                </li>
+                <li>5.3 Compliance &amp; Regulatory Controls: Statutory quiet hours enforcement, local debt collection compliance rules, and audit trail logs.</li>
+                <li>5.4 Integrations: Core banking system sync, loan origination software (LOS) connectors, payment gateways, and CRM hooks.</li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Paper Wireframes -->
+      <div class="project-content">
+        <div class="project-text">
+          <h2>Paper Wireframes</h2>
+          <p>
+            To begin the design stage, I designed the solutions above into a paper wireframe to help give a quick view of what the final design will look like, brainstormed, added and removed ideas, tailoring them to the Solutions above.
+          </p>
+        </div>
+      </div>
+
+      <!-- The Final Design -->
+      <div class="project-content">
+        <div class="project-text">
+          <h2>The Final Design</h2>
+          <p>
+            I converted the completed paper wireframes to the HIFI screens.
+          </p>
+        </div>
+      </div>
+
+      <!-- Mockup Group 1: The Dashboard -->
+      <div class="project-content">
+        <div class="project-text project-text--has-image">
+          <p>
+            <strong>The Dashboard :</strong> The RIHUB Dashboard is engineered to give senior agents and risk managers immediate clarity on portfolio performance, AI recovery efficiency, and critical intervention points&mdash;eliminating operational clutter so users can make data-driven decisions in seconds.
+          </p>
+        </div>
+      </div>
+      <div class="project-mockups">
+        <img
+          src="images/UI/Dashboard.svg"
+          alt="The RIHUB Dashboard"
+          class="project-image"
+        />
+      </div>
+
+      <!-- Mockup Group 2: The loan recovery worklist -->
+      <div class="project-content">
+        <div class="project-text project-text--has-image">
+          <p>
+            <strong>The loan recovery worklist :</strong> Escalated loans, 60+DPD loans and legal cases are escalated to the human agent to take over on this screen.
+          </p>
+        </div>
+      </div>
+      <div class="project-mockups">
+        <img
+          src="images/UI/Other screens 3.svg"
+          alt="The Loan Recovery Worklist"
+          class="project-image"
+        />
+      </div>
+
+      <!-- Mockup Group 3: Integrations -->
+      <div class="project-content">
+        <div class="project-text project-text--has-image">
+          <p>
+            <strong>Integrations :</strong> The integration screens show all added integrations, their states, and what they do. It also shows the way the permitted integrations can be added.
+          </p>
+        </div>
+      </div>
+      <div class="project-mockups">
+        <img
+          src="images/UI/Other screens 4.svg"
+          alt="Integrations Channels Management"
+          class="project-image"
+        />
+        <img
+          src="images/UI/Call management.svg"
+          alt="Connect RIHUB to Chatbase Integration Modal"
+          class="project-image"
+        />
+      </div>
+
+      <!-- Mockup Group 4: The ai chatbot in app -->
+      <div class="project-content">
+        <div class="project-text project-text--has-image">
+          <p>
+            <strong>The ai chatbot in app :</strong> I have also included an ai agent to make work easier for the loan-collection officers to speed up workflow, the agent can verify quick data, create writeups, draft legal documents and adjust preexisting ones on request.
+          </p>
+        </div>
+      </div>
+      <div class="project-mockups">
+        <img
+          src="images/UI/Other screens 4-1.svg"
+          alt="AI Assistant Chatbot in App"
+          class="project-image"
+        />
+      </div>
+
+      <!-- Mockup Group 5: Ai control and general settings -->
+      <div class="project-content">
+        <div class="project-text project-text--has-image">
+          <p>
+            <strong>Ai control and general settings :</strong> Ai agents, including the integrated ones can be controlled from the ai control center.
+          </p>
+        </div>
+      </div>
+      <div class="project-mockups">
+        <img
+          src="images/UI/Other screens 4-2.svg"
+          alt="AI Control and General Settings"
+          class="project-image"
+        />
+      </div>
+
+      <!-- Mockup Group 6: Other screens -->
+      <div class="project-content">
+        <div class="project-text project-text--has-image">
+          <p>
+            <strong>Other screens :</strong> The integration screens show all added integrations, their states, and what they do. It also shows the way the permitted integrations can be added.
+          </p>
+        </div>
+      </div>
+      <div class="project-mockups">
+        <img
+          src="images/Other screens 4.svg"
+          alt="Other Screens Overview"
+          class="project-image"
+        />
+        <img
+          src="images/UI/Other screens 5.svg"
+          alt="Analytics and Performance Metrics"
+          class="project-image"
+        />
+        <img
+          src="images/UI/Other screens 6.svg"
+          alt="Delivered Promises and Commitments Tracker"
+          class="project-image"
+        />
+        <img
+          src="images/UI/Other screens 7.svg"
+          alt="Borrower 360 Dashboard - Marcus Johnson"
+          class="project-image"
+        />
+        <img
+          src="images/UI/Other screens 8.svg"
+          alt="Borrower Profile & Recovery Intelligence - Sarah Jenkins"
+          class="project-image"
+        />
+        <img
+          src="images/UI/Other screens 9.svg"
+          alt="Document Manager & Pre-Approval Verification Archive"
+          class="project-image"
+        />
+        <img
+          src="images/UI/Other screens 10.svg"
+          alt="Communication Timeline & Audit - John Johnson"
+          class="project-image"
+        />
+        <img
+          src="images/UI/Other screens 11.svg"
+          alt="Complete Security Ledger & Forensic Search"
+          class="project-image"
+        />
+        <img
+          src="images/UI/Other screens 12.svg"
+          alt="Account Preferences & Theme Styling"
+          class="project-image"
+        />
+        <img
+          src="images/UI/Other screens 13.svg"
+          alt="Additional Channel Integration"
+          class="project-image"
+        />
+        <img
+          src="images/UI/Other screens 14.svg"
+          alt="Application Settings and Table Preferences"
+          class="project-image"
+        />
+      </div>
+
+      <!-- Projected Business & Agents Impacts -->
+      <div class="project-content">
+        <div class="project-text">
+          <div class="section-header">
+            <h2>Projected Business &amp; Agents Impacts</h2>
+            <button
+              class="section-header__action"
+              onclick="toggleSection('business-impacts-content', this)"
+            >
+              Close
+            </button>
+          </div>
+          <div id="business-impacts-content">
+            <ol>
+              <li>
+                Projected to accelerate Collection Velocity by 40%
+              </li>
+              <li>
+                With AI handling up to 70% of routine follow-ups and payment reminders, financial institutions can scale their loan portfolios without needing to aggressively expand their human call center staff.
+              </li>
+              <li>
+                Projected to drastically Reduce Agent Burnout by 60%
+              </li>
+              <li>
+                60% Faster Case Resolution
+              </li>
+            </ol>
+          </div>
+        </div>
+      </div>
+
+      <!-- What I learnt -->
+      <div class="project-content">
+        <div class="project-text">
+          <div class="section-header">
+            <h2>What I learnt</h2>
+            <button
+              class="section-header__action"
+              onclick="toggleSection('what-i-learnt-content', this)"
+            >
+              Close
+            </button>
+          </div>
+          <div id="what-i-learnt-content">
+            <ol>
+              <li>
+                Customers get offended at ai electronic voices, the wait, latency issues etc
+              </li>
+              <li>
+                Customers don’t have a problem with being responded with ai, they hate spending too much time trying to resolve basic issues or agents not having enough information.
+              </li>
+            </ol>
+          </div>
+        </div>
+      </div>
+
+      <!-- Iterations -->
+      <div class="project-content">
+        <div class="project-text">
+          <div class="section-header">
+            <h2>Iterations</h2>
+            <button
+              class="section-header__action"
+              onclick="toggleSection('iterations-content', this)"
+            >
+              Close
+            </button>
+          </div>
+          <div id="iterations-content">
+            <p>
+              Ai called at ungodly hours and continued calling customers even if they are unavailable, so we created a way to set them to not call past a time and no of calls before defaulting to a text The new screen is  attached below
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Iterations Mockup -->
+      <div class="project-content">
+        <div class="project-text project-text--has-image">
+          <p>
+            <strong>Ai control and general settings :</strong> Ai agents, including the integrated ones can be controlled from the ai control center.
+          </p>
+        </div>
+      </div>
+      <div class="project-mockups">
+        <img
+          src="images/UI/Other screens 4-4.svg"
+          alt="Iterations - Active Call Time and Call Limits Configuration"
+          class="project-image"
+        />
+      </div>
+
+    </main>
+
+    <footer class="footer" id="footer">
+      <div class="footer__divider"></div>
+      <p class="footer__text">&copy; 2026 Ola. All rights reserved.</p>
+    </footer>
+
+    <script>
+      function toggleSection(id, btn) {
+        const el = document.getElementById(id);
+        if (!el) return;
+        if (el.style.display === "none") {
+          el.style.display = "";
+          btn.textContent = "Close";
+        } else {
+          el.style.display = "none";
+          btn.textContent = "View";
+        }
+      }
+    </script>
+  </body>
+</html>

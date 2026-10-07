@@ -1,0 +1,508 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sprance Case Study — Ola</title>
+    <meta
+      name="description"
+      content="A detailed case study of Sprance, a social fitness and run-tracking mobile application designed by Ola."
+    />
+    <link rel="stylesheet" href="index.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Header / Navigation back -->
+    <header class="project-header">
+      <div class="project-header__inner">
+        <a href="index.html" class="project-header__back">
+          <svg
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M19 12H5M5 12L12 19M5 12L12 5"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+          Back
+        </a>
+      </div>
+    </header>
+
+    <main class="project-page">
+      <!-- Top section: Logo + Title + Meta -->
+      <div class="project-content">
+        <div class="project-top">
+          <img
+            src="images/Sprance images/UI/Haystack Logo.svg"
+            alt="Sprance Logo"
+            class="project-logo"
+          />
+        </div>
+
+        <h1 class="project-title">
+          Sprance | A social fitness and run-tracking app.
+        </h1>
+
+        <div class="project-meta">
+          <div class="project-meta__col">
+            <span class="project-meta__label">Category</span>
+            <span class="project-meta__value">Social fitness, Run-tracking</span>
+          </div>
+          <div class="project-meta__col">
+            <span class="project-meta__label">Year</span>
+            <span class="project-meta__value">2026</span>
+          </div>
+          <div class="project-meta__col">
+            <span class="project-meta__label">My role</span>
+            <span class="project-meta__value">Product designer</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- 1. Overview -->
+      <div class="project-content">
+        <div class="project-text">
+          <h2>Overview</h2>
+          <p>
+            Sprance is a social fitness and run-tracking mobile application designed to turn running into an enjoyable, connected habit while capturing granular race telemetry, facilitating local runner discovery, and driving motivation through gamified leaderboards.
+          </p>
+        </div>
+      </div>
+
+      <!-- Hero Image -->
+      <img
+        src="images/Sprance images/UI/Frame 1000005183.svg"
+        alt="Sprance App Active Tracking and Race Summary Overview"
+        class="project-image project-image--hero"
+      />
+
+      <!-- 2. Design Process -->
+      <div class="project-content">
+        <div class="project-text">
+          <div class="section-header">
+            <h2>Design Process</h2>
+            <button
+              class="section-header__action"
+              onclick="toggleSection('design-process-content', this)"
+            >
+              Close
+            </button>
+          </div>
+          <div id="design-process-content">
+            <p>
+              For the design process, I followed 5 critical steps. Note that the steps are non linear
+            </p>
+            <p class="process-flow">
+              [Empathize] &rarr; [Define Problem &amp; Goals] &rarr; [Ideate] &rarr; [Prototype] &rarr; [Test &amp; Iterate]
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- 3. The Problem -->
+      <div class="project-content">
+        <div class="project-text">
+          <div class="section-header">
+            <h2>The Problem</h2>
+            <button
+              class="section-header__action"
+              onclick="toggleSection('problem-content', this)"
+            >
+              Close
+            </button>
+          </div>
+          <div id="problem-content">
+            <p>
+              Running is one of the most accessible forms of exercise, but users find it hard to enjoy &amp; track important data from each race taken.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- 4. The Goal -->
+      <div class="project-content">
+        <div class="project-text">
+          <div class="section-header">
+            <h2>The Goal</h2>
+            <button
+              class="section-header__action"
+              onclick="toggleSection('goal-content', this)"
+            >
+              Close
+            </button>
+          </div>
+          <div id="goal-content">
+            <p>
+              To design an intuitive, high-visibility mobile app that makes running inherently enjoyable while effortlessly capturing critical race data.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- 5. Research -->
+      <div class="project-content">
+        <div class="project-text">
+          <div class="section-header">
+            <h2>Research</h2>
+            <button
+              class="section-header__action"
+              onclick="toggleSection('research-content', this)"
+            >
+              Close
+            </button>
+          </div>
+          <div id="research-content">
+            <p>
+              The research phase is to understand the user's feelings, behaviors, &amp; pain points and also validate my hypothesis without bringing my own biases into it. It includes, user interviews and competitive analysis.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- 6. Competitor's Analysis -->
+      <div class="project-content">
+        <div class="project-text">
+          <div class="section-header">
+            <h2>Competitor's Analysis</h2>
+            <button
+              class="section-header__action"
+              onclick="toggleSection('competitor-content', this)"
+            >
+              Close
+            </button>
+          </div>
+          <div id="competitor-content">
+            <p>
+              To understand how existing platforms attempt to solve the research gap, we analyzed three companies that have tried to solve this &amp; related problems.
+            </p>
+            <p>They include:</p>
+            <div class="competitor-brands">
+              <div class="competitor-brand">
+                <img
+                  src="images/Sprance images/UI/strava_icon.jpeg.svg"
+                  alt="Strava"
+                  class="competitor-brand__icon"
+                />
+                <span class="competitor-brand__name">Strava</span>
+              </div>
+              <div class="competitor-brand">
+                <img
+                  src="images/Sprance images/UI/mapmyrun_icon.jpeg.svg"
+                  alt="MapMyRun"
+                  class="competitor-brand__icon"
+                />
+                <span class="competitor-brand__name">MapMyRun</span>
+              </div>
+              <div class="competitor-brand">
+                <img
+                  src="images/Sprance images/UI/image 236.svg"
+                  alt="Go App"
+                  class="competitor-brand__icon"
+                />
+                <span class="competitor-brand__name">Go App</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Competitor Attributes Comparison Table -->
+      <img
+        src="images/Sprance images/UI/Frame 1000005340.svg"
+        alt="Competitor Attributes Comparison Table"
+        class="project-image"
+      />
+
+      <div class="project-content">
+        <div class="project-text">
+          <p>
+            Based on data from our analysis. There is a distinct gap in the market for an app that balances heavy data visualization with high-enjoyment social features.
+          </p>
+        </div>
+      </div>
+
+      <!-- 7. User Personas -->
+      <div class="project-content">
+        <div class="project-text">
+          <div class="section-header">
+            <h2>User Personas</h2>
+            <button
+              class="section-header__action"
+              onclick="toggleSection('personas-content', this)"
+            >
+              Close
+            </button>
+          </div>
+          <div id="personas-content">
+            <p>
+              To ensure the Sprance app addresses the full spectrum of user friction, we synthesized our research into two distinct archetypes: the hesitant newcomer and the efficiency-driven veteran.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Persona Cards -->
+      <div class="project-image-group">
+        <img
+          src="images/Sprance images/UI/Frame 564.svg"
+          alt="User Persona - Chike (Half-Marathon Trainee)"
+          class="project-image"
+        />
+        <img
+          src="images/Sprance images/UI/Frame 1000005348.svg"
+          alt="User Persona - Nankyer (Brand Strategist)"
+          class="project-image"
+        />
+      </div>
+
+      <!-- 8. Defining The Core Features -->
+      <div class="project-content">
+        <div class="project-text">
+          <div class="section-header">
+            <h2>Defining The Core Features</h2>
+            <button
+              class="section-header__action"
+              onclick="toggleSection('core-features-content', this)"
+            >
+              Close
+            </button>
+          </div>
+          <div id="core-features-content">
+            <p>
+              To solve the gap between raw data tracking and community enjoyment, Sprance was built around four core functional pillars.
+            </p>
+            <ol>
+              <li><strong>Frictionless Mid-Run Tracking- The Glanceable UI</strong></li>
+              <li><strong>Comprehensive Race Telemetry Hub</strong></li>
+              <li><strong>Contextual Post-Race Summaries</strong></li>
+              <li><strong>Hyper-Local Social Discovery &amp; Leaderboards</strong></li>
+            </ol>
+          </div>
+        </div>
+      </div>
+
+      <!-- 9. Paper Wireframes -->
+      <div class="project-content">
+        <div class="project-text">
+          <div class="section-header">
+            <h2>Paper Wireframes</h2>
+            <button
+              class="section-header__action"
+              onclick="toggleSection('paper-wireframes-content', this)"
+            >
+              Close
+            </button>
+          </div>
+          <div id="paper-wireframes-content">
+            <p>
+              To begin the design stage, I designed, brainstormed, added and removed ideas on a paper wireframe to help give a quick view of the final design, tailoring them to the core features above.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- 10. User Flow -->
+      <div class="project-content">
+        <div class="project-text">
+          <div class="section-header">
+            <h2>User Flow</h2>
+            <button
+              class="section-header__action"
+              onclick="toggleSection('user-flow-content', this)"
+            >
+              Close
+            </button>
+          </div>
+          <div id="user-flow-content">
+            <ul class="ia-list">
+              <li>
+                <strong>Flow 1: The Active Tracking Loop (Starting &amp; Saving a Run)</strong>
+                <p><strong>Goal:</strong> To seamlessly start a run, track live metrics without distraction, and log contextual notes upon completion.</p>
+                <p>This flow highlights the frictionless, high-visibility UI designed for mid-stride use.</p>
+                <ul>
+                  <li><strong>Pre-Run State (Home/Map View) &rarr;</strong> User opens the tracking tab. The UI displays a clear map and zeroed metrics (Distance: 0, Time: 00:00). User taps Start.</li>
+                  <li><strong>Countdown Sequence (Set! &rarr; Go!) &rarr;</strong> A massive, high-contrast overlay takes over the screen. UX Rationale: This prevents accidental double-taps and gives the user time to pocket their phone before the timer starts.</li>
+                  <li><strong>Active Tracking State &rarr;</strong> The UI transitions to the live map with a blue GPS route line. Massive typography displays active distance, pace, and calories. User taps End Race when finished.</li>
+                  <li><strong>Post-Race Summary &rarr;</strong> A card slides up showing the completed route map, final distance, and time.</li>
+                  <li><strong>Contextual Logging &rarr;</strong> User types qualitative data (e.g., &ldquo;Felt great, perfect weather&rdquo;) into the Notes input field, then taps Save Details. Data is immediately pushed to their Race History.</li>
+                </ul>
+              </li>
+              <li>
+                <strong>Flow 2: Social Discovery (Meeting a Running Companion)</strong>
+                <p><strong>Goal:</strong> To find and connect with local runners who share similar routes and paces to build a community.</p>
+                <p>This flow highlights the unique social value proposition that separates this app from standard data trackers.</p>
+                <ul>
+                  <li><strong>Dashboard Hub &rarr;</strong> User scrolls down the main Home screen to the &ldquo;Activities&rdquo; section and taps the Around You icon.</li>
+                  <li><strong>Discovery Onboarding &rarr;</strong> User lands on the immersive &ldquo;Meet people around you&rdquo; screen, explaining the value of finding runners on the same route. User taps Get Started.</li>
+                  <li><strong>Algorithmic Matching &rarr;</strong> (Background process) The app analyzes the user's historical route data from their Race History to find overlapping local runners.</li>
+                  <li><strong>Connection Request Overlay &rarr;</strong> User receives an in-app pop-up notification: &ldquo;Ola runs along your route &amp; wants to be your running companion.&rdquo;</li>
+                  <li><strong>Action Taken &rarr;</strong> User taps Accept. Ola is now added to their active Friends list on the dashboard, and they can both compete on the local Leaderboard.</li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- 11. The Final Design -->
+      <div class="project-content">
+        <div class="project-text">
+          <h2>The Final Design</h2>
+          <p>I converted the completed paper wireframes to the HIFI screens.</p>
+        </div>
+      </div>
+
+      <!-- 12. The Homescreen -->
+      <div class="project-content">
+        <div class="project-text project-text--has-image">
+          <p>
+            <strong>The Homescreen :</strong> This is the homescreen, it shows a quick summary the races a user has recorded, the friends and activites
+          </p>
+        </div>
+      </div>
+      <img
+        src="images/Sprance images/UI/Frame 1000005183-1.svg"
+        alt="The Homescreen UI Overview"
+        class="project-image"
+      />
+
+      <!-- 13. Starting & saving a run -->
+      <div class="project-content">
+        <div class="project-text project-text--has-image">
+          <p>
+            <strong>Starting &amp; saving a run:</strong> This flow shows how a user start, record and save data from a run
+          </p>
+        </div>
+      </div>
+      <div class="project-image-group">
+        <img
+          src="images/Sprance images/UI/Frame 1000005183-2.svg"
+          alt="Starting & saving a run - Pre-run, Countdown, and Tracking"
+          class="project-image"
+        />
+        <img
+          src="images/Sprance images/UI/Frame 1000005221.svg"
+          alt="Starting & saving a run - Mid-run, Route tracking, and Race summary"
+          class="project-image"
+        />
+      </div>
+
+      <!-- 14. Socializing in app -->
+      <div class="project-content">
+        <div class="project-text project-text--has-image">
+          <p>
+            <strong>Socializing in app:</strong> This screens shows how users socialize and meet runners
+          </p>
+        </div>
+      </div>
+      <img
+        src="images/Sprance images/UI/Frame 1000005221-1.svg"
+        alt="Socializing in app Screens"
+        class="project-image"
+      />
+
+      <!-- 15. The leaderboard -->
+      <div class="project-content">
+        <div class="project-text project-text--has-image">
+          <p>
+            <strong>The leaderboard:</strong> This gamified Leaderboard allows the app ranks users against their friends and local community based on distance covered and pace.
+          </p>
+        </div>
+      </div>
+      <img
+        src="images/Sprance images/UI/Frame 1000005221-2.svg"
+        alt="The Leaderboard Screen"
+        class="project-image"
+      />
+
+      <!-- 16. Other screens -->
+      <div class="project-content">
+        <div class="project-text project-text--has-image">
+          <h2>Other screens</h2>
+        </div>
+      </div>
+      <img
+        src="images/Sprance images/UI/Frame 1000005221-3.svg"
+        alt="Other screens - Race history and Settings"
+        class="project-image"
+      />
+
+      <!-- 17. User Impacts -->
+      <div class="project-content">
+        <div class="project-text">
+          <div class="section-header">
+            <h2>User Impacts</h2>
+            <button
+              class="section-header__action"
+              onclick="toggleSection('user-impacts-content', this)"
+            >
+              Close
+            </button>
+          </div>
+          <div id="user-impacts-content">
+            <ol>
+              <li>Smarter, Context-Driven Training</li>
+              <li>Safer, Distraction-Free Runs</li>
+              <li>Sustained Motivation &amp; Reduced Churn</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+
+      <!-- 18. Anticipated Business Impact -->
+      <div class="project-content">
+        <div class="project-text">
+          <div class="section-header">
+            <h2>Anticipated Business Impact</h2>
+            <button
+              class="section-header__action"
+              onclick="toggleSection('business-impact-content', this)"
+            >
+              Close
+            </button>
+          </div>
+          <div id="business-impact-content">
+            <p>
+              A product that reduces friction directly improves business performance metrics.
+            </p>
+            <ol>
+              <li>
+                <strong>Retention Through Habit-Looping:</strong> The combination of personal data tracking (investment) and community leaderboards (variable reward) creates a highly &ldquo;sticky&rdquo; product, directly increasing Daily Active Users (DAU) and reducing app uninstalls compared to basic, isolated step-trackers.
+              </li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer" id="footer">
+      <div class="footer__divider"></div>
+      <p class="footer__text">&copy; 2026 Ola. All rights reserved.</p>
+    </footer>
+
+    <script>
+      function toggleSection(id, btn) {
+        const el = document.getElementById(id);
+        if (!el) return;
+        if (el.style.display === "none") {
+          el.style.display = "";
+          btn.textContent = "Close";
+        } else {
+          el.style.display = "none";
+          btn.textContent = "View";
+        }
+      }
+    </script>
+  </body>
+</html>

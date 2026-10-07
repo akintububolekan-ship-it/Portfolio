@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&display=swap');
+
 /* ===== RESET & BASE ===== */
 *,
 *::before,
@@ -145,7 +147,9 @@ video {
 .tabs {
   display: flex;
   align-items: center;
-  gap: 24px;
+  gap: 20px;
+  flex-wrap: wrap;
+  row-gap: 12px;
 }
 
 .tabs__item {
@@ -480,7 +484,14 @@ video {
 }
 
 .project-text {
-  margin-bottom: 80px;
+  margin-bottom: 32px;
+}
+
+.project-content:has(+ .project-image) .project-text,
+.project-content:has(+ .project-mockups) .project-text,
+.project-content:has(+ .project-image-group) .project-text,
+.project-text--has-image {
+  margin-bottom: 24px;
 }
 
 .project-text h2 {
@@ -492,10 +503,18 @@ video {
 }
 
 .project-text p {
+  font-family: 'Geist', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
   font-size: 15px;
   line-height: 1.7;
+  font-weight: 400;
   color: #171717;
   margin-bottom: 24px;
+}
+
+.project-text strong {
+  font-family: 'Geist', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-weight: 500;
+  color: #1a1a1a;
 }
 
 .project-text p:last-child {
@@ -515,9 +534,12 @@ video {
 .project-image {
   width: 100%;
   max-width: 720px;
+  padding: 0 32px;
   margin: 0 auto 80px;
   display: block;
   border-radius: 0px;
+  height: auto;
+  box-sizing: border-box;
 }
 
 .project-image--hero {
@@ -533,10 +555,42 @@ video {
   padding: 0 32px;
   max-width: 720px;
   margin: 0 auto 80px;
+  box-sizing: border-box;
 }
 
-.project-mockups .project-image {
+.project-mockups .project-image,
+.project-mockups video.project-image {
+  padding: 0;
   margin-bottom: 0;
+  width: 100%;
+  max-width: 100%;
+}
+
+.project-image-group {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  max-width: 720px;
+  margin: 0 auto 80px;
+  padding: 0 32px;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.project-image-group .project-image {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  max-width: 100%;
+}
+
+.project-mockups--overlap {
+  gap: 0;
+}
+
+.project-mockups--overlap .project-image + .project-image {
+  margin-top: -38px;
+  position: relative;
 }
 
 .project-mockup-label {
@@ -545,12 +599,13 @@ video {
   gap: 6px;
   align-items: flex-start;
   padding: 0 4px;
-  margin-bottom: 8px;
+  margin-bottom: 24px;
 }
 
 .project-mockup-label__title {
+  font-family: 'Geist', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
   font-size: 15px;
-  font-weight: 600;
+  font-weight: 500;
   color: #1a1a1a;
   letter-spacing: -0.3px;
   display: block;
@@ -565,6 +620,9 @@ video {
 }
 
 @media (max-width: 768px) {
+  .project-content {
+    padding: 0 24px;
+  }
   .project-title {
     font-size: 1.25rem;
   }
@@ -578,22 +636,43 @@ video {
     padding-bottom: 32px;
   }
   .project-image {
+    padding: 0 24px;
     border-radius: 0;
     margin-bottom: 48px;
   }
   .project-image--hero {
     margin-bottom: 64px;
-    padding: 0;
+    padding: 0 24px;
   }
   .project-mockups {
-    padding: 0;
+    padding: 0 24px;
     gap: 12px;
     margin-bottom: 48px;
+  }
+  .project-mockups .project-image,
+  .project-mockups video.project-image {
+    padding: 0;
+    margin-bottom: 0;
+  }
+  .project-image-group {
+    padding: 0 24px;
+    gap: 12px;
+    margin-bottom: 48px;
+  }
+  .project-image-group .project-image {
+    padding: 0;
+    margin: 0;
+  }
+  .project-mockups--overlap {
+    gap: 0;
+  }
+  .project-mockups--overlap .project-image + .project-image {
+    margin-top: -5.9375%;
   }
   .project-mockup-label {
     flex-direction: column;
     gap: 4px;
-    padding: 0 16px;
+    padding: 0 4px;
   }
 }
 
@@ -682,5 +761,83 @@ video {
   color: #1a1a1a;
   letter-spacing: -0.01em;
   padding: 4px 0;
+}
+
+/* Table Styles */
+.table-container {
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  margin: 20px 0 28px;
+  border: 1px solid #eaeaea;
+  border-radius: 8px;
+}
+
+.user-needs-table {
+  width: 100%;
+  min-width: 640px;
+  border-collapse: collapse;
+  text-align: left;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.user-needs-table th,
+.user-needs-table td {
+  padding: 14px 16px;
+  vertical-align: top;
+  border-bottom: 1px solid #eaeaea;
+}
+
+.user-needs-table th {
+  background-color: #fafafa;
+  font-weight: 600;
+  color: #1a1a1a;
+  font-size: 13px;
+  letter-spacing: -0.01em;
+  white-space: nowrap;
+}
+
+.user-needs-table tr:last-child td {
+  border-bottom: none;
+}
+
+.user-needs-table tbody tr:hover {
+  background-color: #fafafa;
+}
+
+.user-needs-table td strong {
+  color: #1a1a1a;
+  font-weight: 500;
+}
+
+/* Competitor brand badges */
+.competitor-brands {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 12px;
+  margin-bottom: 20px;
+}
+
+.competitor-brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.competitor-brand__icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  object-fit: contain;
+}
+
+.competitor-brand__name {
+  font-family: 'Geist', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  color: #000;
+  letter-spacing: -0.4px;
 }
 
