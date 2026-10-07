@@ -80,6 +80,12 @@ video {
   letter-spacing: -0.01em;
 }
 
+.bio__intro strong,
+.bio__details strong {
+  font-weight: 600;
+  color: #111111;
+}
+
 .bio__details {
   font-size: 1rem;
   line-height: 1.7;
@@ -89,12 +95,102 @@ video {
   letter-spacing: -0.01em;
 }
 
+.bio__details a {
+  color: #111111;
+  font-weight: 500;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+  text-decoration-color: rgba(0, 0, 0, 0.25);
+  transition: text-decoration-color 0.2s ease, opacity 0.2s ease;
+}
+
+.bio__details a:hover {
+  text-decoration-color: #111111;
+  opacity: 1;
+}
+
 .bio__social {
   font-size: 1rem;
-  line-height: 1.7;
+  line-height: 2.2;
   color: #1a1a1a;
   font-weight: 400;
   letter-spacing: -0.01em;
+  margin-bottom: 12px;
+}
+
+.bio__reach {
+  font-size: 1rem;
+  line-height: 2.2;
+  color: #1a1a1a;
+  font-weight: 400;
+  letter-spacing: -0.01em;
+}
+
+/* Social Pills / Chips (devchauhan UI style) */
+.social-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 3.5px 9px 3.5px 6.5px;
+  border-radius: 9999px;
+  font-size: 12.5px;
+  font-weight: 500;
+  line-height: 1;
+  color: #111111;
+  background-color: #efefef;
+  border: 1px solid rgba(0, 0, 0, 0.04);
+  text-decoration: none;
+  cursor: pointer;
+  user-select: none;
+  vertical-align: middle;
+  margin: 0;
+  transition: background-color 0.15s ease, transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.social-chip:hover {
+  background-color: #e2e2e2;
+  transform: translateY(-1px);
+  text-decoration: none;
+  opacity: 1;
+}
+
+.social-chip:active {
+  transform: translateY(0);
+}
+
+.social-chip .tool-icon {
+  width: 14px;
+  height: 14px;
+  flex-shrink: 0;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.social-chip[data-tool="x"] .tool-icon {
+  width: 11px;
+  height: 11px;
+}
+
+.social-chip[data-tool="github"] .tool-icon {
+  width: 14px;
+  height: 14px;
+}
+
+.social-chip[data-tool="instagram"] .tool-icon {
+  width: 13px;
+  height: 13px;
+}
+
+.social-chip[data-tool="gmail"] .tool-icon,
+.social-chip[data-tool="email"] .tool-icon {
+  width: 14px;
+  height: 14px;
+}
+
+.social-chip span {
+  display: inline-block;
+  line-height: 1;
 }
 
 /* ===== TABS & MAIL NAVIGATION ===== */
@@ -112,6 +208,7 @@ video {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: relative;
   opacity: 0;
   animation: fadeInUp 0.3s ease 0.2s forwards;
 }
@@ -147,7 +244,7 @@ video {
 .tabs {
   display: flex;
   align-items: center;
-  gap: 20px;
+  gap: 16px;
   flex-wrap: wrap;
   row-gap: 12px;
 }
@@ -176,6 +273,8 @@ video {
 }
 
 .send-mail-link {
+  position: absolute;
+  right: 0;
   font-size: 1rem;
   color: #1a1a1a;
   text-decoration: underline;
