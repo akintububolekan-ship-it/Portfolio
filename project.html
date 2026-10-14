@@ -82,7 +82,7 @@
 
       <!-- Overview Hero Image -->
       <img
-        src="images/UI/Overview image.png"
+        src="images/UI/Overview image.svg"
         alt="Haystack Chat & Support Overview"
         class="project-image project-image--hero"
       />
@@ -179,6 +179,71 @@
         </div>
       </div>
 
+      <!-- User Personas -->
+      <div class="project-content">
+        <div class="project-text">
+          <div class="section-header">
+            <h2>User Personas</h2>
+            <button class="section-header__action" onclick="toggleSection('personas-content', this)">Close</button>
+          </div>
+          <div id="personas-content">
+            <p>
+              To ensure the platform addresses both the operational strains on agents and the frustrations of end-users, we synthesized our findings into two key personas:
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- User Persona Cards -->
+      <div class="project-image-group">
+        <img
+          src="images/UI/Frame 564.png"
+          alt="User Persona - Henry Barner, Customer Service Agent"
+          class="project-image"
+        />
+        <img
+          src="images/UI/Frame 1000005343.png"
+          alt="User Persona - Samuel White, Business Owner"
+          class="project-image"
+        />
+      </div>
+
+      <!-- Competitor's Analysis -->
+      <div class="project-content">
+        <div class="project-text">
+          <div class="section-header">
+            <h2>Competitor's Analysis</h2>
+            <button class="section-header__action" onclick="toggleSection('competitor-content', this)">Close</button>
+          </div>
+          <div id="competitor-content">
+            <p>
+              To understand how existing customer service platforms handle automation and scaling friction, we analyzed the dominant archetypes in the support software market. Our focus was to identify why existing tools fail to solve high ticket backlogs without destroying user trust.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Competitor Analysis Matrix Table -->
+      <img
+        src="images/UI/Frame 1000005340.png"
+        alt="Competitor Analysis Comparison Matrix"
+        class="project-image project-image--competitor"
+      />
+
+      <div class="project-content">
+        <div class="project-text project-text--compact">
+          <p>
+            Our competitor analysis exposed a clear flaw in the current market. Incumbents like Zendesk and Salesforce provide heavy infrastructure and broad integration ecosystems, but their AI implementations feel bolted-on. They rely on rigid decision-tree bots that deflect tickets by tossing static help center links at users. When frustration inevitably peaks and a human must step in, the handoff is blind — no context or chat history transfers over.
+          </p>
+          <p>
+            Tools like Intercom do a better job with modern conversational UI, but they lack autonomous execution. They cannot execute deep operational actions on external databases (e.g. independently processing a refund or updating an ERP order).
+          </p>
+          <p>
+            This leaves a massive product gap. Haystack captures this opportunity by combining autonomous execution with deep context-preserving handoffs. Instead of a glorified FAQ bot, Haystack is built from the ground up as a native AI teammate that understands sentiment, fetches data across isolated systems, and hands off complex edge cases to humans without losing a single line of context.
+          </p>
+        </div>
+      </div>
+
       <!-- Research Insights -->
       <div class="project-content">
         <div class="project-text">
@@ -202,69 +267,6 @@
               </li>
             </ol>
           </div>
-        </div>
-      </div>
-
-      <!-- User Personas -->
-      <div class="project-content">
-        <div class="project-text">
-          <div class="section-header">
-            <h2>User Personas</h2>
-            <button class="section-header__action" onclick="toggleSection('personas-content', this)">Close</button>
-          </div>
-          <div id="personas-content">
-            <p>
-              To ensure the platform addresses both the operational strains on agents and the frustrations of end-users, we synthesized our findings into two key personas:
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <!-- User Persona Cards -->
-      <img
-        src="images/UI/Frame 564.png"
-        alt="User Persona - Henry Barner, Customer Service Agent"
-        class="project-image"
-      />
-      <img
-        src="images/UI/Frame 1000005343.png"
-        alt="User Persona - Samuel White, Business Owner"
-        class="project-image"
-      />
-
-      <!-- Competitor's Analysis -->
-      <div class="project-content">
-        <div class="project-text">
-          <div class="section-header">
-            <h2>Competitor's Analysis</h2>
-            <button class="section-header__action" onclick="toggleSection('competitor-content', this)">Close</button>
-          </div>
-          <div id="competitor-content">
-            <p>
-              To understand how existing customer service platforms handle automation and scaling friction, we analyzed the dominant archetypes in the support software market. Our focus was to identify why existing tools fail to solve high ticket backlogs without destroying user trust.
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <!-- Competitor Analysis Matrix Table -->
-      <img
-        src="images/UI/Frame 1000005340.png"
-        alt="Competitor Analysis Comparison Matrix"
-        class="project-image"
-      />
-
-      <div class="project-content">
-        <div class="project-text">
-          <p>
-            Our competitor analysis exposed a clear flaw in the current market. Incumbents like Zendesk and Salesforce provide heavy infrastructure and broad integration ecosystems, but their AI implementations feel bolted-on. They rely on rigid decision-tree bots that deflect tickets by tossing static help center links at users. When frustration inevitably peaks and a human must step in, the handoff is blind — no context or chat history transfers over.
-          </p>
-          <p>
-            Tools like Intercom do a better job with modern conversational UI, but they lack autonomous execution. They cannot execute deep operational actions on external databases (e.g. independently processing a refund or updating an ERP order).
-          </p>
-          <p>
-            This leaves a massive product gap. Haystack captures this opportunity by combining autonomous execution with deep context-preserving handoffs. Instead of a glorified FAQ bot, Haystack is built from the ground up as a native AI teammate that understands sentiment, fetches data across isolated systems, and hands off complex edge cases to humans without losing a single line of context.
-          </p>
         </div>
       </div>
 
@@ -304,6 +306,13 @@
         </div>
       </div>
 
+      <!-- Paper Wireframe Image -->
+      <img
+        src="images/UI/Haystack Paper wireframe.svg"
+        alt="Haystack Paper Wireframes"
+        class="project-image"
+      />
+
       <!-- The Final Design -->
       <div class="project-content">
         <div class="project-text">
@@ -316,12 +325,11 @@
 
       <!-- Group 1: The Dashboard -->
       <div class="project-mockups">
-        <div class="project-mockup-label">
-          <span class="project-mockup-label__title">The Dashboard</span>
-          <span class="project-mockup-label__desc">The dashboard here shows a quick overview of the workload, helping the user navigate the workload distribution between the ai agents and human agents, and intelligence to see the customers reaction to responses.</span>
-        </div>
+        <p class="project-mockup-label">
+          <strong>The Dashboard :</strong> The dashboard here shows a quick overview of the workload, helping the user navigate the workload distribution between the ai agents and human agents, and intelligence to see the customers reaction to responses.
+        </p>
         <img
-          src="images/UI/Dashboard.png"
+          src="images/UI/Dashboard.svg"
           alt="The Dashboard"
           class="project-image"
         />
@@ -329,22 +337,21 @@
 
       <!-- Group 2: Omni-channel Inbox -->
       <div class="project-mockups">
-        <div class="project-mockup-label">
-          <span class="project-mockup-label__title">Omni-channel Inbox</span>
-          <span class="project-mockup-label__desc">This is the omni-channel inbox, it helps human agents quickly pull out information on a customer query. It is powered with ai so it is interactive and faster than the day to regular omni-channel softwares.</span>
-        </div>
+        <p class="project-mockup-label">
+          <strong>Omni-channel Inbox :</strong> This is the omni-channel inbox, it helps human agents quickly pull out information on a customer query. It is powered with ai so it is interactive and faster than the day to regular omni-channel softwares.
+        </p>
         <img
-          src="images/UI/Other screens 3.png"
+          src="images/UI/Other screens 3.svg"
           alt="Omni-channel Inbox - Screen 1"
           class="project-image"
         />
         <img
-          src="images/UI/Other screens 4.png"
+          src="images/UI/Other screens 4.svg"
           alt="Omni-channel Inbox - Screen 2"
           class="project-image"
         />
         <img
-          src="images/UI/Other screens 6.png"
+          src="images/UI/Other screens 6.svg"
           alt="Omni-channel Inbox - Screen 3"
           class="project-image"
         />
@@ -352,25 +359,28 @@
 
       <!-- Group 3: Chat & Call management -->
       <div class="project-mockups">
-        <div class="project-mockup-label">
-          <span class="project-mockup-label__title">Chat &amp; Call management</span>
-          <span class="project-mockup-label__desc">The Chat and call managements screens shows real time insights on chats and call performance for the day by the ai agents. It shows all chats, avg response time, and escalated complaints that needs attention for easy access, etc.</span>
-        </div>
+        <p class="project-mockup-label">
+          <strong>Chat &amp; Call management :</strong> The Chat and call managements screens shows real time insights on chats and call performance for the day by the ai agents. It shows all chats, avg response time, and escalated complaints that needs attention for easy access, etc.
+        </p>
         <img
-          src="images/UI/Chat management.png"
+          src="images/UI/Chat management.svg"
           alt="Chat and Call Management"
+          class="project-image"
+        />
+        <img
+          src="images/UI/Call management.svg"
+          alt="Haystack Call Management"
           class="project-image"
         />
       </div>
 
       <!-- Group 4: Messaging screen -->
       <div class="project-mockups">
-        <div class="project-mockup-label">
-          <span class="project-mockup-label__title">Messaging screen</span>
-          <span class="project-mockup-label__desc">The all chats screen shows all the chat channels. It shows an ai agent engaging a customer. The ai agent using it's integrations system to check the erp system for the price and availability of the requested item, and the payment directory.</span>
-        </div>
+        <p class="project-mockup-label">
+          <strong>Messaging screen :</strong> The all chats screen shows all the chat channels. It shows an ai agent engaging a customer. The ai agent using it's integrations system to check the erp system for the price and availability of the requested item, and the payment directory.
+        </p>
         <img
-          src="images/UI/Messaging screen.png"
+          src="images/UI/Messaging screen.svg"
           alt="Messaging Screen - Active conversation with ERP integration"
           class="project-image"
         />
@@ -378,17 +388,16 @@
 
       <!-- Group 5: Integrations screen -->
       <div class="project-mockups">
-        <div class="project-mockup-label">
-          <span class="project-mockup-label__title">Integrations screen</span>
-          <span class="project-mockup-label__desc">The integration page is where other workflow software containing customer information are integrated. A tree view of the integration screen below shows an ai agent (Sam) fetching data from the erp.</span>
-        </div>
+        <p class="project-mockup-label">
+          <strong>Integrations screen :</strong> The integration page is where other workflow software containing customer information are integrated. A tree view of the integration screen below shows an ai agent (Sam) fetching data from the erp.
+        </p>
         <img
-          src="images/UI/Integrations screen.png"
+          src="images/UI/Integrations screen.svg"
           alt="Integrations Screen Overview"
           class="project-image"
         />
         <img
-          src="images/UI/Integration s 2.png"
+          src="images/UI/Integration s 2.svg"
           alt="Integrations - Autonomous Agent Node View"
           class="project-image"
         />
@@ -396,17 +405,16 @@
 
       <!-- Group 6: Some other screens -->
       <div class="project-mockups">
-        <div class="project-mockup-label">
-          <span class="project-mockup-label__title">Some other screens</span>
-          <span class="project-mockup-label__desc">The help center, Settings etc etc.</span>
-        </div>
+        <p class="project-mockup-label">
+          <strong>Some other screens :</strong> The help center, Settings etc etc.
+        </p>
         <img
-          src="images/UI/Other screens 1.png"
+          src="images/UI/Other screens 1.svg"
           alt="Help Center Screen"
           class="project-image"
         />
         <img
-          src="images/UI/Other screens 2.png"
+          src="images/UI/Other screens 2.svg"
           alt="Settings &amp; Preferences Screen"
           class="project-image"
         />
@@ -414,9 +422,9 @@
 
       <!-- Group 7: Dark mode -->
       <div class="project-mockups">
-        <div class="project-mockup-label">
-          <span class="project-mockup-label__title">Dark mode</span>
-        </div>
+        <p class="project-mockup-label">
+          <strong>Dark mode</strong>
+        </p>
         <img
           src="images/UI/Other screens 1-1.png"
           alt="Haystack Dark Mode - Dashboard"
@@ -519,5 +527,6 @@
         }
       }
     </script>
+    <script src="project-back.js"></script>
   </body>
 </html>

@@ -1,0 +1,361 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Numen | Ambient AI Interaction &amp; Expressive Micro-States — Ola</title>
+    <meta
+      name="description"
+      content="An ambient, expressive micro-state entity designed as a real-time conversational AI assistant, copilot, or wellness companion."
+    />
+    <link rel="stylesheet" href="index.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      .numen-media-stack {
+        display: flex;
+        flex-direction: column;
+        gap: 18px;
+        align-items: center;
+        max-width: 640px;
+        margin: 0 auto 120px;
+        padding: 0;
+        box-sizing: border-box;
+        width: 100%;
+      }
+      .numen-media-stack video {
+        display: block;
+        width: 100%;
+        max-width: 640px;
+        aspect-ratio: 640 / 573.15;
+        object-fit: contain;
+        margin: 0;
+        padding: 0;
+        border: none;
+        outline: none;
+        border-radius: 0;
+        background-color: #000000;
+        box-sizing: border-box;
+      }
+      .numen-media-stack img {
+        display: block;
+        width: 100%;
+        max-width: 640px;
+        height: auto;
+        aspect-ratio: 640 / 515;
+        margin: 0;
+        padding: 0;
+        border: none;
+        outline: none;
+        border-radius: 0;
+        background-color: #000000;
+        box-sizing: border-box;
+      }
+      @media (max-width: 768px) {
+        .numen-media-stack {
+          padding: 0;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Header / Navigation back -->
+    <header class="project-header">
+      <div class="project-header__inner">
+        <a href="index.html" class="project-header__back">
+          <svg
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M19 12H5M5 12L12 19M5 12L12 5"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+          Back
+        </a>
+      </div>
+    </header>
+
+    <main class="project-page">
+      <!-- Top section: Logo + Title + Meta -->
+      <div class="project-content">
+        <div class="project-top">
+          <img
+            src="images/Numen/Haystack Logo.svg"
+            alt="Numen Logo"
+            class="project-logo"
+            style="width: 36.4px; height: 36.4px; margin-bottom: 12px;"
+          />
+        </div>
+
+        <h1 class="project-title">
+          Numen | Ambient AI Interaction &amp; Expressive Micro-States
+        </h1>
+
+        <div class="project-meta">
+          <div class="project-meta__col">
+            <span class="project-meta__label">Category</span>
+            <span class="project-meta__value">Copilot Avatar</span>
+          </div>
+          <div class="project-meta__col">
+            <span class="project-meta__label">Year</span>
+            <span class="project-meta__value">2026</span>
+          </div>
+          <div class="project-meta__col">
+            <span class="project-meta__label">My role</span>
+            <span class="project-meta__value">Illustrator, Animator</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Overview -->
+      <div class="project-content">
+        <div class="project-text project-text--has-image">
+          <h2>Overview</h2>
+          <p>
+            An ambient, expressive micro-state entity designed as a real-time conversational AI assistant, copilot, or wellness companion.
+          </p>
+        </div>
+      </div>
+
+      <!-- Overview Hero Video: Wake to sleep mode -->
+      <div class="project-image-container">
+        <video
+          src="images/Numen/Wake-To-Sleep-Mode.mp4"
+          autoplay
+          loop
+          muted
+          playsinline
+          webkit-playsinline
+          preload="auto"
+          class="project-image project-image--hero"
+          style="width: 100%; max-width: 640px; aspect-ratio: 640 / 573.15; object-fit: contain; padding: 0; margin: 0 auto 120px; display: block; border-radius: 0; background-color: #000000;"
+        >
+          <source src="images/Numen/Wake-To-Sleep-Mode.mp4" type="video/mp4" />
+        </video>
+      </div>
+
+      <!-- Project Background & Challenge -->
+      <div class="project-content">
+        <div class="project-text">
+          <h2>Project Background &amp; Challenge</h2>
+          <p>
+            Most generative AI interfaces rely on abstract voice waves or static text bubbles, creating emotional detachment during voice interactions.
+          </p>
+          <p>
+            The challenge was to craft an emotive, lightweight visual anchor capable of conveying system states, focus, and empathy through minimal geometric changes and lighting dynamics.
+          </p>
+        </div>
+      </div>
+
+      <!-- Character Anatomy & Visual Language -->
+      <div class="project-content">
+        <div class="project-text">
+          <h2>Character Anatomy &amp; Visual Language</h2>
+          <p style="margin-bottom: 12px;">
+            <strong>Base Form:</strong> A soft-lit luminous sphere with a high-glow outer radius designed for high legibility across dark-mode surfaces.
+          </p>
+          <p style="margin-bottom: 12px;">
+            <strong>Feature Minimalism:</strong> The face relies entirely on high-contrast vertical slit pupils to communicate attention, focus, and state changes without mouth or eyebrow complexity.
+          </p>
+          <p>
+            <strong>Luminescence as Feedback:</strong> Core glow and rim intensity dynamically pulse to communicate processing latency, audio gain, and device connectivity.
+          </p>
+        </div>
+      </div>
+
+      <!-- Motion State System Architecture -->
+      <div class="project-content">
+        <div class="project-text">
+          <h2>Motion State System Architecture</h2>
+          <p style="margin-bottom: 6px;">01. Default system state</p>
+          <p style="margin-bottom: 6px;">02. Attention Shift - Wake-word detected</p>
+          <p style="margin-bottom: 6px;">03. Cognitive Focus</p>
+          <p style="margin-bottom: 6px;">04. Micro-Blink</p>
+          <p style="margin-bottom: 6px;">05. Rest / Standby</p>
+          <p style="margin-bottom: 0;">06. Tracking</p>
+        </div>
+      </div>
+
+      <!-- Credits -->
+      <div class="project-content">
+        <div class="project-text">
+          <h2>Credits</h2>
+          <p>
+            Client: Caterpilllar studios<br />
+            Art Director: Akintububo Olamilekan<br />
+            Motion Designer: Akintububo Olamilekan<br />
+            Sound Designer: Akintububo Olamilekan<br />
+            Tools Used: Figma, After Effects<br />
+            Deliverables: Character State Sheet, Interactive Motion Specs, System Integration Map
+          </p>
+        </div>
+      </div>
+
+      <!-- Final Design Header -->
+      <div class="project-content">
+        <div class="project-text project-text--has-image">
+          <div class="section-header">
+            <h2>Final Design</h2>
+            <button
+              class="section-header__action"
+              onclick="toggleSection('final-design-content', this)"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Final Design Content Collapsible -->
+      <div id="final-design-content">
+        <div class="project-content">
+          <div class="project-text project-text--has-image">
+            <p>Here's the final design</p>
+          </div>
+        </div>
+
+        <!-- Mascot Motion Loop Videos & Asset Matrix -->
+        <div class="numen-media-stack">
+          <video
+            src="images/Numen/Slash-Eye.mp4"
+            autoplay
+            loop
+            muted
+            playsinline
+            webkit-playsinline
+            preload="auto"
+          >
+            <source src="images/Numen/Slash-Eye.mp4" type="video/mp4" />
+          </video>
+
+          <video
+            src="images/Numen/Oval-Eye.mp4"
+            autoplay
+            loop
+            muted
+            playsinline
+            webkit-playsinline
+            preload="auto"
+          >
+            <source src="images/Numen/Oval-Eye.mp4" type="video/mp4" />
+          </video>
+
+          <video
+            src="images/Numen/Eye-Rolling.mp4"
+            autoplay
+            loop
+            muted
+            playsinline
+            webkit-playsinline
+            preload="auto"
+          >
+            <source src="images/Numen/Eye-Rolling.mp4" type="video/mp4" />
+          </video>
+
+          <!-- Final Image: Automation illustration -->
+          <img
+            src="images/Numen/Automation illustration.svg"
+            alt="Numen Motion State Matrix Suite"
+          />
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer" id="footer">
+      <div class="footer__divider"></div>
+      <p class="footer__text">&copy; 2026 Ola. All rights reserved.</p>
+    </footer>
+
+    <script>
+      function toggleSection(id, btn) {
+        const el = document.getElementById(id);
+        if (!el) return;
+        if (el.style.display === "none") {
+          el.style.display = "";
+          btn.textContent = "Close";
+          if (window.playVisibleVideos) window.playVisibleVideos();
+        } else {
+          el.style.display = "none";
+          btn.textContent = "View";
+          el.querySelectorAll("video").forEach((v) => v.pause());
+        }
+      }
+
+      // Robust video autoplay & decoder pipeline manager
+      function initNumenVideos() {
+        const videos = document.querySelectorAll("video");
+
+        videos.forEach((video) => {
+          video.muted = true;
+          video.defaultMuted = true;
+          video.playsInline = true;
+          video.setAttribute("muted", "");
+          video.setAttribute("playsinline", "");
+          video.setAttribute("webkit-playsinline", "");
+          video.setAttribute("preload", "auto");
+        });
+
+        // IntersectionObserver: play in viewport, pause offscreen to manage decoder limit
+        const observer = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((entry) => {
+              const v = entry.target;
+              if (entry.isIntersecting) {
+                v.muted = true;
+                const p = v.play();
+                if (p !== undefined) p.catch(() => {});
+              } else {
+                v.pause();
+              }
+            });
+          },
+          { rootMargin: "200px 0px", threshold: 0.05 }
+        );
+
+        videos.forEach((v) => observer.observe(v));
+
+        window.playVisibleVideos = function () {
+          videos.forEach((v) => {
+            const rect = v.getBoundingClientRect();
+            const inView = rect.top < window.innerHeight + 200 && rect.bottom > -200;
+            const isHidden = v.closest("#final-design-content")?.style.display === "none";
+            if (inView && !isHidden) {
+              v.muted = true;
+              const p = v.play();
+              if (p !== undefined) p.catch(() => {});
+            }
+          });
+        };
+
+        const unlock = () => {
+          window.playVisibleVideos();
+        };
+
+        window.addEventListener("click", unlock, { passive: true, once: true });
+        window.addEventListener("touchstart", unlock, { passive: true, once: true });
+        window.addEventListener("scroll", unlock, { passive: true, once: true });
+        window.addEventListener("pointerdown", unlock, { passive: true, once: true });
+
+        window.playVisibleVideos();
+      }
+
+      if (document.readyState === "loading") {
+        document.addEventListener("DOMContentLoaded", initNumenVideos);
+      } else {
+        initNumenVideos();
+      }
+    </script>
+    <script src="project-back.js"></script>
+  </body>
+</html>

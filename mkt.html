@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MKT | Social Commerce Through Narrative Illustration — Ola</title>
+    <meta
+      name="description"
+      content="Narrative illustration suite designed for MKT, an end-to-end social commerce solution pairing shop management with escrow security and mobile social shopping."
+    />
+    <link rel="stylesheet" href="index.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Header / Navigation back -->
+    <header class="project-header">
+      <div class="project-header__inner">
+        <a href="index.html" class="project-header__back">
+          <svg
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M19 12H5M5 12L12 19M5 12L12 5"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+          Back
+        </a>
+      </div>
+    </header>
+
+    <main class="project-page">
+      <!-- Top section: Logo + Title + Meta -->
+      <div class="project-content">
+        <div class="project-top">
+          <img
+            src="images/MKT/Haystack Logo.svg"
+            alt="MKT Logo"
+            class="project-logo"
+          />
+        </div>
+
+        <h1 class="project-title">
+          MKT | Social Commerce Through Narrative Illustration
+        </h1>
+
+        <div class="project-meta">
+          <div class="project-meta__col">
+            <span class="project-meta__label">Category</span>
+            <span class="project-meta__value">Socio-commerce</span>
+          </div>
+          <div class="project-meta__col">
+            <span class="project-meta__label">Year</span>
+            <span class="project-meta__value">2025</span>
+          </div>
+          <div class="project-meta__col">
+            <span class="project-meta__label">My role</span>
+            <span class="project-meta__value">Illustrator</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Overview -->
+      <div class="project-content">
+        <div class="project-text project-text--has-image">
+          <h2>Overview</h2>
+          <p>
+            These are some illustrations created for MKT.
+          </p>
+          <p>
+            MKT is an end-to-end social commerce solution that pairs shop
+            management with bank-grade escrow security and frictionless mobile
+            social shopping, making buying and selling via chat and social
+            channels safe, automated, and instant.
+          </p>
+        </div>
+      </div>
+
+      <!-- Hero Image -->
+      <img
+        src="images/MKT/Automation illustration.svg"
+        alt="MKT Automation Illustration"
+        class="project-image project-image--hero"
+      />
+
+      <!-- Credits -->
+      <div class="project-content">
+        <div class="project-text">
+          <h2>Credits</h2>
+          <p>
+            Client: MKT<br />
+            Art Director: Akintububo Olamilekan<br />
+            Motion Designer: Akintububo Olamilekan<br />
+            Sound Designer: Akintububo Olamilekan<br />
+            Tools Used: Figma
+          </p>
+        </div>
+      </div>
+
+      <!-- Final Design Header -->
+      <div class="project-content">
+        <div class="project-text project-text--has-image">
+          <div class="section-header">
+            <h2>Final Design</h2>
+            <button
+              class="section-header__action"
+              onclick="toggleSection('final-design-content', this)"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Final Design Content Collapsible -->
+      <div id="final-design-content">
+        <div class="project-content">
+          <div class="project-text project-text--has-image">
+            <p>Here's the final design</p>
+          </div>
+        </div>
+
+        <!-- Protecting everyone (Vault / Escrow Security) -->
+        <img
+          src="images/MKT/Proctecting everyone.svg"
+          alt="MKT Escrow Security Illustration"
+          class="project-image"
+        />
+
+        <!-- Experience simplicity (Mobile Social Shopping) -->
+        <img
+          src="images/MKT/Experience simplicity.svg"
+          alt="MKT Mobile Social Shopping Illustration"
+          class="project-image"
+        />
+
+        <!-- Automation illustration (Automated Shop Management) -->
+        <img
+          src="images/MKT/Automation illustration.svg"
+          alt="MKT Shop Management & Automation Illustration"
+          class="project-image"
+        />
+
+        <!-- Group 869 (UI Asset Suite & Icons Grid) -->
+        <img
+          src="images/MKT/Group 869.svg"
+          alt="MKT Illustration & Icon Assets Suite"
+          class="project-image"
+        />
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer" id="footer">
+      <div class="footer__divider"></div>
+      <p class="footer__text">&copy; 2026 Ola. All rights reserved.</p>
+    </footer>
+
+    <script>
+      function toggleSection(id, btn) {
+        const el = document.getElementById(id);
+        if (!el) return;
+        if (el.style.display === "none") {
+          el.style.display = "";
+          btn.textContent = "Close";
+        } else {
+          el.style.display = "none";
+          btn.textContent = "View";
+        }
+      }
+    </script>
+    <script src="project-back.js"></script>
+  </body>
+</html>

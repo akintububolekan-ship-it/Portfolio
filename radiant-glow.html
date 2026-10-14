@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Radiant Glow | Skincare &amp; Beauty — Ola</title>
+    <meta
+      name="description"
+      content="Email design and visual campaign strategy for Radiant Glow, featuring vibrant editorial layouts, brand ethos discovery, and high-converting abandoned cart flows."
+    />
+    <link rel="stylesheet" href="index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Header / Navigation back -->
+    <header class="project-header">
+      <div class="project-header__inner">
+        <a href="index.html" class="project-header__back">
+          <svg
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M19 12H5M5 12L12 19M5 12L12 5"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+          Back
+        </a>
+      </div>
+    </header>
+
+    <main class="project-page">
+      <!-- Top section: Logo + Title + Meta -->
+      <div class="project-content">
+        <div class="project-top">
+          <img
+            src="images/Radiant glow/Haystack Logo.svg"
+            alt="Radiant Glow Logo"
+            class="project-logo"
+          />
+        </div>
+
+        <h1 class="project-title">
+          Radiant Glow | Skincare &amp; Beauty
+        </h1>
+
+        <div class="project-meta">
+          <div class="project-meta__col">
+            <span class="project-meta__label">Category</span>
+            <span class="project-meta__value">Skincare</span>
+          </div>
+          <div class="project-meta__col">
+            <span class="project-meta__label">Year</span>
+            <span class="project-meta__value">2026</span>
+          </div>
+          <div class="project-meta__col">
+            <span class="project-meta__label">My role</span>
+            <span class="project-meta__value">Email designer</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Design Strategy -->
+      <div class="project-content">
+        <div class="project-text project-text--has-image">
+          <h2>Design strategy</h2>
+          <p>
+            High-energy editorial layout using vibrant purples, soft pinks, and macro
+            product photography.
+          </p>
+        </div>
+      </div>
+
+      <!-- Hero Image Mockup -->
+      <img
+        src="images/Radiant glow/Frame 85.svg"
+        alt="Radiant Glow Hero Mockup"
+        class="project-image project-image--hero"
+        width="640"
+        height="427"
+      />
+
+      <!-- Templates Designed -->
+      <div class="project-content">
+        <div class="project-text">
+          <h2>Templates designed</h2>
+          <ul>
+            <li>
+              <strong>Welcome &amp; Brand Discovery:</strong> Hero visual with brand
+              ethos, followed by product detail modules highlighting formulas (e.g.,
+              Retinol power).
+            </li>
+            <li>
+              <strong>Abandoned Cart &amp; Upsell Flow:</strong> Bold header alerting
+              users to their cart, paired with a curated 4-item grid of complementary
+              products ("Similar items") with instant "Add to cart" buttons.
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Final Design Header -->
+      <div class="project-content">
+        <div class="project-text project-text--has-image">
+          <div class="section-header">
+            <h2>Final Design</h2>
+            <button
+              class="section-header__action"
+              onclick="toggleSection('final-design-content', this)"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Final Design Content Collapsible -->
+      <div id="final-design-content">
+        <div class="project-content">
+          <div class="project-text project-text--has-image">
+            <p>Here’s the final design</p>
+          </div>
+        </div>
+
+        <div class="project-image-group">
+          <!-- Mockup Angle 1 -->
+          <img
+            src="images/Radiant glow/Frame 1000005226.svg"
+            alt="Radiant Glow Product Showcase Angle"
+            class="project-image"
+            width="640"
+            height="427"
+          />
+
+          <!-- Mockup Perspective 2 -->
+          <img
+            src="images/Radiant glow/Frame 1000005227.svg"
+            alt="Radiant Glow Product Showcase Perspective"
+            class="project-image"
+            width="640"
+            height="427"
+          />
+
+          <!-- Email Template 1: Welcome & Brand Discovery -->
+          <img
+            src="images/Radiant glow/Container.svg"
+            alt="Radiant Glow Welcome &amp; Brand Discovery Email Template"
+            class="project-image"
+            width="640"
+            height="5458"
+          />
+
+          <!-- Email Template 2: Abandoned Cart & Upsell Flow -->
+          <img
+            src="images/Radiant glow/Container-1.svg"
+            alt="Radiant Glow Abandoned Cart &amp; Upsell Flow Email Template"
+            class="project-image"
+            width="640"
+            height="5609"
+          />
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer" id="footer">
+      <div class="footer__divider"></div>
+      <p class="footer__text">&copy; 2026 Ola. All rights reserved.</p>
+    </footer>
+
+    <script>
+      function toggleSection(id, btn) {
+        const el = document.getElementById(id);
+        if (!el) return;
+        if (el.style.display === "none") {
+          el.style.display = "";
+          btn.textContent = "Close";
+        } else {
+          el.style.display = "none";
+          btn.textContent = "View";
+        }
+      }
+    </script>
+    <script src="project-back.js"></script>
+  </body>
+</html>

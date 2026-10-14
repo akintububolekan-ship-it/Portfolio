@@ -21,18 +21,32 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="index.css" />
+    <script>
+      (function () {
+        try {
+          const hash = window.location.hash.replace(/^#/, "");
+          const tab =
+            hash ||
+            sessionStorage.getItem("portfolioActiveTab") ||
+            localStorage.getItem("portfolioActiveTab");
+          if (tab && tab !== "case-studies") {
+            document.documentElement.setAttribute("data-initial-tab", tab);
+          }
+        } catch (e) {}
+      })();
+    </script>
   </head>
   <body>
     <main class="portfolio" id="portfolio">
-      <!-- Avatar -->
-      <img
-        src="images/Profile image.png"
-        alt="Portrait photo of Ola"
+      <!-- Avatar with dither hover effect -->
+      <canvas
         class="avatar"
         id="avatar"
-        width="64"
-        height="64"
-      />
+        width="92"
+        height="92"
+        data-src-default="images/Profile image.png"
+        data-src-hover="images/Image (Profile).svg"
+      ></canvas>
 
       <!-- Bio -->
       <section class="bio" id="bio">
@@ -54,8 +68,36 @@
           <a href="#" id="link-nauta">Nauta AI</a>.
         </p>
         <p class="bio__social">
-          You can find me on
-          <a href="#" class="social-chip" id="link-x" data-tool="x"
+          You can grab my
+          <a
+            href="https://drive.google.com/file/d/1r6JQby2Ej4I8JHzXNDFbO2J1U1vPeg3k/view?usp=drive_link"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="social-chip"
+            id="link-resume"
+            data-tool="resume"
+            ><svg
+              class="tool-icon"
+              viewBox="0 0 16 18"
+              width="12"
+              height="13.5"
+              fill="currentColor"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M3 0C1.895 0 1 0.895 1 2V16C1 17.105 1.895 18 3 18H13C14.105 18 15 17.105 15 16V5L10 0H3ZM8 4.5C6.895 4.5 6 5.395 6 6.5C6 7.605 6.895 8.5 8 8.5C9.105 8.5 10 7.605 10 6.5C10 5.395 9.105 4.5 8 4.5ZM4 14C4 11.8 5.8 10.5 8 10.5C10.2 10.5 12 11.8 12 14C12 14.5 11.6 15 11 15H5C4.4 15 4 14.5 4 14Z"
+              /></svg
+            ><span>Resume</span></a
+          >
+          &amp; find me on
+          <a
+            href="https://x.com/Olamilekan_afo"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="social-chip"
+            id="link-x"
+            data-tool="twitter"
             ><svg
               class="tool-icon"
               viewBox="0 0 1200 1227"
@@ -66,9 +108,15 @@
               <path
                 d="M714.163 519.284 1160.89 0h-105.86L667.137 450.887 357.328 0H0l468.492 681.821L0 1226.37h105.866l409.625-476.152 327.181 476.152H1200L714.137 519.284h.026ZM569.165 687.828l-47.468-67.894-377.686-540.24h162.604l304.797 435.991 47.468 67.894 396.2 566.721H892.476L569.165 687.854v-.026Z"
               /></svg
-            ><span>X</span></a
+            ><span>Twitter</span></a
           >,
-          <a href="#" class="social-chip" id="link-github" data-tool="github"
+          <a
+            href="https://github.com/akintububolekan-ship-it"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="social-chip"
+            id="link-github"
+            data-tool="github"
             ><svg
               class="tool-icon"
               viewBox="0 0 24 24"
@@ -84,7 +132,9 @@
             ><span>GitHub</span></a
           >, and
           <a
-            href="#"
+            href="https://www.instagram.com/olamilekan_design0/?__pwa=1"
+            target="_blank"
+            rel="noopener noreferrer"
             class="social-chip"
             id="link-instagram"
             data-tool="instagram"
@@ -224,7 +274,7 @@
                 data-tab="illustrations-character-animation"
                 id="tab-illustrations-character-animation"
               >
-                Illustrations/character animation
+                Illustrations &amp; Rigging
               </button>
               <button
                 class="tabs__item"
@@ -233,21 +283,70 @@
               >
                 Email templates
               </button>
-              <button
-                class="tabs__item"
-                data-tab="website-design"
-                id="tab-website-design"
-              >
-                Website design
-              </button>
             </nav>
           </div>
           <a
             href="mailto:Akintububolekan@gmail.com"
-            class="send-mail-link"
+            class="send-mail-link send-mail-btn"
             id="send-mail-link"
-            >E-Mail</a
           >
+            <svg
+              class="send-mail-btn__icon"
+              viewBox="0 0 192 192"
+              width="16"
+              height="16"
+              fill="none"
+              aria-hidden="true"
+            >
+              <path
+                fill="url(#gmail-nav-a)"
+                d="M146 44h38v110c0 6.627-5.373 12-12 12h-20a6 6 0 0 1-6-6z"
+              />
+              <path
+                fill="#fc413d"
+                d="M46 44H8v110c0 6.627 5.373 12 12 12h20a6 6 0 0 0 6-6z"
+              />
+              <path
+                fill="url(#gmail-nav-b)"
+                d="M39.226 30.456c-8.033-6.752-20.018-5.714-26.77 2.319-6.752 8.032-5.714 20.017 2.319 26.77l76.078 63.949a8 8 0 0 0 10.295 0l76.078-63.95c8.032-6.752 9.07-18.737 2.318-26.77-6.752-8.032-18.737-9.07-26.769-2.318L96 78.18z"
+              />
+              <defs>
+                <linearGradient
+                  id="gmail-nav-a"
+                  x1="165"
+                  x2="165"
+                  y1="44"
+                  y2="166"
+                  gradientUnits="userSpaceOnUse"
+                >
+                  <stop stop-color="#60d673" />
+                  <stop offset=".17" stop-color="#42c868" />
+                  <stop offset=".39" stop-color="#0ebc5f" />
+                  <stop offset=".62" stop-color="#00a9bb" />
+                  <stop offset=".86" stop-color="#3c90ff" />
+                  <stop offset="1" stop-color="#3186ff" />
+                </linearGradient>
+                <linearGradient
+                  id="gmail-nav-b"
+                  x1="8"
+                  x2="184"
+                  y1="46.13"
+                  y2="46.13"
+                  gradientUnits="userSpaceOnUse"
+                >
+                  <stop offset=".08" stop-color="#ff63a0" />
+                  <stop offset=".3" stop-color="#fc413d" />
+                  <stop offset=".5" stop-color="#fc413d" />
+                  <stop offset=".65" stop-color="#fc413d" />
+                  <stop offset=".72" stop-color="#fc5c30" />
+                  <stop offset=".86" stop-color="#feb10c" />
+                  <stop offset=".91" stop-color="#fec700" />
+                  <stop offset=".96" stop-color="#ffdb0f" />
+                </linearGradient>
+              </defs>
+            </svg>
+            <span>Email</span>
+          </a>
         </div>
       </div>
 
@@ -257,21 +356,19 @@
         id="content-case-studies"
         aria-label="Case studies projects"
       >
-        <!-- IFA ai -->
-        <a href="ifa.html" class="project-card" id="project-ifa">
+        <!-- Haystack -->
+        <a href="project.html" class="project-card" id="project-haystack">
           <div class="project-card__image-container">
             <img
-              src="images/Ifa Ai display picture.png"
-              alt="IFA ai mobile AI assistant"
+              src="images/UI/Overview image.svg"
+              alt="Haystack CRM platform"
               class="project-card__image"
               loading="lazy"
             />
           </div>
           <div class="project-card__info">
-            <h3 class="project-card__title">IFA ai</h3>
-            <p class="project-card__desc">
-              A next-generation mobile AI assistant
-            </p>
+            <h3 class="project-card__title">Haystack</h3>
+            <p class="project-card__desc">An ai powered CRM platform</p>
           </div>
         </a>
 
@@ -279,7 +376,7 @@
         <a href="bron-project.html" class="project-card" id="project-bron">
           <div class="project-card__image-container">
             <img
-              src="images/Bron Crypto display picture.png"
+              src="UI/Bron app/image 2285 (1) (1).png"
               alt="Bron Crypto platform"
               class="project-card__image"
               loading="lazy"
@@ -293,27 +390,11 @@
           </div>
         </a>
 
-        <!-- Haystack -->
-        <a href="project.html" class="project-card" id="project-haystack">
-          <div class="project-card__image-container">
-            <img
-              src="images/Haystack display picture.png"
-              alt="Haystack CRM platform"
-              class="project-card__image"
-              loading="lazy"
-            />
-          </div>
-          <div class="project-card__info">
-            <h3 class="project-card__title">Haystack</h3>
-            <p class="project-card__desc">An ai powered CRM platform</p>
-          </div>
-        </a>
-
         <!-- RIHUB -->
         <a href="rihub.html" class="project-card" id="project-rihub">
           <div class="project-card__image-container">
             <img
-              src="images/Rihub display picture.png"
+              src="UI/Rihub BG.svg"
               alt="RIHUB loan recovery financial tool"
               class="project-card__image"
               loading="lazy"
@@ -327,11 +408,29 @@
           </div>
         </a>
 
+        <!-- IFA ai -->
+        <a href="ifa.html" class="project-card" id="project-ifa">
+          <div class="project-card__image-container">
+            <img
+              src="UI/Ifa BG  img.png"
+              alt="IFA ai mobile AI assistant"
+              class="project-card__image"
+              loading="lazy"
+            />
+          </div>
+          <div class="project-card__info">
+            <h3 class="project-card__title">IFA ai</h3>
+            <p class="project-card__desc">
+              A next-generation mobile AI assistant
+            </p>
+          </div>
+        </a>
+
         <!-- Articulate -->
         <a href="articulate.html" class="project-card" id="project-articulate">
           <div class="project-card__image-container">
             <img
-              src="images/Articulate homescreen.png"
+              src="images/Articulate Images/image 2287 (1) (1).png"
               alt="Articulate Speech Rehearsal Studio"
               class="project-card__image"
               loading="lazy"
@@ -347,7 +446,7 @@
         <a href="sprance.html" class="project-card" id="project-sprance">
           <div class="project-card__image-container">
             <img
-              src="images/Sprance homescreen.png"
+              src="images/Sprance images/image 2288 (1) (1).png"
               alt="Sprance run-tracking app"
               class="project-card__image"
               loading="lazy"
@@ -362,23 +461,54 @@
         </a>
       </section>
 
-      <!-- Motion Design -->
+            <!-- Motion Design -->
       <section
         class="tab-content"
         id="content-motion-design"
         aria-label="Motion design projects"
       >
-        <a href="#" class="project-card">
+        <!-- Caterpilllar studio -->
+        <a href="caterpillar.html" class="project-card" id="project-caterpillar">
           <div class="project-card__image-container">
-            <img
-              src="images/project-3.png"
-              alt="Motion design"
+            <video
+              src="images/Caterpilllar images/Caterpillar Intro Video Sfx Inn mm.mp4"
+              autoplay loop muted playsinline
               class="project-card__image"
-              loading="lazy"
-            />
+            ></video>
           </div>
           <div class="project-card__info">
-            <h3 class="project-card__title">Motion design</h3>
+            <h3 class="project-card__title">Caterpilllar studios</h3>
+            <p class="project-card__desc">Product introduction video &amp; Storyboard</p>
+          </div>
+        </a>
+
+        <!-- Haystack -->
+        <a href="haystack-motion.html" class="project-card" id="project-haystack-motion">
+          <div class="project-card__image-container">
+            <video
+              src="images/Haystack Product Intro.mp4"
+              autoplay loop muted playsinline
+              class="project-card__image"
+            ></video>
+          </div>
+          <div class="project-card__info">
+            <h3 class="project-card__title">Haystack</h3>
+            <p class="project-card__desc">Product Introduction video</p>
+          </div>
+        </a>
+
+        <!-- IFA ai -->
+        <a href="ifa-motion.html" class="project-card" id="project-ifa-motion">
+          <div class="project-card__image-container">
+            <video
+              src="images/Ifa shorts/Frame 1000005141 8.mp4"
+              autoplay loop muted playsinline
+              class="project-card__image"
+            ></video>
+          </div>
+          <div class="project-card__info">
+            <h3 class="project-card__title">IFA ai</h3>
+            <p class="project-card__desc">Launch teaser</p>
           </div>
         </a>
       </section>
@@ -389,33 +519,70 @@
         id="content-illustrations-character-animation"
         aria-label="Illustrations and character animation projects"
       >
-        <!-- Character animations -->
-        <a href="#" class="project-card">
+        <!-- Spendwise -->
+        <a href="spendwise.html" class="project-card" id="project-spendwise">
           <div class="project-card__image-container">
-            <img
-              src="images/project-1.png"
-              alt="Character animations"
+            <video
+              src="images/Spendwise/Putting-On-Glasses.mp4"
+              autoplay
+              loop
+              muted
+              playsinline
+              webkit-playsinline
+              preload="auto"
               class="project-card__image"
-              loading="lazy"
-            />
+            >
+              <source src="images/Spendwise/Putting-On-Glasses.mp4" type="video/mp4" />
+            </video>
           </div>
           <div class="project-card__info">
-            <h3 class="project-card__title">Character animations</h3>
+            <h3 class="project-card__title">Spendwise</h3>
+            <p class="project-card__desc">
+              Humanizing personal wealth &amp; credit health
+            </p>
           </div>
         </a>
 
-        <!-- Illustrations -->
-        <a href="#" class="project-card">
+        <!-- Numen -->
+        <a href="numen.html" class="project-card" id="project-numen">
+          <div class="project-card__image-container">
+            <video
+              src="images/Numen/Wake-To-Sleep-Mode.mp4"
+              autoplay
+              loop
+              muted
+              playsinline
+              webkit-playsinline
+              preload="auto"
+              class="project-card__image"
+              style="background-color: #000;"
+            >
+              <source src="images/Numen/Wake-To-Sleep-Mode.mp4" type="video/mp4" />
+            </video>
+          </div>
+          <div class="project-card__info">
+            <h3 class="project-card__title">Numen</h3>
+            <p class="project-card__desc">
+              Ambient AI interaction &amp; expressive micro-states
+            </p>
+          </div>
+        </a>
+
+        <!-- MKT -->
+        <a href="mkt.html" class="project-card" id="project-mkt">
           <div class="project-card__image-container">
             <img
-              src="images/project-2.png"
-              alt="Illustrations"
+              src="images/MKT/Automation illustration.svg"
+              alt="MKT social commerce illustrations"
               class="project-card__image"
               loading="lazy"
             />
           </div>
           <div class="project-card__info">
-            <h3 class="project-card__title">Illustrations</h3>
+            <h3 class="project-card__title">MKT</h3>
+            <p class="project-card__desc">
+              Social commerce narrative illustrations
+            </p>
           </div>
         </a>
       </section>
@@ -426,38 +593,93 @@
         id="content-email-templates"
         aria-label="Email templates projects"
       >
-        <a href="#" class="project-card">
+        <!-- No mile -->
+        <a href="no-mile.html" class="project-card" id="project-no-mile">
           <div class="project-card__image-container">
             <img
-              src="images/project-4.png"
-              alt="Email templates"
+              src="images/No Mile/Frame 1000005226-1.svg"
+              alt="No Mile Hero Mockup"
               class="project-card__image"
               loading="lazy"
             />
           </div>
           <div class="project-card__info">
-            <h3 class="project-card__title">Email templates</h3>
+            <h3 class="project-card__title">No mile</h3>
+            <p class="project-card__desc">
+              Artisan Ice Cream &amp; Desserts (F&amp;B)
+            </p>
           </div>
         </a>
-      </section>
 
-      <!-- Website Design -->
-      <section
-        class="tab-content"
-        id="content-website-design"
-        aria-label="Website design projects"
-      >
-        <a href="#" class="project-card">
+        <!-- Radiant glow -->
+        <a href="radiant-glow.html" class="project-card" id="project-radiant-glow">
           <div class="project-card__image-container">
             <img
-              src="images/project-3.png"
-              alt="Website design"
+              src="images/Radiant glow/Frame 85.svg"
+              alt="Radiant glow Skincare &amp; Beauty"
               class="project-card__image"
               loading="lazy"
             />
           </div>
           <div class="project-card__info">
-            <h3 class="project-card__title">Website design</h3>
+            <h3 class="project-card__title">Radiant glow</h3>
+            <p class="project-card__desc">
+              Skincare &amp; Beauty
+            </p>
+          </div>
+        </a>
+
+        <!-- Openhouse cinemas -->
+        <a href="openhouse-cinemas.html" class="project-card" id="project-openhouse-cinemas">
+          <div class="project-card__image-container">
+            <img
+              src="images/Open house/Frame 1000005228.svg"
+              alt="Openhouse cinemas Entertainment &amp; Ticketing"
+              class="project-card__image"
+              loading="lazy"
+            />
+          </div>
+          <div class="project-card__info">
+            <h3 class="project-card__title">Openhouse cinemas</h3>
+            <p class="project-card__desc">
+              Entertainment &amp; Ticketing
+            </p>
+          </div>
+        </a>
+
+        <!-- Baze air -->
+        <a href="baze-air.html" class="project-card" id="project-baze-air">
+          <div class="project-card__image-container">
+            <img
+              src="images/Baze air/Frame 86.svg"
+              alt="Baze air Airline &amp; Travel Booking"
+              class="project-card__image"
+              loading="lazy"
+            />
+          </div>
+          <div class="project-card__info">
+            <h3 class="project-card__title">Baze air</h3>
+            <p class="project-card__desc">
+              Airline &amp; Travel Booking
+            </p>
+          </div>
+        </a>
+
+        <!-- Marigo furnitures -->
+        <a href="marigo-furnitures.html" class="project-card" id="project-marigo-furnitures">
+          <div class="project-card__image-container">
+            <img
+              src="images/Marigo/Frame 87.svg"
+              alt="Marigo furnitures Modern Living &amp; Home Decor"
+              class="project-card__image"
+              loading="lazy"
+            />
+          </div>
+          <div class="project-card__info">
+            <h3 class="project-card__title">Marigo furnitures</h3>
+            <p class="project-card__desc">
+              Modern Living &amp; Home Decor
+            </p>
           </div>
         </a>
       </section>
@@ -470,26 +692,170 @@
     </footer>
 
     <script>
-      // Tab switching logic
+      // Tab switching & state persistence logic
       const tabs = document.querySelectorAll(".tabs__item");
       const contents = document.querySelectorAll(".tab-content");
 
+      function activateTab(tabId, updateState = true) {
+        if (!tabId) return;
+        const targetTab = document.querySelector(`.tabs__item[data-tab="${tabId}"]`);
+        const target = document.getElementById("content-" + tabId);
+        if (!targetTab || !target) return;
+
+        // Remove active from all tabs
+        tabs.forEach((t) => t.classList.remove("tabs__item--active"));
+        // Hide all content and pause videos in background
+        contents.forEach((c) => {
+          c.classList.remove("tab-content--active");
+          c.querySelectorAll("video").forEach((v) => v.pause());
+        });
+
+        // Activate matching tab
+        targetTab.classList.add("tabs__item--active");
+        target.classList.add("tab-content--active");
+        document.documentElement.removeAttribute("data-initial-tab");
+
+        // Play contained videos
+        target.querySelectorAll("video").forEach((v) => {
+          v.muted = true;
+          v.defaultMuted = true;
+          v.playsInline = true;
+          const p = v.play();
+          if (p !== undefined) p.catch(() => {});
+        });
+
+        // Persist tab state
+        try {
+          sessionStorage.setItem("portfolioActiveTab", tabId);
+          localStorage.setItem("portfolioActiveTab", tabId);
+        } catch (e) {}
+
+        if (updateState) {
+          try {
+            history.replaceState(null, "", "#" + tabId);
+          } catch (e) {}
+        }
+      }
+
       tabs.forEach((tab) => {
         tab.addEventListener("click", () => {
-          // Remove active from all tabs
-          tabs.forEach((t) => t.classList.remove("tabs__item--active"));
-          // Hide all content
-          contents.forEach((c) => c.classList.remove("tab-content--active"));
-
-          // Activate clicked tab
-          tab.classList.add("tabs__item--active");
-          // Show matching content
-          const target = document.getElementById("content-" + tab.dataset.tab);
-          if (target) {
-            target.classList.add("tab-content--active");
-          }
+          activateTab(tab.dataset.tab, true);
         });
       });
+
+      function getSavedTab() {
+        const hash = window.location.hash.replace(/^#/, "");
+        if (hash && document.getElementById("content-" + hash)) {
+          return hash;
+        }
+        try {
+          const session = sessionStorage.getItem("portfolioActiveTab");
+          if (session && document.getElementById("content-" + session)) {
+            return session;
+          }
+        } catch (e) {}
+        try {
+          const local = localStorage.getItem("portfolioActiveTab");
+          if (local && document.getElementById("content-" + local)) {
+            return local;
+          }
+        } catch (e) {}
+        return null;
+      }
+
+      // Initial tab restoration on page load
+      const initialTab = getSavedTab();
+      if (initialTab && initialTab !== "case-studies") {
+        activateTab(initialTab, false);
+      } else {
+        document.documentElement.removeAttribute("data-initial-tab");
+      }
+
+      // Save scroll position and active tab when clicking into a project
+      document.querySelectorAll(".project-card").forEach((card) => {
+        card.addEventListener("click", () => {
+          try {
+            const activeTab = document.querySelector(".tabs__item--active")?.dataset.tab;
+            if (activeTab) {
+              sessionStorage.setItem("portfolioActiveTab", activeTab);
+              localStorage.setItem("portfolioActiveTab", activeTab);
+            }
+            sessionStorage.setItem("portfolioScrollPos", (window.pageYOffset || document.documentElement.scrollTop).toString());
+            sessionStorage.setItem("portfolioReturnFromProject", "true");
+          } catch (e) {}
+        });
+      });
+
+      // Restore scroll position if returning from a project
+      const restoreScrollPosition = () => {
+        try {
+          const isReturn = sessionStorage.getItem("portfolioReturnFromProject");
+          const savedPos = sessionStorage.getItem("portfolioScrollPos");
+          if (isReturn && savedPos !== null) {
+            sessionStorage.removeItem("portfolioReturnFromProject");
+            const targetY = parseInt(savedPos, 10);
+            if (!isNaN(targetY)) {
+              window.scrollTo({ top: targetY, behavior: "instant" });
+              requestAnimationFrame(() => {
+                window.scrollTo({ top: targetY, behavior: "instant" });
+              });
+            }
+          }
+        } catch (e) {}
+      };
+
+      restoreScrollPosition();
+
+      // Listen for browser back / forward navigation and tab visibility
+      window.addEventListener("pageshow", () => {
+        const tab = getSavedTab();
+        if (tab) activateTab(tab, false);
+        restoreScrollPosition();
+      });
+
+      window.addEventListener("popstate", () => {
+        const tab = getSavedTab();
+        if (tab) activateTab(tab, false);
+      });
+
+      // Video autoplay and interaction handling
+      const portfolioVideos = document.querySelectorAll("video");
+      portfolioVideos.forEach((v) => {
+        v.muted = true;
+        v.defaultMuted = true;
+        v.playsInline = true;
+        v.setAttribute("muted", "");
+        v.setAttribute("playsinline", "");
+        v.setAttribute("webkit-playsinline", "");
+        v.setAttribute("preload", "auto");
+      });
+
+      // Card hover playback trigger
+      document.querySelectorAll(".project-card").forEach((card) => {
+        const v = card.querySelector("video");
+        if (v) {
+          card.addEventListener("mouseenter", () => {
+            v.muted = true;
+            const p = v.play();
+            if (p !== undefined) p.catch(() => {});
+          });
+        }
+      });
+
+      // Unlock on first user gesture
+      const unlockIndexVideos = () => {
+        const activeContent = document.querySelector(".tab-content--active");
+        if (activeContent) {
+          activeContent.querySelectorAll("video").forEach((v) => {
+            v.muted = true;
+            const p = v.play();
+            if (p !== undefined) p.catch(() => {});
+          });
+        }
+      };
+      window.addEventListener("click", unlockIndexVideos, { passive: true, once: true });
+      window.addEventListener("touchstart", unlockIndexVideos, { passive: true, once: true });
+      window.addEventListener("scroll", unlockIndexVideos, { passive: true, once: true });
 
       // Sticky nav logic
       const bio = document.getElementById("bio");
@@ -537,6 +903,112 @@
           }
           requestAnimationFrame(scroll);
         });
+      }
+
+      // Dither hover effect for avatar
+      const avatarCanvas = document.getElementById("avatar");
+      if (avatarCanvas) {
+        const ctx = avatarCanvas.getContext("2d");
+        const defaultSrc = avatarCanvas.getAttribute("data-src-default");
+        const hoverSrc = avatarCanvas.getAttribute("data-src-hover");
+        
+        let imgDefault = new Image();
+        let imgHover = new Image();
+        
+        // 4x4 Bayer matrix
+        const bayerMatrix = [
+          [ 0,  8,  2, 10],
+          [12,  4, 14,  6],
+          [ 3, 11,  1,  9],
+          [15,  7, 13,  5]
+        ];
+        
+        let ditherProgress = 0;
+        let ditherAnimationId = null;
+        let imagesLoaded = 0;
+        
+        const renderDither = () => {
+          if (imagesLoaded < 2) return;
+          
+          const w = avatarCanvas.width;
+          const h = avatarCanvas.height;
+          
+          ctx.clearRect(0, 0, w, h);
+          
+          // Draw default image
+          ctx.drawImage(imgDefault, 0, 0, w, h);
+          
+          if (ditherProgress > 0) {
+            // Draw hover image onto offscreen canvas
+            const offCanvas = document.createElement("canvas");
+            offCanvas.width = w;
+            offCanvas.height = h;
+            const offCtx = offCanvas.getContext("2d");
+            offCtx.drawImage(imgHover, 0, 0, w, h);
+            
+            const hoverData = offCtx.getImageData(0, 0, w, h);
+            const targetData = ctx.getImageData(0, 0, w, h);
+            
+            // Threshold based on progress (0 to 1)
+            const threshold = ditherProgress * 17; // 17 because bayer matrix is 0-15
+            
+            for (let y = 0; y < h; y++) {
+              for (let x = 0; x < w; x++) {
+                // Chunk size of 2 for a slightly chunkier retro dither look (retina screens)
+                const bayerY = Math.floor(y / 2) % 4;
+                const bayerX = Math.floor(x / 2) % 4;
+                const bayerValue = bayerMatrix[bayerY][bayerX];
+                
+                if (bayerValue < threshold) {
+                  const idx = (y * w + x) * 4;
+                  const alphaHover = hoverData.data[idx + 3] / 255;
+                  
+                  if (alphaHover > 0) {
+                    const alphaBase = targetData.data[idx + 3] / 255;
+                    const outAlpha = alphaHover + alphaBase * (1 - alphaHover);
+                    
+                    targetData.data[idx] = (hoverData.data[idx] * alphaHover + targetData.data[idx] * alphaBase * (1 - alphaHover)) / outAlpha;
+                    targetData.data[idx + 1] = (hoverData.data[idx + 1] * alphaHover + targetData.data[idx + 1] * alphaBase * (1 - alphaHover)) / outAlpha;
+                    targetData.data[idx + 2] = (hoverData.data[idx + 2] * alphaHover + targetData.data[idx + 2] * alphaBase * (1 - alphaHover)) / outAlpha;
+                    targetData.data[idx + 3] = outAlpha * 255;
+                  }
+                }
+              }
+            }
+            ctx.putImageData(targetData, 0, 0);
+          }
+        };
+
+        const checkLoad = () => {
+          imagesLoaded++;
+          if (imagesLoaded === 2) renderDither();
+        };
+
+        imgDefault.onload = checkLoad;
+        imgHover.onload = checkLoad;
+        
+        imgDefault.src = defaultSrc;
+        imgHover.src = hoverSrc;
+        
+        const animateDither = (target) => {
+          if (ditherAnimationId) cancelAnimationFrame(ditherAnimationId);
+          
+          const step = () => {
+            const diff = target - ditherProgress;
+            if (Math.abs(diff) < 0.01) {
+              ditherProgress = target;
+              renderDither();
+              return;
+            }
+            ditherProgress += diff * 0.15; // Animation speed
+            renderDither();
+            ditherAnimationId = requestAnimationFrame(step);
+          };
+          step();
+        };
+        
+        avatarCanvas.addEventListener("mouseenter", () => animateDither(1));
+        avatarCanvas.addEventListener("mouseleave", () => animateDither(0));
       }
     </script>
   </body>

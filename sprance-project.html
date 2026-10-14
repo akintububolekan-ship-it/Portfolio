@@ -312,48 +312,38 @@
         </div>
       </div>
 
+      <!-- Paper Wireframe Image -->
+      <img
+        src="images/UI/Sprance Paper wireframe.svg"
+        alt="Sprance Paper Wireframes"
+        class="project-image"
+      />
+
       <!-- 10. User Flow -->
       <div class="project-content">
-        <div class="project-text">
-          <div class="section-header">
-            <h2>User Flow</h2>
-            <button
-              class="section-header__action"
-              onclick="toggleSection('user-flow-content', this)"
+        <div class="project-text project-text--has-image">
+          <h2>User Flow</h2>
+          <p>
+            Flow 1 to start a race<br />
+            Flow 2 to find other runners around you
+          </p>
+          <p>
+            <a
+              href="https://www.figma.com/board/gy9ofwmEFy2Th2CnqPnkZR/Untitled?node-id=7-2271&amp;t=ymyrgd06mrBK1gdV-11"
+              target="_blank"
+              rel="noopener noreferrer"
+              >View on figma</a
             >
-              Close
-            </button>
-          </div>
-          <div id="user-flow-content">
-            <ul class="ia-list">
-              <li>
-                <strong>Flow 1: The Active Tracking Loop (Starting &amp; Saving a Run)</strong>
-                <p><strong>Goal:</strong> To seamlessly start a run, track live metrics without distraction, and log contextual notes upon completion.</p>
-                <p>This flow highlights the frictionless, high-visibility UI designed for mid-stride use.</p>
-                <ul>
-                  <li><strong>Pre-Run State (Home/Map View) &rarr;</strong> User opens the tracking tab. The UI displays a clear map and zeroed metrics (Distance: 0, Time: 00:00). User taps Start.</li>
-                  <li><strong>Countdown Sequence (Set! &rarr; Go!) &rarr;</strong> A massive, high-contrast overlay takes over the screen. UX Rationale: This prevents accidental double-taps and gives the user time to pocket their phone before the timer starts.</li>
-                  <li><strong>Active Tracking State &rarr;</strong> The UI transitions to the live map with a blue GPS route line. Massive typography displays active distance, pace, and calories. User taps End Race when finished.</li>
-                  <li><strong>Post-Race Summary &rarr;</strong> A card slides up showing the completed route map, final distance, and time.</li>
-                  <li><strong>Contextual Logging &rarr;</strong> User types qualitative data (e.g., &ldquo;Felt great, perfect weather&rdquo;) into the Notes input field, then taps Save Details. Data is immediately pushed to their Race History.</li>
-                </ul>
-              </li>
-              <li>
-                <strong>Flow 2: Social Discovery (Meeting a Running Companion)</strong>
-                <p><strong>Goal:</strong> To find and connect with local runners who share similar routes and paces to build a community.</p>
-                <p>This flow highlights the unique social value proposition that separates this app from standard data trackers.</p>
-                <ul>
-                  <li><strong>Dashboard Hub &rarr;</strong> User scrolls down the main Home screen to the &ldquo;Activities&rdquo; section and taps the Around You icon.</li>
-                  <li><strong>Discovery Onboarding &rarr;</strong> User lands on the immersive &ldquo;Meet people around you&rdquo; screen, explaining the value of finding runners on the same route. User taps Get Started.</li>
-                  <li><strong>Algorithmic Matching &rarr;</strong> (Background process) The app analyzes the user's historical route data from their Race History to find overlapping local runners.</li>
-                  <li><strong>Connection Request Overlay &rarr;</strong> User receives an in-app pop-up notification: &ldquo;Ola runs along your route &amp; wants to be your running companion.&rdquo;</li>
-                  <li><strong>Action Taken &rarr;</strong> User taps Accept. Ola is now added to their active Friends list on the dashboard, and they can both compete on the local Leaderboard.</li>
-                </ul>
-              </li>
-            </ul>
-          </div>
+          </p>
         </div>
       </div>
+
+      <!-- User Flow Image -->
+      <img
+        src="images/UI/Sprance IA.svg"
+        alt="Sprance User Flow"
+        class="project-image"
+      />
 
       <!-- 11. The Final Design -->
       <div class="project-content">
@@ -504,5 +494,6 @@
         }
       }
     </script>
+    <script src="project-back.js"></script>
   </body>
 </html>

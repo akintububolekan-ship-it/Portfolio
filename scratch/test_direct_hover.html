@@ -1,0 +1,709 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ola — Product & Interaction Designer</title>
+    <meta
+      name="description"
+      content="Ola is a Product & Interaction Designer currently building & leading design at Haystack, an AI-powered CRM platform."
+    />
+    <meta property="og:title" content="Ola — Product & Interaction Designer" />
+    <meta
+      property="og:description"
+      content="Product & Interaction Designer currently leading design at Haystack, an AI-powered CRM platform."
+    />
+    <meta property="og:type" content="website" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <main class="portfolio" id="portfolio">
+      <!-- Avatar with Dither Hover Transition -->
+      <div class="avatar-wrapper" id="avatar-container">
+        <img
+          src="images/Profile image.png"
+          alt="Portrait photo of Ola"
+          class="avatar avatar--img"
+          id="avatar-img"
+          width="64"
+          height="64"
+        />
+        <canvas
+          class="avatar avatar--canvas"
+          id="avatar-canvas"
+          width="128"
+          height="128"
+          role="img"
+          aria-label="Portrait photo of Ola"
+        ></canvas>
+      </div>
+
+      <!-- Bio -->
+      <section class="bio" id="bio">
+        <p class="bio__intro">
+          Hi, I'm Ola. A <strong>Product &amp; interaction designer</strong>.
+          Currently leading design at <strong>Haystack</strong>, an AI powered
+          CRM platform.
+        </p>
+        <p class="bio__details">
+          Previously, I led UI/UX initiatives as the Lead Product Designer &amp;
+          Lead website manager at
+          <a href="#" id="link-rovingheights">Rovingheights</a>,
+          <a href="#" id="link-nedsis">Nedsis</a> and
+          <a href="#" id="link-careerminds">Careerminds</a>, where I designed
+          socio-commerce systems and user-centric payment solutions. On the
+          side, I advise on complex interface logic and design systems for
+          global companies like
+          <a href="#" id="link-careerminds-2">Careerminds</a> and
+          <a href="#" id="link-nauta">Nauta AI</a>.
+        </p>
+        <p class="bio__social">
+          You can find me on
+          <a href="#" class="social-chip" id="link-x" data-tool="x"
+            ><svg
+              class="tool-icon"
+              viewBox="0 0 1200 1227"
+              width="11"
+              height="11"
+              fill="currentColor"
+            >
+              <path
+                d="M714.163 519.284 1160.89 0h-105.86L667.137 450.887 357.328 0H0l468.492 681.821L0 1226.37h105.866l409.625-476.152 327.181 476.152H1200L714.137 519.284h.026ZM569.165 687.828l-47.468-67.894-377.686-540.24h162.604l304.797 435.991 47.468 67.894 396.2 566.721H892.476L569.165 687.854v-.026Z"
+              /></svg
+            ><span>X</span></a
+          >,
+          <a href="#" class="social-chip" id="link-github" data-tool="github"
+            ><svg
+              class="tool-icon"
+              viewBox="0 0 24 24"
+              width="14"
+              height="14"
+              fill="currentColor"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"
+              /></svg
+            ><span>GitHub</span></a
+          >, and
+          <a
+            href="#"
+            class="social-chip"
+            id="link-instagram"
+            data-tool="instagram"
+            ><svg
+              class="tool-icon"
+              viewBox="0 0 24 24"
+              width="13"
+              height="13"
+              fill="none"
+            >
+              <defs>
+                <radialGradient id="ig-grad" cx="20%" cy="105%" r="130%">
+                  <stop offset="0%" stop-color="#fdf497" />
+                  <stop offset="5%" stop-color="#fdf497" />
+                  <stop offset="45%" stop-color="#fd5949" />
+                  <stop offset="60%" stop-color="#d6249f" />
+                  <stop offset="90%" stop-color="#285AEB" />
+                </radialGradient>
+              </defs>
+              <rect
+                x="2"
+                y="2"
+                width="20"
+                height="20"
+                rx="5.5"
+                stroke="url(#ig-grad)"
+                stroke-width="2.2"
+              />
+              <circle
+                cx="12"
+                cy="12"
+                r="4.2"
+                stroke="url(#ig-grad)"
+                stroke-width="2.2"
+              />
+              <circle cx="17.3" cy="6.7" r="1.3" fill="url(#ig-grad)" /></svg
+            ><span>Instagram</span></a
+          >
+        </p>
+        <p class="bio__reach">
+          Or reach me via
+          <a
+            href="mailto:Akintububolekan@gmail.com"
+            class="social-chip"
+            id="link-email"
+            data-tool="gmail"
+          >
+            <svg
+              class="tool-icon"
+              viewBox="0 0 192 192"
+              width="14"
+              height="14"
+              fill="none"
+            >
+              <path
+                fill="url(#gmail-a)"
+                d="M146 44h38v110c0 6.627-5.373 12-12 12h-20a6 6 0 0 1-6-6z"
+              />
+              <path
+                fill="#fc413d"
+                d="M46 44H8v110c0 6.627 5.373 12 12 12h20a6 6 0 0 0 6-6z"
+              />
+              <path
+                fill="url(#gmail-b)"
+                d="M39.226 30.456c-8.033-6.752-20.018-5.714-26.77 2.319-6.752 8.032-5.714 20.017 2.319 26.77l76.078 63.949a8 8 0 0 0 10.295 0l76.078-63.95c8.032-6.752 9.07-18.737 2.318-26.77-6.752-8.032-18.737-9.07-26.769-2.318L96 78.18z"
+              />
+              <defs>
+                <linearGradient
+                  id="gmail-a"
+                  x1="165"
+                  x2="165"
+                  y1="44"
+                  y2="166"
+                  gradientUnits="userSpaceOnUse"
+                >
+                  <stop stop-color="#60d673" />
+                  <stop offset=".17" stop-color="#42c868" />
+                  <stop offset=".39" stop-color="#0ebc5f" />
+                  <stop offset=".62" stop-color="#00a9bb" />
+                  <stop offset=".86" stop-color="#3c90ff" />
+                  <stop offset="1" stop-color="#3186ff" />
+                </linearGradient>
+                <linearGradient
+                  id="gmail-b"
+                  x1="8"
+                  x2="184"
+                  y1="46.13"
+                  y2="46.13"
+                  gradientUnits="userSpaceOnUse"
+                >
+                  <stop offset=".08" stop-color="#ff63a0" />
+                  <stop offset=".3" stop-color="#fc413d" />
+                  <stop offset=".5" stop-color="#fc413d" />
+                  <stop offset=".65" stop-color="#fc413d" />
+                  <stop offset=".72" stop-color="#fc5c30" />
+                  <stop offset=".86" stop-color="#feb10c" />
+                  <stop offset=".91" stop-color="#fec700" />
+                  <stop offset=".96" stop-color="#ffdb0f" />
+                </linearGradient>
+              </defs>
+            </svg>
+            <span>Email</span>
+          </a>
+        </p>
+      </section>
+
+      <!-- Hatched Divider (sahilcodex style) -->
+      <div class="hatched-divider" aria-hidden="true"></div>
+
+      <!-- Tabs Area -->
+      <div class="tabs-wrapper" id="tabs-wrapper">
+        <div class="tabs-container" id="tabs-container">
+          <div class="tabs-left">
+            <img
+              src="images/Profile image.png"
+              alt="Ola"
+              class="tabs__avatar"
+              id="tabs-avatar"
+            />
+            <nav class="tabs" id="tabs" aria-label="Portfolio categories">
+              <button
+                class="tabs__item tabs__item--active"
+                data-tab="case-studies"
+                id="tab-case-studies"
+              >
+                Case studies
+              </button>
+              <button
+                class="tabs__item"
+                data-tab="motion-design"
+                id="tab-motion-design"
+              >
+                Motion design
+              </button>
+              <button
+                class="tabs__item"
+                data-tab="illustrations-character-animation"
+                id="tab-illustrations-character-animation"
+              >
+                Illustrations/character animation
+              </button>
+              <button
+                class="tabs__item"
+                data-tab="email-templates"
+                id="tab-email-templates"
+              >
+                Email templates
+              </button>
+              <button
+                class="tabs__item"
+                data-tab="website-design"
+                id="tab-website-design"
+              >
+                Website design
+              </button>
+            </nav>
+          </div>
+          <a
+            href="mailto:Akintububolekan@gmail.com"
+            class="send-mail-link"
+            id="send-mail-link"
+            >E-Mail</a
+          >
+        </div>
+      </div>
+
+      <!-- Case Studies -->
+      <section
+        class="tab-content tab-content--active"
+        id="content-case-studies"
+        aria-label="Case studies projects"
+      >
+        <!-- IFA ai -->
+        <a href="ifa.html" class="project-card" id="project-ifa">
+          <div class="project-card__image-container">
+            <img
+              src="images/Ifa Ai display picture.png"
+              alt="IFA ai mobile AI assistant"
+              class="project-card__image"
+              loading="lazy"
+            />
+          </div>
+          <div class="project-card__info">
+            <h3 class="project-card__title">IFA ai</h3>
+            <p class="project-card__desc">
+              A next-generation mobile AI assistant
+            </p>
+          </div>
+        </a>
+
+        <!-- Bron Crypto -->
+        <a href="bron-project.html" class="project-card" id="project-bron">
+          <div class="project-card__image-container">
+            <img
+              src="images/Bron Crypto display picture.png"
+              alt="Bron Crypto platform"
+              class="project-card__image"
+              loading="lazy"
+            />
+          </div>
+          <div class="project-card__info">
+            <h3 class="project-card__title">Bron Crypto</h3>
+            <p class="project-card__desc">
+              An Ethereum powered crypto platform
+            </p>
+          </div>
+        </a>
+
+        <!-- Haystack -->
+        <a href="project.html" class="project-card" id="project-haystack">
+          <div class="project-card__image-container">
+            <img
+              src="images/Haystack display picture.png"
+              alt="Haystack CRM platform"
+              class="project-card__image"
+              loading="lazy"
+            />
+          </div>
+          <div class="project-card__info">
+            <h3 class="project-card__title">Haystack</h3>
+            <p class="project-card__desc">An ai powered CRM platform</p>
+          </div>
+        </a>
+
+        <!-- RIHUB -->
+        <a href="rihub.html" class="project-card" id="project-rihub">
+          <div class="project-card__image-container">
+            <img
+              src="images/Rihub display picture.png"
+              alt="RIHUB loan recovery financial tool"
+              class="project-card__image"
+              loading="lazy"
+            />
+          </div>
+          <div class="project-card__info">
+            <h3 class="project-card__title">RIHUB</h3>
+            <p class="project-card__desc">
+              An ai powered loan recovery financial tool
+            </p>
+          </div>
+        </a>
+
+        <!-- Articulate -->
+        <a href="articulate.html" class="project-card" id="project-articulate">
+          <div class="project-card__image-container">
+            <img
+              src="images/Articulate homescreen.png"
+              alt="Articulate Speech Rehearsal Studio"
+              class="project-card__image"
+              loading="lazy"
+            />
+          </div>
+          <div class="project-card__info">
+            <h3 class="project-card__title">Articulate</h3>
+            <p class="project-card__desc">A Private Speech Rehearsal Studio</p>
+          </div>
+        </a>
+
+        <!-- Sprance -->
+        <a href="sprance.html" class="project-card" id="project-sprance">
+          <div class="project-card__image-container">
+            <img
+              src="images/Sprance homescreen.png"
+              alt="Sprance run-tracking app"
+              class="project-card__image"
+              loading="lazy"
+            />
+          </div>
+          <div class="project-card__info">
+            <h3 class="project-card__title">Sprance</h3>
+            <p class="project-card__desc">
+              A social fitness and run-tracking app.
+            </p>
+          </div>
+        </a>
+      </section>
+
+      <!-- Motion Design -->
+      <section
+        class="tab-content"
+        id="content-motion-design"
+        aria-label="Motion design projects"
+      >
+        <a href="#" class="project-card">
+          <div class="project-card__image-container">
+            <img
+              src="images/project-3.png"
+              alt="Motion design"
+              class="project-card__image"
+              loading="lazy"
+            />
+          </div>
+          <div class="project-card__info">
+            <h3 class="project-card__title">Motion design</h3>
+          </div>
+        </a>
+      </section>
+
+      <!-- Illustrations / Character Animation -->
+      <section
+        class="tab-content"
+        id="content-illustrations-character-animation"
+        aria-label="Illustrations and character animation projects"
+      >
+        <!-- Character animations -->
+        <a href="#" class="project-card">
+          <div class="project-card__image-container">
+            <img
+              src="images/project-1.png"
+              alt="Character animations"
+              class="project-card__image"
+              loading="lazy"
+            />
+          </div>
+          <div class="project-card__info">
+            <h3 class="project-card__title">Character animations</h3>
+          </div>
+        </a>
+
+        <!-- Illustrations -->
+        <a href="#" class="project-card">
+          <div class="project-card__image-container">
+            <img
+              src="images/project-2.png"
+              alt="Illustrations"
+              class="project-card__image"
+              loading="lazy"
+            />
+          </div>
+          <div class="project-card__info">
+            <h3 class="project-card__title">Illustrations</h3>
+          </div>
+        </a>
+      </section>
+
+      <!-- Email Templates -->
+      <section
+        class="tab-content"
+        id="content-email-templates"
+        aria-label="Email templates projects"
+      >
+        <a href="#" class="project-card">
+          <div class="project-card__image-container">
+            <img
+              src="images/project-4.png"
+              alt="Email templates"
+              class="project-card__image"
+              loading="lazy"
+            />
+          </div>
+          <div class="project-card__info">
+            <h3 class="project-card__title">Email templates</h3>
+          </div>
+        </a>
+      </section>
+
+      <!-- Website Design -->
+      <section
+        class="tab-content"
+        id="content-website-design"
+        aria-label="Website design projects"
+      >
+        <a href="#" class="project-card">
+          <div class="project-card__image-container">
+            <img
+              src="images/project-3.png"
+              alt="Website design"
+              class="project-card__image"
+              loading="lazy"
+            />
+          </div>
+          <div class="project-card__info">
+            <h3 class="project-card__title">Website design</h3>
+          </div>
+        </a>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer" id="footer">
+      <div class="footer__divider"></div>
+      <p class="footer__text">© 2026 Ola. All rights reserved.</p>
+    </footer>
+
+    <script>
+      // Tab switching logic
+      const tabs = document.querySelectorAll(".tabs__item");
+      const contents = document.querySelectorAll(".tab-content");
+
+      tabs.forEach((tab) => {
+        tab.addEventListener("click", () => {
+          // Remove active from all tabs
+          tabs.forEach((t) => t.classList.remove("tabs__item--active"));
+          // Hide all content
+          contents.forEach((c) => c.classList.remove("tab-content--active"));
+
+          // Activate clicked tab
+          tab.classList.add("tabs__item--active");
+          // Show matching content
+          const target = document.getElementById("content-" + tab.dataset.tab);
+          if (target) {
+            target.classList.add("tab-content--active");
+          }
+        });
+      });
+
+      // Sticky nav logic
+      const bio = document.getElementById("bio");
+      const tabsWrapper = document.getElementById("tabs-wrapper");
+
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.boundingClientRect.bottom < 0) {
+              tabsWrapper.classList.add("is-sticky");
+            } else {
+              tabsWrapper.classList.remove("is-sticky");
+            }
+          });
+        },
+        { threshold: 0 },
+      );
+
+      if (bio) observer.observe(bio);
+
+      // Smooth scroll back to top in exactly 0.5s
+      const tabsAvatar = document.getElementById("tabs-avatar");
+      if (tabsAvatar) {
+        tabsAvatar.style.cursor = "pointer";
+        tabsAvatar.addEventListener("click", () => {
+          const start = window.pageYOffset;
+          if (start === 0) return;
+
+          document.documentElement.style.scrollBehavior = "auto";
+          const duration = 500;
+          const startTime = performance.now();
+
+          function scroll(currentTime) {
+            const timeElapsed = currentTime - startTime;
+            const progress = Math.min(timeElapsed / duration, 1);
+            // easeOutQuad easing
+            const ease = progress * (2 - progress);
+            window.scrollTo(0, start * (1 - ease));
+
+            if (timeElapsed < duration) {
+              requestAnimationFrame(scroll);
+            } else {
+              document.documentElement.style.scrollBehavior = "";
+            }
+          }
+          requestAnimationFrame(scroll);
+        });
+      }
+
+      // Dither transition on avatar hover
+      (function initAvatarDither() {
+        const container = document.getElementById("avatar-container");
+        const canvas = document.getElementById("avatar-canvas");
+        const fallbackImg = document.getElementById("avatar-img");
+        if (!canvas || !canvas.getContext) return;
+
+        const ctx = canvas.getContext("2d");
+        const size = canvas.width; // 128
+
+        // 8x8 Bayer matrix for ordered dithering
+        const bayer8 = [
+           0, 32,  8, 40,  2, 34, 10, 42,
+          48, 16, 56, 24, 50, 18, 58, 26,
+          12, 44,  4, 36, 14, 46,  6, 38,
+          60, 28, 52, 20, 62, 30, 54, 22,
+           3, 35, 11, 43,  1, 33,  9, 41,
+          51, 19, 59, 27, 49, 17, 57, 25,
+          15, 47,  7, 39, 13, 45,  5, 37,
+          63, 31, 55, 23, 61, 29, 53, 21
+        ];
+
+        const BLOCK_SIZE = 2;
+        const NUM_MASKS = 32;
+        const masks = [];
+
+        for (let step = 0; step <= NUM_MASKS; step++) {
+          const threshold = step / NUM_MASKS;
+          const mCanvas = document.createElement("canvas");
+          mCanvas.width = size;
+          mCanvas.height = size;
+          const mCtx = mCanvas.getContext("2d");
+
+          if (step > 0) {
+            mCtx.fillStyle = "#000000";
+            for (let y = 0; y < size; y += BLOCK_SIZE) {
+              const by = Math.floor(y / BLOCK_SIZE) % 8;
+              for (let x = 0; x < size; x += BLOCK_SIZE) {
+                const bx = Math.floor(x / BLOCK_SIZE) % 8;
+                const val = bayer8[by * 8 + bx] / 64;
+                if (threshold >= val) {
+                  mCtx.fillRect(x, y, BLOCK_SIZE, BLOCK_SIZE);
+                }
+              }
+            }
+          }
+          masks.push(mCanvas);
+        }
+
+        const tempCanvas = document.createElement("canvas");
+        tempCanvas.width = size;
+        tempCanvas.height = size;
+        const tempCtx = tempCanvas.getContext("2d");
+
+        const img1 = new Image();
+        const img2 = new Image();
+        let loadedCount = 0;
+
+        function render(progress) {
+          ctx.save();
+          ctx.clearRect(0, 0, size, size);
+
+          // Circular clipping
+          ctx.beginPath();
+          ctx.arc(size / 2, size / 2, size / 2, 0, Math.PI * 2);
+          ctx.clip();
+
+          // 1. Draw base photo
+          ctx.drawImage(img1, 0, 0, size, size);
+
+          // 2. Composite dithered SVG
+          if (progress > 0) {
+            const maskIdx = Math.min(NUM_MASKS, Math.max(0, Math.round(progress * NUM_MASKS)));
+            tempCtx.clearRect(0, 0, size, size);
+            tempCtx.drawImage(img2, 0, 0, size, size);
+            tempCtx.globalCompositeOperation = "destination-in";
+            tempCtx.drawImage(masks[maskIdx], 0, 0);
+
+            ctx.drawImage(tempCanvas, 0, 0);
+          }
+          ctx.restore();
+        }
+
+        let currentProgress = 0;
+        let targetProgress = 0;
+        let animId = null;
+        const DURATION = 320;
+        let startTime = null;
+        let startProgress = 0;
+
+        function animate(timestamp) {
+          if (!startTime) startTime = timestamp;
+          const elapsed = timestamp - startTime;
+          const t = Math.min(1, elapsed / DURATION);
+          // Ease-out quad
+          const ease = t * (2 - t);
+          currentProgress = startProgress + (targetProgress - startProgress) * ease;
+          render(currentProgress);
+
+          if (t < 1) {
+            animId = requestAnimationFrame(animate);
+          } else {
+            currentProgress = targetProgress;
+            render(currentProgress);
+            animId = null;
+          }
+        }
+
+        function setTarget(target) {
+          if (targetProgress === target) return;
+          targetProgress = target;
+          startProgress = currentProgress;
+          startTime = null;
+          if (!animId) {
+            animId = requestAnimationFrame(animate);
+          }
+        }
+
+        function onReady() {
+          loadedCount++;
+          if (loadedCount < 2) return;
+          render(0);
+          if (fallbackImg) {
+            fallbackImg.style.transition = "opacity 0.2s ease";
+            fallbackImg.style.opacity = "0";
+          }
+
+          const trigger = container || canvas;
+          trigger.addEventListener("mouseenter", () => setTarget(1));
+          trigger.addEventListener("mouseleave", () => setTarget(0));
+          trigger.addEventListener("touchstart", () => {
+            setTarget(targetProgress === 0 ? 1 : 0);
+          }, { passive: true });
+        }
+
+        img1.onload = onReady;
+        img2.onload = onReady;
+        img1.src = "images/Profile image.png";
+        img2.src = "images/Image (Profile).svg";
+      })();
+    </script>
+  
+<script>
+window.addEventListener('load', () => {
+  setTimeout(() => {
+    const c = document.getElementById('avatar-container');
+    if (c) {
+      c.dispatchEvent(new MouseEvent('mouseenter'));
+      setTimeout(() => {
+        document.body.setAttribute('data-hovered', 'true');
+      }, 500);
+    }
+  }, 200);
+});
+</script>
+</body>
+
+</html>

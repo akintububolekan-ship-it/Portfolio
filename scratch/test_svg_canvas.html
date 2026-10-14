@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<body>
+<canvas id="c" width="116" height="116"></canvas>
+<div id="result">Testing...</div>
+<script>
+const canvas = document.getElementById('c');
+const ctx = canvas.getContext('2d');
+const img = new Image();
+img.onload = () => {
+  try {
+    ctx.drawImage(img, 0, 0, 116, 116);
+    const data = ctx.getImageData(0, 0, 116, 116);
+    document.getElementById('result').innerText = 'SUCCESS: ' + data.data.length + ' bytes';
+  } catch (err) {
+    document.getElementById('result').innerText = 'ERROR: ' + err.message;
+  }
+};
+img.onerror = (e) => {
+  document.getElementById('result').innerText = 'LOAD ERROR';
+};
+img.src = '../images/Image (Profile).svg';
+</script>
+</body>
+</html>

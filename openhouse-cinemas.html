@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Open House Cinemas | Entertainment &amp; Ticketing — Ola</title>
+    <meta
+      name="description"
+      content="Email design and visual campaign strategy for Open House Cinemas, featuring atmospheric dark mode showtimes, featured releases, and VIP premiere booking spotlights."
+    />
+    <link rel="stylesheet" href="index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Header / Navigation back -->
+    <header class="project-header">
+      <div class="project-header__inner">
+        <a href="index.html" class="project-header__back">
+          <svg
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M19 12H5M5 12L12 19M5 12L12 5"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+          Back
+        </a>
+      </div>
+    </header>
+
+    <main class="project-page">
+      <!-- Top section: Logo + Title + Meta -->
+      <div class="project-content">
+        <div class="project-top">
+          <img
+            src="images/Open house/Haystack Logo.svg"
+            alt="Open House Cinemas Logo"
+            class="project-logo"
+          />
+        </div>
+
+        <h1 class="project-title">
+          Open House Cinemas | Entertainment &amp; Ticketing
+        </h1>
+
+        <div class="project-meta">
+          <div class="project-meta__col">
+            <span class="project-meta__label">Category</span>
+            <span class="project-meta__value">Entertainment</span>
+          </div>
+          <div class="project-meta__col">
+            <span class="project-meta__label">Year</span>
+            <span class="project-meta__value">2026</span>
+          </div>
+          <div class="project-meta__col">
+            <span class="project-meta__label">My role</span>
+            <span class="project-meta__value">Email designer</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Design Strategy -->
+      <div class="project-content">
+        <div class="project-text project-text--has-image">
+          <h2>Design strategy</h2>
+          <p>
+            Atmospheric dark mode reflecting the theatrical moviegoing experience.
+          </p>
+        </div>
+      </div>
+
+      <!-- Hero Image Mockup -->
+      <img
+        src="images/Open house/Frame 1000005228.svg"
+        alt="Open House Cinemas Hero Mockup"
+        class="project-image project-image--hero"
+        width="640"
+        height="428"
+      />
+
+      <!-- Templates Designed -->
+      <div class="project-content">
+        <div class="project-text">
+          <h2>Templates designed</h2>
+          <ul>
+            <li>
+              <strong>Weekend Showtimes &amp; Featured Releases:</strong> Clear
+              cinema branding, ticket purchase buttons, and movie showtimes.
+            </li>
+            <li>
+              <strong>Special Premiere Spotlight (Michael):</strong> VIP/screen-specific
+              ticket booking, rating reviews, and viewer testimonials with star
+              ratings to drive urgent bookings.
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Final Design Header -->
+      <div class="project-content">
+        <div class="project-text project-text--has-image">
+          <div class="section-header">
+            <h2>Final Design</h2>
+            <button
+              class="section-header__action"
+              onclick="toggleSection('final-design-content', this)"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Final Design Content Collapsible -->
+      <div id="final-design-content">
+        <div class="project-content">
+          <div class="project-text project-text--has-image">
+            <p>Here’s the final design</p>
+          </div>
+        </div>
+
+        <div class="project-image-group">
+          <!-- Mockup Angle 1 -->
+          <img
+            src="images/Open house/Frame 1000005228.svg"
+            alt="Open House Cinemas Product Showcase Angle"
+            class="project-image"
+            width="640"
+            height="428"
+          />
+
+          <!-- Mockup Perspective 2 -->
+          <img
+            src="images/Open house/Frame 1000005229.svg"
+            alt="Open House Cinemas Michael Premiere Showcase Perspective"
+            class="project-image"
+            width="640"
+            height="428"
+          />
+
+          <!-- Email Template 1: Weekend Showtimes & Featured Releases -->
+          <img
+            src="images/Open house/Container.svg"
+            alt="Open House Cinemas Weekend Showtimes &amp; Featured Releases Email Template"
+            class="project-image"
+            width="640"
+            height="6587"
+          />
+
+          <!-- Email Template 2: Special Premiere Spotlight (Michael) -->
+          <img
+            src="images/Open house/Container-1.svg"
+            alt="Open House Cinemas Special Premiere Spotlight Email Template"
+            class="project-image"
+            width="640"
+            height="5227"
+          />
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer" id="footer">
+      <div class="footer__divider"></div>
+      <p class="footer__text">&copy; 2026 Ola. All rights reserved.</p>
+    </footer>
+
+    <script>
+      function toggleSection(id, btn) {
+        const el = document.getElementById(id);
+        if (!el) return;
+        if (el.style.display === "none") {
+          el.style.display = "";
+          btn.textContent = "Close";
+        } else {
+          el.style.display = "none";
+          btn.textContent = "View";
+        }
+      }
+    </script>
+    <script src="project-back.js"></script>
+  </body>
+</html>

@@ -214,7 +214,7 @@
       <img
         src="images/UI/Frame 1000005340.svg"
         alt="Competitor's Analysis Matrix"
-        class="project-image"
+        class="project-image project-image--compact"
       />
 
       <!-- 7. User Personas -->
@@ -239,16 +239,18 @@
       </div>
 
       <!-- User Persona Cards -->
-      <img
-        src="images/UI/Frame 1000005348.svg"
-        alt="User Persona - David, 34-year-old Architect (The Cautious Parent)"
-        class="project-image"
-      />
-      <img
-        src="images/UI/Frame 564.svg"
-        alt="User Persona - Maya, 29-year-old Banking Manager (The Emotional Sounding-Board)"
-        class="project-image"
-      />
+      <div class="project-image-group project-image-group--compact">
+        <img
+          src="images/UI/Frame 1000005348.svg"
+          alt="User Persona - David, 34-year-old Architect (The Cautious Parent)"
+          class="project-image"
+        />
+        <img
+          src="UI/Frame 564.svg"
+          alt="User Persona - Maya, 29-year-old Banking Manager (The Emotional Sounding-Board)"
+          class="project-image"
+        />
+      </div>
 
       <!-- 8. User Needs Mapping -->
       <div class="project-content">
@@ -277,7 +279,7 @@
       <img
         src="images/UI/user-needs-mapping.svg"
         alt="User Needs Mapping Matrix"
-        class="project-image"
+        class="project-image project-image--compact"
       />
 
       <!-- 9. User Journey Map -->
@@ -289,10 +291,10 @@
               class="section-header__action"
               onclick="toggleSection('journey-map-content', this)"
             >
-              View
+              Close
             </button>
           </div>
-          <div id="journey-map-content" style="display: none">
+          <div id="journey-map-content">
             <p>
               This map illustrates Amara's journey as she transitions from an
               overwhelming day into a relaxed evening, using IFA AI to process
@@ -310,35 +312,36 @@
       <img
         src="images/UI/Recreate existing design.svg"
         alt="Customer Journey Map - IFA AI Voice Companion Experience"
-        class="project-image"
+        class="project-image project-image--compact"
       />
 
       <!-- 10. The Solution -->
       <div class="project-content">
-        <div class="project-text">
+        <div class="project-text project-text--compact">
           <div class="section-header">
             <h2>The Solution</h2>
             <button
               class="section-header__action"
               onclick="toggleSection('solution-content', this)"
             >
-              View
+              Close
             </button>
           </div>
-          <p>
-            Our solution is to reimagine prompt engineering by replacing manual
-            text inputs with a contextual, mode-driven UI. Instead of making the
-            user do the heavy lifting, the system configures tone, voice style,
-            multi-modal tools, and safety guardrails automatically behind the
-            scenes.
-          </p>
-          <div id="solution-content" style="display: none"></div>
+          <div id="solution-content">
+            <p>
+              Our solution is to reimagine prompt engineering by replacing manual
+              text inputs with a contextual, mode-driven UI. Instead of making the
+              user do the heavy lifting, the system configures tone, voice style,
+              multi-modal tools, and safety guardrails automatically behind the
+              scenes.
+            </p>
+          </div>
         </div>
       </div>
 
       <!-- 11. Paper Wireframes -->
       <div class="project-content">
-        <div class="project-text">
+        <div class="project-text project-text--has-image">
           <h2>Paper Wireframes</h2>
           <p>
             To begin the design stage, I designed, brainstormed, added and
@@ -349,130 +352,36 @@
         </div>
       </div>
 
+      <!-- Paper Wireframes Image -->
+      <img
+        src="images/UI/Ifa Paper wireframe.svg"
+        alt="IFA AI Paper Wireframes"
+        class="project-image"
+      />
+
+
       <!-- 12. Information Architecture -->
       <div class="project-content">
-        <div class="project-text">
+        <div class="project-text project-text--has-image">
           <h2>Information Architecture</h2>
-          <ul class="ia-list">
-            <li>
-              <strong>1. Onboarding &amp; Authentication Flow</strong>
-              <p>The linear journey a new user takes to access the app.</p>
-              <ul>
-                <li>[ Splash Screen (IFA Logo) ]</li>
-                <li>&darr;</li>
-                <li>[ Social Auth (Sign in with Google / Apple) ]</li>
-                <li>&darr;</li>
-                <li>
-                  [ Enter OTP Code (Numeric Keypad) ] &rarr; [ Verification
-                  Success Modal ]
-                </li>
-                <li>&darr;</li>
-                <li>
-                  [ Paywall (IFA Upperclass Feature Breakdown) ] &rarr; (User
-                  Subscribes or Skips)
-                </li>
-                <li>&darr;</li>
-                <li>(Enters Core Workspace)</li>
-              </ul>
-            </li>
-            <li>
-              <strong>2. Core Workspace &amp; Chat Flow</strong>
-              <p>
-                The default home state where standard text and multi-modal
-                prompting happen.
-              </p>
-              <ul>
-                <li>[ Main Chat Interface (Empty State) ]</li>
-                <li>&darr; (User types a prompt or taps attachment)</li>
-                <li>
-                  Branch A: &rarr; [ Attachment Drawer (Camera / Gallery / Docs)
-                  ]
-                </li>
-                <li>Branch B: &darr; [ AI Processing / Loading ]</li>
-                <li>&darr;</li>
-                <li>[ Rich Text AI Response (Structured Output) ]</li>
-                <li>&darr; (User taps menu icon)</li>
-                <li>
-                  [ Navigation Drawer ] &rarr; [ History Feed / Saved Chats ] OR
-                  [ Start New Chat ]
-                </li>
-              </ul>
-            </li>
-            <li>
-              <strong>3. Adaptive Voice Assist Flow (The Core UX)</strong>
-              <p>
-                How the user selects a contextual mode and transitions to
-                hands-free voice.
-              </p>
-              <ul>
-                <li>[ Main Chat Interface ]</li>
-                <li>&darr; (User taps the Voice icon)</li>
-                <li>[ Voice Assist Onboarding / Intro Screen ]</li>
-                <li>&darr; (Taps "Get Started")</li>
-                <li>
-                  [ Context Mode Selector (Scrollable List) ] <br /><small
-                    >(Options: Therapy, Kids, Companion, Game, Health,
-                    etc.)</small
-                  >
-                </li>
-                <li>&darr; (User selects a mode, e.g., Kids Mode)</li>
-                <li>[ Active Voice Interface (Audio Waveform) ]</li>
-                <li>&darr; (User wants to change the AI's persona)</li>
-                <li>
-                  [ Character Voice Switcher Modal (Victor, Stella, Zara, Sam) ]
-                  &rarr; (Returns to Active Voice)
-                </li>
-              </ul>
-            </li>
-            <li>
-              <strong>4. Image Generation &amp; Editing Flow</strong>
-              <p>The journey from text prompt to final generated asset.</p>
-              <ul>
-                <li>[ Main Chat Interface ]</li>
-                <li>&darr; (User enters image generation prompt)</li>
-                <li>[ Image Rendering / Progress Screen ]</li>
-                <li>&darr;</li>
-                <li>[ Image Result Preview (Grid or Single Image View) ]</li>
-                <li>&darr; (User selects an image to tweak)</li>
-                <li>
-                  [ Image Transformation &amp; Edit Suite (Refine Prompt /
-                  Filters) ]
-                </li>
-                <li>&darr;</li>
-                <li>[ Export Actions (Download / Share) ]</li>
-              </ul>
-            </li>
-            <li>
-              <strong>5. Profile &amp; Parental Guardrails Flow</strong>
-              <p>
-                How users manage their account and set up the child-safe
-                sandbox.
-              </p>
-              <ul>
-                <li>[ Main Chat Interface ]</li>
-                <li>&darr; (User taps Profile Avatar)</li>
-                <li>[ User Profile Dashboard &amp; Plan Overview ]</li>
-                <li>&darr; (User navigates to sub-menus)</li>
-                <li>
-                  Branch A (Settings): &rarr; [ System Settings (Appearance,
-                  Language, Dark Mode) ]
-                </li>
-                <li>Branch B (Kids Mode): &darr;</li>
-                <li>[ Set Child Mode (Intro Screen) ]</li>
-                <li>&darr;</li>
-                <li>[ Customize Child Avatar &amp; Profile Details ]</li>
-                <li>&darr;</li>
-                <li>[ Set Screen Time / Usage Limits ]</li>
-                <li>&darr;</li>
-                <li>
-                  [ Set Security Passcode (To lock child in the safe mode) ]
-                  &rarr; (App reloads in Kids Mode)
-                </li>
-              </ul>
-            </li>
-          </ul>
+          <p>
+            <a
+              href="https://www.figma.com/board/gy9ofwmEFy2Th2CnqPnkZR/Untitled?node-id=7-1388&amp;t=ymyrgd06mrBK1gdV-4"
+              target="_blank"
+              rel="noopener noreferrer"
+              >View on figma</a
+            >
+          </p>
         </div>
       </div>
+
+      <!-- Information Architecture Image -->
+      <img
+        src="images/UI/Ifa IA.svg"
+        alt="IFA AI Information Architecture Diagram"
+        class="project-image"
+      />
+
 
       <!-- 13. The Final Design -->
       <div class="project-content">
@@ -492,7 +401,7 @@
       </div>
       <div class="project-mockups project-mockups--overlap">
         <img
-          src="images/UI/Frame 1000005183-1.svg"
+          src="C:\Users\HP\Downloads\Portfolio\UI\UI\Frame 1000005183.png"
           alt="The Homescreen Flow"
           class="project-image"
         />
@@ -510,7 +419,7 @@
       </div>
       <div class="project-mockups project-mockups--overlap">
         <img
-          src="images/UI/Frame 1000005197.svg"
+          src="C:\Users\HP\Downloads\Portfolio\UI\Frame 1000005197.png"
           alt="The Voice Assist Mode Flow - Mode Selection"
           class="project-image"
         />
@@ -534,7 +443,7 @@
       </div>
       <div class="project-mockups project-mockups--overlap">
         <img
-          src="images/UI/Frame 1000005397.svg"
+          src="C:\Users\HP\Downloads\Portfolio\UI\Frame 1000005198.png"
           alt="The Voice Select Flow - Character Voice Selection"
           class="project-image"
         />
@@ -552,7 +461,7 @@
       </div>
       <div class="project-mockups project-mockups--overlap">
         <img
-          src="images/UI/Dribbble shot HD - 20.svg"
+          src="C:\Users\HP\Downloads\Portfolio\UI\Dribbble shot HD - 20.png"
           alt="The Child's Mode Control - Parental Dashboard and Time Allowance"
           class="project-image"
         />
@@ -568,13 +477,26 @@
         </div>
       </div>
       <div class="project-mockups project-mockups--overlap">
+        <video
+          class="project-image"
+          autoplay
+          loop
+          muted
+          playsinline
+          controls
+          poster="images/UI/Ifa Ask Wsound 1.png"
+        >
+          <source src="UI/Ifa Ask Wsound.mp4" type="video/mp4" />
+          <source src="images/UI/Ifa Ask Wsound.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
         <img
-          src="images/UI/Frame 1000005183-2.svg"
+          src="C:\Users\HP\Downloads\Portfolio\UI\UI\Frame 1000005183.png"
           alt="The User Prompting Flow - Text Prompting Screen"
           class="project-image"
         />
         <img
-          src="images/UI/Frame 1000005201.svg"
+          src="C:\Users\HP\Downloads\Portfolio\UI\UI\Frame 1000005201.png"
           alt="The User Prompting Flow - Response Screen"
           class="project-image"
         />
@@ -590,8 +512,21 @@
         </div>
       </div>
       <div class="project-mockups project-mockups--overlap">
+        <video
+          class="project-image"
+          autoplay
+          loop
+          muted
+          playsinline
+          controls
+          poster="images/UI/Prompt With Pic 1.png"
+        >
+          <source src="UI/Prompt With Pic.mp4" type="video/mp4" />
+          <source src="images/UI/Prompt With Pic.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
         <img
-          src="images/UI/Frame 1000005203.svg"
+          src="C:\Users\HP\Downloads\Portfolio\UI\UI\Frame 1000005203.png"
           alt="The User Prompting Flow 2 - Uploading Media"
           class="project-image"
         />
@@ -602,7 +537,28 @@
         />
       </div>
 
-      <!-- 20. Other screens -->
+      <!-- 20. The unboarding flow -->
+      <div class="project-content">
+        <div class="project-text project-text--has-image">
+          <h2>The unboarding flow</h2>
+        </div>
+      </div>
+      <div class="project-mockups">
+        <video
+          class="project-image"
+          autoplay
+          loop
+          muted
+          playsinline
+          controls
+        >
+          <source src="images/ifa-launch-teaser-old.mp4" type="video/mp4" />
+          <source src="UI/ifa-launch-teaser-old.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      </div>
+
+      <!-- 21. Other screens -->
       <div class="project-content">
         <div class="project-text project-text--has-image">
           <h2>Other screens</h2>
@@ -625,32 +581,32 @@
           class="project-image"
         />
         <img
-          src="images/UI/Frame 1000005190.svg"
+          src="C:\Users\HP\Downloads\Portfolio\UI\Frame 1000005190.png"
           alt="Other Screens - Navigation Drawer and Ghost Chat"
           class="project-image"
         />
         <img
-          src="images/UI/Dribbble shot HD - 22.svg"
+          src="C:\Users\HP\Downloads\Portfolio\UI\Dribbble shot HD - 20.png"
           alt="Other Screens - Child Profile & Time Limits"
           class="project-image"
         />
         <img
-          src="images/UI/Dribbble shot HD - 23.svg"
+          src="C:\Users\HP\Downloads\Portfolio\UI\UI\Dribbble shot HD - 23.png"
           alt="Other Screens - History, Images & System Settings"
           class="project-image"
         />
         <img
-          src="images/UI/Frame 1000005193.svg"
+          src="C:\Users\HP\Downloads\Portfolio\UI\UI\Frame 1000005193.png"
           alt="Other Screens - Image Workspace and Refine Actions"
           class="project-image"
         />
         <img
-          src="images/UI/Frame 1000005194.svg"
+          src="C:\Users\HP\Downloads\Portfolio\UI\UI\Frame 1000005194.png"
           alt="Other Screens - Image Transformation Results"
           class="project-image"
         />
         <img
-          src="images/UI/Dribbble shot HD - 9.svg"
+          src="C:\Users\HP\Downloads\Portfolio\UI\UI\Dribbble shot HD - 9.png"
           alt="Other Screens - Web Search Results and Citations"
           class="project-image"
         />
@@ -676,14 +632,19 @@
             </p>
             <ol>
               <li>
-                <strong>90% Reduction in Setup Time (Frictionless Onboarding):</strong>
+                <strong
+                  >90% Reduction in Setup Time (Frictionless
+                  Onboarding):</strong
+                >
                 IFA AI’s one-tap mode selector reduces prompt fatigue.
               </li>
               <li>
                 <strong>100% Guaranteed Child-Safe Sessions</strong>
               </li>
               <li>
-                <strong>Increased Daily Active Usage (DAU) via Voice Assist:</strong>
+                <strong
+                  >Increased Daily Active Usage (DAU) via Voice Assist:</strong
+                >
                 Because the AI dynamically adjusts its tone and cadence to the
                 user's current environment (e.g., cooking, driving, relaxing),
                 we estimate a 40% increase in session duration for hands-free,
@@ -720,5 +681,6 @@
         }
       }
     </script>
+    <script src="project-back.js"></script>
   </body>
 </html>

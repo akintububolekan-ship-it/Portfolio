@@ -1,0 +1,9 @@
+import re
+
+svg_content = '''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="14" height="14" fill="currentColor">
+  <path fill-rule="evenodd" clip-rule="evenodd" d="M5 2C3.89543 2 3 2.89543 3 4V20C3 21.1046 3.89543 22 5 22H19C20.1046 22 21 21.1046 21 20V8L15 2H5ZM12 7.5C10.6193 7.5 9.5 8.61929 9.5 10C9.5 11.3807 10.6193 12.5 12 12.5C13.3807 12.5 14.5 11.3807 14.5 10C14.5 8.61929 13.3807 7.5 12 7.5ZM7.5 18C7.5 15.5 9.5 14.5 12 14.5C14.5 14.5 16.5 15.5 16.5 18H7.5Z" />
+</svg>'''
+
+with open('scratch/resume_icon.svg', 'w') as f:
+    f.write(svg_content)
+print("SVG saved successfully")

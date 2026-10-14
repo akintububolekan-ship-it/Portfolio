@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body { margin: 30px; background: #fff; font-family: sans-serif; display: flex; gap: 30px; align-items: center; }
+.card { text-align: center; }
+canvas {
+  width: 58px;
+  height: 58px;
+  border-radius: 50%;
+  border: 1px solid rgba(0,0,0,0.08);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  display: block;
+  margin: 0 auto 10px;
+}
+</style>
+</head>
+<body>
+<div class="card">
+  <h4>t = 0.0 (Initial)</h4>
+  <canvas id="c0" width="128" height="128"></canvas>
+</div>
+<div class="card">
+  <h4>t = 0.35 (Dithering)</h4>
+  <canvas id="c1" width="128" height="128"></canvas>
+</div>
+<div class="card">
+  <h4>t = 0.70 (Dithering)</h4>
+  <canvas id="c2" width="128" height="128"></canvas>
+</div>
+<div class="card">
+  <h4>t = 1.0 (Hovered SVG)</h4>
+  <canvas id="c3" width="128" height="128"></canvas>
+</div>
+
+<script>
+const bayer8 = [
+   0, 32,  8, 40,  2, 34, 10, 42,
+  48, 16, 56, 24, 50, 18, 58, 26,
+  12, 44,  4, 36, 14, 46,  6, 38,
+  60, 28, 52, 20, 62, 30, 54, 22,
+   3, 35, 11, 43,  1, 33,  9, 41,
+  51, 19, 59, 27, 49, 17, 57, 25,
+  15, 47,  7, 39, 13, 45,  5, 37,
+  63, 31, 55, 23, 61, 29, 53, 21
+];
+
+function createMask(size, blockSize, threshold) {
+  const c = document.createElement('canvas');
+  c.width = size;
+  c.height = size;
+  const ctx = c.getContext('2d');
+  ctx.fillStyle = '#000';
+  for (let y = 0; y < size; y += blockSize) {
+    const by = Math.floor(y / blockSize) % 8;
+    for (let x = 0; x < size; x += blockSize) {
+      const bx = Math.floor(x / blockSize) % 8;
+      const val = bayer8[by * 8 + bx] / 64;
+      if (threshold >= val) {
+        ctx.fillRect(x, y, blockSize, blockSize);
+      }
+    }
+  }
+  return c;
+}
+
+const img1 = new Image();
+const img2 = new Image();
+let loaded = 0;
+function onReady() {
+  loaded++;
+  if (loaded < 2) return;
+  const size = 128;
+  const list = [
+    { id: 'c0', t: 0.0 },
+    { id: 'c1', t: 0.35 },
+    { id: 'c2', t: 0.70 },
+    { id: 'c3', t: 1.0 }
+  ];
+
+  list.forEach(item => {
+    const canvas = document.getElementById(item.id);
+    const ctx = canvas.getContext('2d');
+
+    ctx.save();
+    ctx.beginPath();
+    ctx.arc(size/2, size/2, size/2, 0, Math.PI * 2);
+    ctx.clip();
+
+    ctx.drawImage(img1, 0, 0, size, size);
+
+    if (item.t > 0) {
+      const mask = createMask(size, 2, item.t);
+      const temp = document.createElement('canvas');
+      temp.width = size;
+      temp.height = size;
+      const tctx = temp.getContext('2d');
+      tctx.drawImage(img2, 0, 0, size, size);
+      tctx.globalCompositeOperation = 'destination-in';
+      tctx.drawImage(mask, 0, 0);
+
+      ctx.drawImage(temp, 0, 0);
+    }
+    ctx.restore();
+  });
+}
+
+img1.onload = onReady;
+img2.onload = onReady;
+img1.src = '../images/Profile image.png';
+img2.src = '../images/Image (Profile).svg';
+</script>
+</body>
+</html>

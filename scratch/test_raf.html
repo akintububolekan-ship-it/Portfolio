@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<body>
+<div id="logs" style="font-family:monospace;"></div>
+<script>
+const dbg = (msg) => { document.getElementById('logs').innerHTML += '<br>' + msg; };
+
+let startTime = null;
+function frame(ts) {
+  if (!startTime) startTime = performance.now();
+  const now = performance.now();
+  dbg("ts: " + ts + " | now: " + now + " | diff: " + (now - startTime));
+  if (now - startTime < 100) {
+    requestAnimationFrame(frame);
+  } else {
+    dbg("DONE");
+  }
+}
+setTimeout(() => {
+  requestAnimationFrame(frame);
+}, 100);
+</script>
+</body>
+</html>

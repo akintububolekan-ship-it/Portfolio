@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<body>
+<canvas id="c" width="116" height="116"></canvas>
+<div id="result">Testing...</div>
+<script>
+try {
+  const canvas = document.getElementById('c');
+  const ctx = canvas.getContext('2d');
+  
+  // Create procedural dither mask canvas
+  const maskCanvas = document.createElement('canvas');
+  maskCanvas.width = 116;
+  maskCanvas.height = 116;
+  const mctx = maskCanvas.getContext('2d');
+  mctx.fillStyle = '#000';
+  for (let y = 0; y < 116; y += 4) {
+    for (let x = 0; x < 116; x += 4) {
+      mctx.fillRect(x, y, 2, 2);
+    }
+  }
+
+  const img1 = new Image();
+  const img2 = new Image();
+  let loaded = 0;
+  const ondone = () => {
+    loaded++;
+    if (loaded < 2) return;
+    try {
+      // Draw img1
+      ctx.drawImage(img1, 0, 0, 116, 116);
+      
+      // Offscreen canvas for img2 masked by dither
+      const temp = document.createElement('canvas');
+      temp.width = 116;
+      temp.height = 116;
+      const tctx = temp.getContext('2d');
+      tctx.drawImage(img2, 0, 0, 116, 116);
+      tctx.globalCompositeOperation = 'destination-in';
+      tctx.drawImage(maskCanvas, 0, 0);
+      
+      // Draw masked img2 on top of img1
+      ctx.drawImage(temp, 0, 0);
+      document.getElementById('result').innerText = 'COMPOSITE SUCCESS!';
+    } catch(err) {
+      document.getElementById('result').innerText = 'COMPOSITE ERROR: ' + err.message;
+    }
+  };
+  img1.onload = ondone;
+  img2.onload = ondone;
+  img1.src = '../images/Profile image.png';
+  img2.src = '../images/Image (Profile).svg';
+} catch(e) {
+  document.getElementById('result').innerText = 'FATAL: ' + e.message;
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<body>
+<iframe id="f" src="../index.html" style="width:1200px;height:800px;border:none;"></iframe>
+<script>
+window.onload = () => {
+  setTimeout(() => {
+    const doc = document.getElementById('f').contentDocument;
+    const container = doc.getElementById('avatar-container');
+    if (container) {
+      container.dispatchEvent(new MouseEvent('mouseenter'));
+      setTimeout(() => {
+        document.title = 'HOVER_DONE';
+      }, 400);
+    }
+  }, 300);
+};
+</script>
+</body>
+</html>
