@@ -557,6 +557,24 @@ video.project-card__image {
     gap: 16px;
     flex-wrap: wrap;
   }
+
+  .tabs__avatar,
+  .is-sticky .tabs__avatar {
+    display: none !important;
+    opacity: 0 !important;
+    visibility: hidden !important;
+    max-width: 0 !important;
+    margin-right: 0 !important;
+  }
+
+  .send-mail-btn,
+  .send-mail-link,
+  .is-sticky .send-mail-btn,
+  .is-sticky .send-mail-link {
+    display: none !important;
+    opacity: 0 !important;
+    visibility: hidden !important;
+  }
 }
 
 @media (max-width: 480px) {
