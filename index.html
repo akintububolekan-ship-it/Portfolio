@@ -6,7 +6,7 @@
     <title>Ola — Product & Interaction Designer</title>
     <meta
       name="description"
-      content="Ola is a Product & Interaction Designer currently building & leading design at Haystack, an AI-powered CRM platform."
+      content="Ola is a Creative & product Designer currently building & leading design at Haystack, an AI-powered CRM platform."
     />
     <meta property="og:title" content="Ola — Product & Interaction Designer" />
     <meta
@@ -465,33 +465,49 @@
         </a>
       </section>
 
-            <!-- Motion Design -->
+      <!-- Motion Design -->
       <section
         class="tab-content"
         id="content-motion-design"
         aria-label="Motion design projects"
       >
         <!-- Caterpilllar studio -->
-        <a href="caterpillar.html" class="project-card" id="project-caterpillar">
+        <a
+          href="caterpillar.html"
+          class="project-card"
+          id="project-caterpillar"
+        >
           <div class="project-card__image-container">
             <video
-              src="images/Caterpilllar images/Caterpillar Intro Video Sfx Inn mm.mp4"
-              autoplay loop muted playsinline
+              src="images/Caterpilllar images/Caterpillar Intro Video Sfx Inn Mm.mp4"
+              autoplay
+              loop
+              muted
+              playsinline
               class="project-card__image"
             ></video>
           </div>
           <div class="project-card__info">
             <h3 class="project-card__title">Caterpilllar studios</h3>
-            <p class="project-card__desc">Product introduction video &amp; Storyboard</p>
+            <p class="project-card__desc">
+              Product introduction video &amp; Storyboard
+            </p>
           </div>
         </a>
 
         <!-- Haystack -->
-        <a href="haystack-motion.html" class="project-card" id="project-haystack-motion">
+        <a
+          href="haystack-motion.html"
+          class="project-card"
+          id="project-haystack-motion"
+        >
           <div class="project-card__image-container">
             <video
               src="images/Haystack Product Intro.mp4"
-              autoplay loop muted playsinline
+              autoplay
+              loop
+              muted
+              playsinline
               class="project-card__image"
             ></video>
           </div>
@@ -506,7 +522,10 @@
           <div class="project-card__image-container">
             <video
               src="images/Ifa shorts/Frame 1000005141 8.mp4"
-              autoplay loop muted playsinline
+              autoplay
+              loop
+              muted
+              playsinline
               class="project-card__image"
             ></video>
           </div>
@@ -536,7 +555,10 @@
               preload="auto"
               class="project-card__image"
             >
-              <source src="images/Spendwise/Putting-On-Glasses.mp4" type="video/mp4" />
+              <source
+                src="images/Spendwise/Putting-On-Glasses.mp4"
+                type="video/mp4"
+              />
             </video>
           </div>
           <div class="project-card__info">
@@ -559,9 +581,12 @@
               webkit-playsinline
               preload="auto"
               class="project-card__image"
-              style="background-color: #000;"
+              style="background-color: #000"
             >
-              <source src="images/Numen/Wake-To-Sleep-Mode.mp4" type="video/mp4" />
+              <source
+                src="images/Numen/Wake-To-Sleep-Mode.mp4"
+                type="video/mp4"
+              />
             </video>
           </div>
           <div class="project-card__info">
@@ -616,7 +641,11 @@
         </a>
 
         <!-- Radiant glow -->
-        <a href="radiant-glow.html" class="project-card" id="project-radiant-glow">
+        <a
+          href="radiant-glow.html"
+          class="project-card"
+          id="project-radiant-glow"
+        >
           <div class="project-card__image-container">
             <img
               src="images/Radiant glow/Frame 85.svg"
@@ -627,14 +656,16 @@
           </div>
           <div class="project-card__info">
             <h3 class="project-card__title">Radiant glow</h3>
-            <p class="project-card__desc">
-              Skincare &amp; Beauty
-            </p>
+            <p class="project-card__desc">Skincare &amp; Beauty</p>
           </div>
         </a>
 
         <!-- Openhouse cinemas -->
-        <a href="openhouse-cinemas.html" class="project-card" id="project-openhouse-cinemas">
+        <a
+          href="openhouse-cinemas.html"
+          class="project-card"
+          id="project-openhouse-cinemas"
+        >
           <div class="project-card__image-container">
             <img
               src="images/Open house/Frame 1000005228.svg"
@@ -645,9 +676,7 @@
           </div>
           <div class="project-card__info">
             <h3 class="project-card__title">Openhouse cinemas</h3>
-            <p class="project-card__desc">
-              Entertainment &amp; Ticketing
-            </p>
+            <p class="project-card__desc">Entertainment &amp; Ticketing</p>
           </div>
         </a>
 
@@ -663,14 +692,16 @@
           </div>
           <div class="project-card__info">
             <h3 class="project-card__title">Baze air</h3>
-            <p class="project-card__desc">
-              Airline &amp; Travel Booking
-            </p>
+            <p class="project-card__desc">Airline &amp; Travel Booking</p>
           </div>
         </a>
 
         <!-- Marigo furnitures -->
-        <a href="marigo-furnitures.html" class="project-card" id="project-marigo-furnitures">
+        <a
+          href="marigo-furnitures.html"
+          class="project-card"
+          id="project-marigo-furnitures"
+        >
           <div class="project-card__image-container">
             <img
               src="images/Marigo/Frame 87.svg"
@@ -681,9 +712,7 @@
           </div>
           <div class="project-card__info">
             <h3 class="project-card__title">Marigo furnitures</h3>
-            <p class="project-card__desc">
-              Modern Living &amp; Home Decor
-            </p>
+            <p class="project-card__desc">Modern Living &amp; Home Decor</p>
           </div>
         </a>
       </section>
@@ -702,7 +731,9 @@
 
       function activateTab(tabId, updateState = true) {
         if (!tabId) return;
-        const targetTab = document.querySelector(`.tabs__item[data-tab="${tabId}"]`);
+        const targetTab = document.querySelector(
+          `.tabs__item[data-tab="${tabId}"]`,
+        );
         const target = document.getElementById("content-" + tabId);
         if (!targetTab || !target) return;
 
@@ -779,12 +810,18 @@
       document.querySelectorAll(".project-card").forEach((card) => {
         card.addEventListener("click", () => {
           try {
-            const activeTab = document.querySelector(".tabs__item--active")?.dataset.tab;
+            const activeTab = document.querySelector(".tabs__item--active")
+              ?.dataset.tab;
             if (activeTab) {
               sessionStorage.setItem("portfolioActiveTab", activeTab);
               localStorage.setItem("portfolioActiveTab", activeTab);
             }
-            sessionStorage.setItem("portfolioScrollPos", (window.pageYOffset || document.documentElement.scrollTop).toString());
+            sessionStorage.setItem(
+              "portfolioScrollPos",
+              (
+                window.pageYOffset || document.documentElement.scrollTop
+              ).toString(),
+            );
             sessionStorage.setItem("portfolioReturnFromProject", "true");
           } catch (e) {}
         });
@@ -857,9 +894,18 @@
           });
         }
       };
-      window.addEventListener("click", unlockIndexVideos, { passive: true, once: true });
-      window.addEventListener("touchstart", unlockIndexVideos, { passive: true, once: true });
-      window.addEventListener("scroll", unlockIndexVideos, { passive: true, once: true });
+      window.addEventListener("click", unlockIndexVideos, {
+        passive: true,
+        once: true,
+      });
+      window.addEventListener("touchstart", unlockIndexVideos, {
+        passive: true,
+        once: true,
+      });
+      window.addEventListener("scroll", unlockIndexVideos, {
+        passive: true,
+        once: true,
+      });
 
       // Sticky nav logic
       const bio = document.getElementById("bio");
@@ -915,33 +961,33 @@
         const ctx = avatarCanvas.getContext("2d");
         const defaultSrc = avatarCanvas.getAttribute("data-src-default");
         const hoverSrc = avatarCanvas.getAttribute("data-src-hover");
-        
+
         let imgDefault = new Image();
         let imgHover = new Image();
-        
+
         // 4x4 Bayer matrix
         const bayerMatrix = [
-          [ 0,  8,  2, 10],
-          [12,  4, 14,  6],
-          [ 3, 11,  1,  9],
-          [15,  7, 13,  5]
+          [0, 8, 2, 10],
+          [12, 4, 14, 6],
+          [3, 11, 1, 9],
+          [15, 7, 13, 5],
         ];
-        
+
         let ditherProgress = 0;
         let ditherAnimationId = null;
         let imagesLoaded = 0;
-        
+
         const renderDither = () => {
           if (imagesLoaded < 2) return;
-          
+
           const w = avatarCanvas.width;
           const h = avatarCanvas.height;
-          
+
           ctx.clearRect(0, 0, w, h);
-          
+
           // Draw default image
           ctx.drawImage(imgDefault, 0, 0, w, h);
-          
+
           if (ditherProgress > 0) {
             // Draw hover image onto offscreen canvas
             const offCanvas = document.createElement("canvas");
@@ -949,31 +995,44 @@
             offCanvas.height = h;
             const offCtx = offCanvas.getContext("2d");
             offCtx.drawImage(imgHover, 0, 0, w, h);
-            
+
             const hoverData = offCtx.getImageData(0, 0, w, h);
             const targetData = ctx.getImageData(0, 0, w, h);
-            
+
             // Threshold based on progress (0 to 1)
             const threshold = ditherProgress * 17; // 17 because bayer matrix is 0-15
-            
+
             for (let y = 0; y < h; y++) {
               for (let x = 0; x < w; x++) {
                 // Chunk size of 2 for a slightly chunkier retro dither look (retina screens)
                 const bayerY = Math.floor(y / 2) % 4;
                 const bayerX = Math.floor(x / 2) % 4;
                 const bayerValue = bayerMatrix[bayerY][bayerX];
-                
+
                 if (bayerValue < threshold) {
                   const idx = (y * w + x) * 4;
                   const alphaHover = hoverData.data[idx + 3] / 255;
-                  
+
                   if (alphaHover > 0) {
                     const alphaBase = targetData.data[idx + 3] / 255;
                     const outAlpha = alphaHover + alphaBase * (1 - alphaHover);
-                    
-                    targetData.data[idx] = (hoverData.data[idx] * alphaHover + targetData.data[idx] * alphaBase * (1 - alphaHover)) / outAlpha;
-                    targetData.data[idx + 1] = (hoverData.data[idx + 1] * alphaHover + targetData.data[idx + 1] * alphaBase * (1 - alphaHover)) / outAlpha;
-                    targetData.data[idx + 2] = (hoverData.data[idx + 2] * alphaHover + targetData.data[idx + 2] * alphaBase * (1 - alphaHover)) / outAlpha;
+
+                    targetData.data[idx] =
+                      (hoverData.data[idx] * alphaHover +
+                        targetData.data[idx] * alphaBase * (1 - alphaHover)) /
+                      outAlpha;
+                    targetData.data[idx + 1] =
+                      (hoverData.data[idx + 1] * alphaHover +
+                        targetData.data[idx + 1] *
+                          alphaBase *
+                          (1 - alphaHover)) /
+                      outAlpha;
+                    targetData.data[idx + 2] =
+                      (hoverData.data[idx + 2] * alphaHover +
+                        targetData.data[idx + 2] *
+                          alphaBase *
+                          (1 - alphaHover)) /
+                      outAlpha;
                     targetData.data[idx + 3] = outAlpha * 255;
                   }
                 }
@@ -990,13 +1049,13 @@
 
         imgDefault.onload = checkLoad;
         imgHover.onload = checkLoad;
-        
+
         imgDefault.src = defaultSrc;
         imgHover.src = hoverSrc;
-        
+
         const animateDither = (target) => {
           if (ditherAnimationId) cancelAnimationFrame(ditherAnimationId);
-          
+
           const step = () => {
             const diff = target - ditherProgress;
             if (Math.abs(diff) < 0.01) {
@@ -1010,7 +1069,7 @@
           };
           step();
         };
-        
+
         avatarCanvas.addEventListener("mouseenter", () => animateDither(1));
         avatarCanvas.addEventListener("mouseleave", () => animateDither(0));
       }
