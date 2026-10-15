@@ -835,7 +835,7 @@ video.project-card__image {
 }
 
 .project-mockups--overlap .project-image + .project-image {
-  margin-top: -38px;
+  margin-top: 0px;
   position: relative;
 }
 
@@ -913,7 +913,7 @@ video.project-card__image {
     gap: 0;
   }
   .project-mockups--overlap .project-image + .project-image {
-    margin-top: -5.9375%;
+    margin-top: 0%;
   }
   .project-mockup-label {
     padding: 0 4px;
