@@ -3,7 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Numen | Ambient AI Interaction &amp; Expressive Micro-States — Ola</title>
+    <title>
+      Numen | Ambient AI Interaction &amp; Expressive Micro-States — Ola
+    </title>
     <meta
       name="description"
       content="An ambient, expressive micro-state entity designed as a real-time conversational AI assistant, copilot, or wellness companion."
@@ -96,7 +98,7 @@
             src="images/Numen/Haystack Logo.svg"
             alt="Numen Logo"
             class="project-logo"
-            style="width: 36.4px; height: 36.4px; margin-bottom: 12px;"
+            style="width: 36.4px; height: 36.4px; margin-bottom: 12px"
           />
         </div>
 
@@ -125,7 +127,8 @@
         <div class="project-text project-text--has-image">
           <h2>Overview</h2>
           <p>
-            An ambient, expressive micro-state entity designed as a real-time conversational AI assistant, copilot, or wellness companion.
+            An ambient, expressive micro-state entity designed as a real-time
+            conversational AI assistant, copilot, or wellness companion.
           </p>
         </div>
       </div>
@@ -141,7 +144,17 @@
           webkit-playsinline
           preload="auto"
           class="project-image project-image--hero"
-          style="width: 100%; max-width: 640px; aspect-ratio: 640 / 573.15; object-fit: contain; padding: 0; margin: 0 auto 120px; display: block; border-radius: 0; background-color: #000000;"
+          style="
+            width: 100%;
+            max-width: 640px;
+            aspect-ratio: 640 / 573.15;
+            object-fit: contain;
+            padding: 0;
+            margin: 0 auto 120px;
+            display: block;
+            border-radius: 0;
+            background-color: #000000;
+          "
         >
           <source src="images/Numen/Wake-To-Sleep-Mode.mp4" type="video/mp4" />
         </video>
@@ -152,10 +165,14 @@
         <div class="project-text">
           <h2>Project Background &amp; Challenge</h2>
           <p>
-            Most generative AI interfaces rely on abstract voice waves or static text bubbles, creating emotional detachment during voice interactions.
+            Most generative AI interfaces rely on abstract voice waves or static
+            text bubbles, creating emotional detachment during voice
+            interactions.
           </p>
           <p>
-            The challenge was to craft an emotive, lightweight visual anchor capable of conveying system states, focus, and empathy through minimal geometric changes and lighting dynamics.
+            The challenge was to craft an emotive, lightweight visual anchor
+            capable of conveying system states, focus, and empathy through
+            minimal geometric changes and lighting dynamics.
           </p>
         </div>
       </div>
@@ -164,14 +181,20 @@
       <div class="project-content">
         <div class="project-text">
           <h2>Character Anatomy &amp; Visual Language</h2>
-          <p style="margin-bottom: 12px;">
-            <strong>Base Form:</strong> A soft-lit luminous sphere with a high-glow outer radius designed for high legibility across dark-mode surfaces.
+          <p style="margin-bottom: 12px">
+            <strong>Base Form:</strong> A soft-lit luminous sphere with a
+            high-glow outer radius designed for high legibility across dark-mode
+            surfaces.
           </p>
-          <p style="margin-bottom: 12px;">
-            <strong>Feature Minimalism:</strong> The face relies entirely on high-contrast vertical slit pupils to communicate attention, focus, and state changes without mouth or eyebrow complexity.
+          <p style="margin-bottom: 12px">
+            <strong>Feature Minimalism:</strong> The face relies entirely on
+            high-contrast vertical slit pupils to communicate attention, focus,
+            and state changes without mouth or eyebrow complexity.
           </p>
           <p>
-            <strong>Luminescence as Feedback:</strong> Core glow and rim intensity dynamically pulse to communicate processing latency, audio gain, and device connectivity.
+            <strong>Luminescence as Feedback:</strong> Core glow and rim
+            intensity dynamically pulse to communicate processing latency, audio
+            gain, and device connectivity.
           </p>
         </div>
       </div>
@@ -180,12 +203,14 @@
       <div class="project-content">
         <div class="project-text">
           <h2>Motion State System Architecture</h2>
-          <p style="margin-bottom: 6px;">01. Default system state</p>
-          <p style="margin-bottom: 6px;">02. Attention Shift - Wake-word detected</p>
-          <p style="margin-bottom: 6px;">03. Cognitive Focus</p>
-          <p style="margin-bottom: 6px;">04. Micro-Blink</p>
-          <p style="margin-bottom: 6px;">05. Rest / Standby</p>
-          <p style="margin-bottom: 0;">06. Tracking</p>
+          <p style="margin-bottom: 6px">01. Default system state</p>
+          <p style="margin-bottom: 6px">
+            02. Attention Shift - Wake-word detected
+          </p>
+          <p style="margin-bottom: 6px">03. Cognitive Focus</p>
+          <p style="margin-bottom: 6px">04. Micro-Blink</p>
+          <p style="margin-bottom: 6px">05. Rest / Standby</p>
+          <p style="margin-bottom: 0">06. Tracking</p>
         </div>
       </div>
 
@@ -194,12 +219,12 @@
         <div class="project-text">
           <h2>Credits</h2>
           <p>
-            Client: Caterpilllar studios<br />
+            Client: Numen<br />
             Art Director: Akintububo Olamilekan<br />
             Motion Designer: Akintububo Olamilekan<br />
-            Sound Designer: Akintububo Olamilekan<br />
-            Tools Used: Figma, After Effects<br />
-            Deliverables: Character State Sheet, Interactive Motion Specs, System Integration Map
+            Tools Used: Figma, Rive<br />
+            Deliverables: Character State Sheet, Interactive Motion Specs,
+            System Integration Map
           </p>
         </div>
       </div>
@@ -323,7 +348,7 @@
               }
             });
           },
-          { rootMargin: "200px 0px", threshold: 0.05 }
+          { rootMargin: "200px 0px", threshold: 0.05 },
         );
 
         videos.forEach((v) => observer.observe(v));
@@ -331,8 +356,10 @@
         window.playVisibleVideos = function () {
           videos.forEach((v) => {
             const rect = v.getBoundingClientRect();
-            const inView = rect.top < window.innerHeight + 200 && rect.bottom > -200;
-            const isHidden = v.closest("#final-design-content")?.style.display === "none";
+            const inView =
+              rect.top < window.innerHeight + 200 && rect.bottom > -200;
+            const isHidden =
+              v.closest("#final-design-content")?.style.display === "none";
             if (inView && !isHidden) {
               v.muted = true;
               const p = v.play();
@@ -346,9 +373,18 @@
         };
 
         window.addEventListener("click", unlock, { passive: true, once: true });
-        window.addEventListener("touchstart", unlock, { passive: true, once: true });
-        window.addEventListener("scroll", unlock, { passive: true, once: true });
-        window.addEventListener("pointerdown", unlock, { passive: true, once: true });
+        window.addEventListener("touchstart", unlock, {
+          passive: true,
+          once: true,
+        });
+        window.addEventListener("scroll", unlock, {
+          passive: true,
+          once: true,
+        });
+        window.addEventListener("pointerdown", unlock, {
+          passive: true,
+          once: true,
+        });
 
         window.playVisibleVideos();
       }

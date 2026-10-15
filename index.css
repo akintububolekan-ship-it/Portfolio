@@ -1269,7 +1269,7 @@ video.project-card__image {
 .numen-media-stack {
   display: flex;
   flex-direction: column;
-  gap: 18px;
+  gap: 0px;
   align-items: center;
   max-width: 640px;
   margin: 0 auto 120px;
