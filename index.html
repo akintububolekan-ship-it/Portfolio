@@ -48,6 +48,9 @@
         id="avatar"
         width="92"
         height="92"
+        role="button"
+        tabindex="0"
+        aria-label="Profile image"
         data-src-default="images/Profile image.png"
         data-src-hover="images/Image (Profile).svg"
       ></canvas>
@@ -1070,8 +1073,49 @@
           step();
         };
 
-        avatarCanvas.addEventListener("mouseenter", () => animateDither(1));
-        avatarCanvas.addEventListener("mouseleave", () => animateDither(0));
+        let returnTimer = null;
+        let isTouch = false;
+
+        const triggerReveal = () => {
+          if (returnTimer) {
+            clearTimeout(returnTimer);
+            returnTimer = null;
+          }
+          animateDither(1);
+          returnTimer = setTimeout(() => {
+            animateDither(0);
+            returnTimer = null;
+          }, 700);
+        };
+
+        avatarCanvas.addEventListener(
+          "touchstart",
+          () => {
+            isTouch = true;
+          },
+          { passive: true }
+        );
+
+        avatarCanvas.addEventListener("mouseenter", () => {
+          if (isTouch || window.matchMedia("(hover: none)").matches) return;
+          animateDither(1);
+        });
+
+        avatarCanvas.addEventListener("mouseleave", () => {
+          if (isTouch || window.matchMedia("(hover: none)").matches) return;
+          animateDither(0);
+        });
+
+        avatarCanvas.addEventListener("click", () => {
+          triggerReveal();
+        });
+
+        avatarCanvas.addEventListener("keydown", (e) => {
+          if (e.key === "Enter" || e.key === " ") {
+            e.preventDefault();
+            triggerReveal();
+          }
+        });
       }
     </script>
   </body>
