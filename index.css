@@ -196,6 +196,15 @@ video {
 .social-chip[data-tool="github"] .tool-icon {
   width: 14px;
   height: 14px;
+  color: #000000;
+  fill: #000000;
+}
+
+.social-chip[data-tool="dribbble"] .tool-icon {
+  width: 14px;
+  height: 14px;
+  color: #4e4e4e;
+  fill: #4e4e4e;
 }
 
 .social-chip[data-tool="instagram"] .tool-icon {
@@ -380,19 +389,21 @@ video {
 }
 
 /* Anti-flicker pre-render rules for restored portfolio tabs */
-html[data-initial-tab]:not([data-initial-tab="case-studies"]) #content-case-studies {
+html[data-initial-tab]:not([data-initial-tab="all"]) #content-all {
   display: none !important;
 }
+html[data-initial-tab="case-studies"] #content-case-studies,
 html[data-initial-tab="motion-design"] #content-motion-design,
 html[data-initial-tab="illustrations-character-animation"] #content-illustrations-character-animation,
 html[data-initial-tab="email-templates"] #content-email-templates {
   display: grid !important;
   opacity: 1 !important;
 }
-html[data-initial-tab]:not([data-initial-tab="case-studies"]) #tab-case-studies {
-  color: #a0a0a0 !important;
+html[data-initial-tab]:not([data-initial-tab="all"]) #tab-all {
+  color: #8c8c8c !important;
   font-weight: 400 !important;
 }
+html[data-initial-tab="case-studies"] #tab-case-studies,
 html[data-initial-tab="motion-design"] #tab-motion-design,
 html[data-initial-tab="illustrations-character-animation"] #tab-illustrations-character-animation,
 html[data-initial-tab="email-templates"] #tab-email-templates {
@@ -1406,16 +1417,63 @@ video.project-card__image {
   }
 }
 
-/* ===== MOBILE SECTION BUBBLE (ATTACHED TO NATIVE SCROLL) ===== */
+/* ===== MOBILE SCROLL WHEEL & BUBBLE ===== */
+.mobile-scroll-track,
 .mobile-scroll-bubble {
   display: none;
 }
 
 @media (max-width: 1080px) {
-  .mobile-scroll-bubble {
+  .mobile-scroll-track {
     display: block;
     position: fixed;
-    right: 14px;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 26px;
+    z-index: 10001;
+    pointer-events: auto;
+    touch-action: none;
+    user-select: none;
+    -webkit-user-select: none;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  .mobile-scroll-thumb {
+    position: absolute;
+    right: 3px;
+    top: 0;
+    width: 4.5px;
+    min-height: 38px;
+    border-radius: 9999px;
+    background: rgba(0, 0, 0, 0.38);
+    opacity: 0;
+    visibility: hidden;
+    will-change: transform, height;
+    transition: opacity 0.3s cubic-bezier(0.16, 1, 0.3, 1), visibility 0.3s, width 0.15s ease, background-color 0.15s ease;
+    cursor: pointer;
+    touch-action: none;
+  }
+
+  .mobile-scroll-thumb--visible {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .mobile-scroll-track:active .mobile-scroll-thumb,
+  .mobile-scroll-thumb--active,
+  .mobile-scroll-thumb--dragging {
+    width: 7.5px;
+    right: 2px;
+    background: rgba(0, 0, 0, 0.85);
+  }
+
+  .mobile-scroll-bubble {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    position: fixed;
+    right: 16px;
     top: 0;
     transform: translateY(50vh) translateY(-50%);
     will-change: transform;
@@ -1428,12 +1486,47 @@ video.project-card__image {
     padding: 7px 14px;
     border-radius: 9999px;
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35), 0 0 0 1px rgba(255, 255, 255, 0.15);
-    pointer-events: none;
+    pointer-events: auto;
+    cursor: pointer;
+    user-select: none;
+    -webkit-user-select: none;
+    -webkit-tap-highlight-color: transparent;
+    touch-action: none;
     white-space: nowrap;
     opacity: 0;
     visibility: hidden;
-    transition: opacity 0.3s cubic-bezier(0.16, 1, 0.3, 1), visibility 0.3s;
+    transition: opacity 0.3s cubic-bezier(0.16, 1, 0.3, 1), visibility 0.3s, box-shadow 0.15s ease, background-color 0.15s ease;
     z-index: 10000;
+  }
+
+  .mobile-scroll-bubble:active,
+  .mobile-scroll-bubble--active {
+    background: #1a1a1a;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.45), 0 0 0 1.5px rgba(255, 255, 255, 0.3);
+  }
+
+  .mobile-scroll-bubble--dragging {
+    opacity: 1 !important;
+    visibility: visible !important;
+    background: #000000;
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.6), 0 0 0 2px rgba(255, 255, 255, 0.4);
+  }
+
+  .mobile-scroll-bubble__arrow {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.75;
+    transition: transform 0.15s ease, opacity 0.15s ease;
+  }
+
+  .mobile-scroll-bubble:hover .mobile-scroll-bubble__arrow,
+  .mobile-scroll-bubble--active .mobile-scroll-bubble__arrow {
+    opacity: 1;
+  }
+
+  .mobile-scroll-bubble--pulse {
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5), 0 0 0 2px rgba(255, 255, 255, 0.45);
   }
 
   .mobile-scroll-bubble--visible {
